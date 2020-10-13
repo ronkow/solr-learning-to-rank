@@ -1,0 +1,2648 @@
+{
+    "store": "feature_store1",
+    "name": "lambdamart_model1",
+    "class": "org.apache.solr.ltr.model.MultipleAdditiveTreesModel",
+    "features": [
+        {
+            "name": "qa_original_score"
+        },
+        {
+            "name": "qa_pos"
+        },
+        {
+            "name": "qa_pos_bigram"
+        },
+        {
+            "name": "qa_pos_trigram"
+        },
+        {
+            "name": "qa_parse_tree"
+        }
+    ],
+    "params": {
+        "trees": [
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_original_score",
+                    "threshold": "13.90629",
+                    "left": {
+                        "feature": "qa_pos_trigram",
+                        "threshold": "2.9651628",
+                        "left": {
+                            "value": "-2.0"
+                        },
+                        "right": {
+                            "feature": "qa_original_score",
+                            "threshold": "11.387265",
+                            "left": {
+                                "feature": "qa_parse_tree",
+                                "threshold": "3.0138202",
+                                "left": {
+                                    "value": "-1.9590051174163818"
+                                },
+                                "right": {
+                                    "value": "1.5734734535217285"
+                                }
+                            },
+                            "right": {
+                                "value": "1.7075549364089966"
+                            }
+                        }
+                    },
+                    "right": {
+                        "feature": "qa_pos_trigram",
+                        "threshold": "3.9015298",
+                        "left": {
+                            "value": "-0.5937725901603699"
+                        },
+                        "right": {
+                            "feature": "qa_pos",
+                            "threshold": "2.9387348",
+                            "left": {
+                                "value": "-2.0"
+                            },
+                            "right": {
+                                "feature": "qa_parse_tree",
+                                "threshold": "3.8928506",
+                                "left": {
+                                    "value": "2.0"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "4.602468",
+                                    "left": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "14.125336",
+                                        "left": {
+                                            "value": "2.0"
+                                        },
+                                        "right": {
+                                            "value": "2.0"
+                                        }
+                                    },
+                                    "right": {
+                                        "value": "2.0"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_original_score",
+                    "threshold": "13.577722",
+                    "left": {
+                        "feature": "qa_pos_trigram",
+                        "threshold": "2.9651628",
+                        "left": {
+                            "value": "-1.690348505973816"
+                        },
+                        "right": {
+                            "feature": "qa_pos",
+                            "threshold": "3.0003545",
+                            "left": {
+                                "value": "-1.8644084930419922"
+                            },
+                            "right": {
+                                "feature": "qa_parse_tree",
+                                "threshold": "3.0138202",
+                                "left": {
+                                    "value": "-1.663506031036377"
+                                },
+                                "right": {
+                                    "feature": "qa_original_score",
+                                    "threshold": "10.730128",
+                                    "left": {
+                                        "feature": "qa_pos_trigram",
+                                        "threshold": "21.692505",
+                                        "left": {
+                                            "feature": "qa_pos",
+                                            "threshold": "4.04789",
+                                            "left": {
+                                                "value": "1.7210527658462524"
+                                            },
+                                            "right": {
+                                                "value": "1.69801926612854"
+                                            }
+                                        },
+                                        "right": {
+                                            "value": "1.710128664970398"
+                                        }
+                                    },
+                                    "right": {
+                                        "value": "1.707115888595581"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "right": {
+                        "feature": "qa_pos_trigram",
+                        "threshold": "3.9015298",
+                        "left": {
+                            "value": "-1.0892794132232666"
+                        },
+                        "right": {
+                            "feature": "qa_pos",
+                            "threshold": "2.9387348",
+                            "left": {
+                                "value": "-1.8133761882781982"
+                            },
+                            "right": {
+                                "value": "1.679612398147583"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "3.5894074",
+                    "left": {
+                        "value": "-1.2678037881851196"
+                    },
+                    "right": {
+                        "feature": "qa_original_score",
+                        "threshold": "13.577722",
+                        "left": {
+                            "feature": "qa_pos",
+                            "threshold": "3.0003545",
+                            "left": {
+                                "value": "-1.5981463193893433"
+                            },
+                            "right": {
+                                "feature": "qa_parse_tree",
+                                "threshold": "3.0138202",
+                                "left": {
+                                    "value": "-1.4746135473251343"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "4.04789",
+                                    "left": {
+                                        "feature": "qa_pos_trigram",
+                                        "threshold": "18.571281",
+                                        "left": {
+                                            "feature": "qa_original_score",
+                                            "threshold": "11.8253565",
+                                            "left": {
+                                                "value": "1.5137892961502075"
+                                            },
+                                            "right": {
+                                                "value": "1.4941074848175049"
+                                            }
+                                        },
+                                        "right": {
+                                            "value": "1.5182944536209106"
+                                        }
+                                    },
+                                    "right": {
+                                        "value": "1.5020794868469238"
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "qa_pos",
+                            "threshold": "3.123594",
+                            "left": {
+                                "value": "-1.5394150018692017"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "4.664088",
+                                "left": {
+                                    "value": "1.4841786623001099"
+                                },
+                                "right": {
+                                    "value": "1.484597086906433"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "3.5894074",
+                    "left": {
+                        "value": "-1.306599736213684"
+                    },
+                    "right": {
+                        "feature": "qa_original_score",
+                        "threshold": "13.577722",
+                        "left": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "3.0138202",
+                            "left": {
+                                "value": "-1.3668773174285889"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "3.0003545",
+                                "left": {
+                                    "value": "-1.5110883712768555"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "4.04789",
+                                    "left": {
+                                        "feature": "qa_pos_trigram",
+                                        "threshold": "18.571281",
+                                        "left": {
+                                            "feature": "qa_original_score",
+                                            "threshold": "11.8253565",
+                                            "left": {
+                                                "value": "1.388001561164856"
+                                            },
+                                            "right": {
+                                                "value": "1.3734575510025024"
+                                            }
+                                        },
+                                        "right": {
+                                            "value": "1.3902695178985596"
+                                        }
+                                    },
+                                    "right": {
+                                        "value": "1.3799099922180176"
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "qa_pos",
+                            "threshold": "3.1852138",
+                            "left": {
+                                "value": "-0.4065447449684143"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "4.664088",
+                                "left": {
+                                    "value": "1.364124059677124"
+                                },
+                                "right": {
+                                    "value": "1.3671386241912842"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "3.5894074",
+                    "left": {
+                        "value": "-1.2142095565795898"
+                    },
+                    "right": {
+                        "feature": "qa_original_score",
+                        "threshold": "13.577722",
+                        "left": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "3.0138202",
+                            "left": {
+                                "value": "-1.2815676927566528"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "3.0003545",
+                                "left": {
+                                    "value": "-1.385225534439087"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "4.04789",
+                                    "left": {
+                                        "feature": "qa_pos_trigram",
+                                        "threshold": "18.571281",
+                                        "left": {
+                                            "feature": "qa_original_score",
+                                            "threshold": "11.8253565",
+                                            "left": {
+                                                "value": "1.2959843873977661"
+                                            },
+                                            "right": {
+                                                "value": "1.2860628366470337"
+                                            }
+                                        },
+                                        "right": {
+                                            "value": "1.2974045276641846"
+                                        }
+                                    },
+                                    "right": {
+                                        "value": "1.2899688482284546"
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "qa_pos",
+                            "threshold": "3.1852138",
+                            "left": {
+                                "value": "-1.3487282991409302"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "4.664088",
+                                "left": {
+                                    "value": "1.2764874696731567"
+                                },
+                                "right": {
+                                    "value": "1.2805695533752441"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "3.5894074",
+                    "left": {
+                        "value": "-1.1434381008148193"
+                    },
+                    "right": {
+                        "feature": "qa_original_score",
+                        "threshold": "13.577722",
+                        "left": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "3.0138202",
+                            "left": {
+                                "value": "-1.2210527658462524"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "3.0003545",
+                                "left": {
+                                    "value": "-1.2976559400558472"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "4.04789",
+                                    "left": {
+                                        "feature": "qa_pos_trigram",
+                                        "threshold": "18.571281",
+                                        "left": {
+                                            "feature": "qa_original_score",
+                                            "threshold": "11.8253565",
+                                            "left": {
+                                                "value": "1.2299696207046509"
+                                            },
+                                            "right": {
+                                                "value": "1.2226170301437378"
+                                            }
+                                        },
+                                        "right": {
+                                            "value": "1.230889916419983"
+                                        }
+                                    },
+                                    "right": {
+                                        "value": "1.2252346277236938"
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "qa_pos",
+                            "threshold": "3.1852138",
+                            "left": {
+                                "value": "-1.2690057754516602"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "4.602468",
+                                "left": {
+                                    "value": "1.2128692865371704"
+                                },
+                                "right": {
+                                    "value": "1.217963695526123"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "3.5894074",
+                    "left": {
+                        "value": "-1.086820363998413"
+                    },
+                    "right": {
+                        "feature": "qa_original_score",
+                        "threshold": "13.577722",
+                        "left": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "3.0138202",
+                            "left": {
+                                "value": "-1.177050232887268"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "3.0003545",
+                                "left": {
+                                    "value": "-1.2346545457839966"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "4.04789",
+                                    "left": {
+                                        "feature": "qa_pos_trigram",
+                                        "threshold": "18.571281",
+                                        "left": {
+                                            "feature": "qa_original_score",
+                                            "threshold": "11.8253565",
+                                            "left": {
+                                                "value": "1.18112051486969"
+                                            },
+                                            "right": {
+                                                "value": "1.17556631565094"
+                                            }
+                                        },
+                                        "right": {
+                                            "value": "1.181715726852417"
+                                        }
+                                    },
+                                    "right": {
+                                        "value": "1.1771901845932007"
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "qa_pos",
+                            "threshold": "3.1852138",
+                            "left": {
+                                "value": "-1.2105162143707275"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "4.602468",
+                                "left": {
+                                    "value": "1.1651794910430908"
+                                },
+                                "right": {
+                                    "value": "1.1713863611221313"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "3.5894074",
+                    "left": {
+                        "value": "-1.0392791032791138"
+                    },
+                    "right": {
+                        "feature": "qa_original_score",
+                        "threshold": "13.577722",
+                        "left": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "3.0138202",
+                            "left": {
+                                "value": "-1.1446410417556763"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "3.0003545",
+                                "left": {
+                                    "value": "-1.1883625984191895"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "4.04789",
+                                    "left": {
+                                        "feature": "qa_pos_trigram",
+                                        "threshold": "18.571281",
+                                        "left": {
+                                            "feature": "qa_original_score",
+                                            "threshold": "11.8253565",
+                                            "left": {
+                                                "value": "1.144142508506775"
+                                            },
+                                            "right": {
+                                                "value": "1.1398855447769165"
+                                            }
+                                        },
+                                        "right": {
+                                            "value": "1.1445125341415405"
+                                        }
+                                    },
+                                    "right": {
+                                        "value": "1.1406954526901245"
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "qa_pos",
+                            "threshold": "3.1852138",
+                            "left": {
+                                "value": "-1.1665574312210083"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "4.602468",
+                                "left": {
+                                    "value": "1.1284072399139404"
+                                },
+                                "right": {
+                                    "value": "1.135917067527771"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "3.5894074",
+                    "left": {
+                        "value": "-0.9974269866943359"
+                    },
+                    "right": {
+                        "feature": "qa_original_score",
+                        "threshold": "13.90629",
+                        "left": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "3.0138202",
+                            "left": {
+                                "value": "-1.1255823373794556"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "3.0003545",
+                                "left": {
+                                    "value": "-1.1540392637252808"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "4.04789",
+                                    "left": {
+                                        "feature": "qa_pos_trigram",
+                                        "threshold": "18.571281",
+                                        "left": {
+                                            "feature": "qa_original_score",
+                                            "threshold": "11.8253565",
+                                            "left": {
+                                                "feature": "qa_pos_bigram",
+                                                "threshold": "4.5221276",
+                                                "left": {
+                                                    "value": "1.1143900156021118"
+                                                },
+                                                "right": {
+                                                    "value": "1.1158356666564941"
+                                                }
+                                            },
+                                            "right": {
+                                                "value": "1.11188542842865"
+                                            }
+                                        },
+                                        "right": {
+                                            "value": "1.1158778667449951"
+                                        }
+                                    },
+                                    "right": {
+                                        "value": "1.1124871969223022"
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "qa_pos",
+                            "threshold": "3.1852138",
+                            "left": {
+                                "value": "-1.1242226362228394"
+                            },
+                            "right": {
+                                "value": "1.109103798866272"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "3.5894074",
+                    "left": {
+                        "value": "-0.9594886898994446"
+                    },
+                    "right": {
+                        "feature": "qa_original_score",
+                        "threshold": "13.90629",
+                        "left": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "3.0138202",
+                            "left": {
+                                "value": "-1.106205940246582"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "3.0003545",
+                                "left": {
+                                    "value": "-1.1282895803451538"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "4.04789",
+                                    "left": {
+                                        "feature": "qa_pos_trigram",
+                                        "threshold": "18.571281",
+                                        "left": {
+                                            "feature": "qa_original_score",
+                                            "threshold": "11.8253565",
+                                            "left": {
+                                                "feature": "qa_original_score",
+                                                "threshold": "4.1587586",
+                                                "left": {
+                                                    "value": "1.0920063257217407"
+                                                },
+                                                "right": {
+                                                    "value": "1.093665599822998"
+                                                }
+                                            },
+                                            "right": {
+                                                "value": "1.0903807878494263"
+                                            }
+                                        },
+                                        "right": {
+                                            "value": "1.093544840812683"
+                                        }
+                                    },
+                                    "right": {
+                                        "value": "1.090232253074646"
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "qa_pos",
+                            "threshold": "3.1852138",
+                            "left": {
+                                "value": "-1.1042110919952393"
+                            },
+                            "right": {
+                                "value": "1.0876681804656982"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "2.9651628",
+                    "left": {
+                        "value": "-1.1021616458892822"
+                    },
+                    "right": {
+                        "feature": "qa_original_score",
+                        "threshold": "13.90629",
+                        "left": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "3.0138202",
+                            "left": {
+                                "value": "-1.0960040092468262"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "3.0003545",
+                                "left": {
+                                    "value": "-1.1145849227905273"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "4.04789",
+                                    "left": {
+                                        "feature": "qa_pos_trigram",
+                                        "threshold": "18.571281",
+                                        "left": {
+                                            "feature": "qa_pos_bigram",
+                                            "threshold": "3.154972",
+                                            "left": {
+                                                "value": "1.4971920251846313"
+                                            },
+                                            "right": {
+                                                "feature": "qa_original_score",
+                                                "threshold": "11.16822",
+                                                "left": {
+                                                    "feature": "qa_original_score",
+                                                    "threshold": "4.1587586",
+                                                    "left": {
+                                                        "value": "1.111940860748291"
+                                                    },
+                                                    "right": {
+                                                        "value": "1.1087465286254883"
+                                                    }
+                                                },
+                                                "right": {
+                                                    "value": "1.1147270202636719"
+                                                }
+                                            }
+                                        },
+                                        "right": {
+                                            "value": "1.075950264930725"
+                                        }
+                                    },
+                                    "right": {
+                                        "value": "1.0924477577209473"
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "value": "1.05919349193573"
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "2.9651628",
+                    "left": {
+                        "value": "-1.0842238664627075"
+                    },
+                    "right": {
+                        "feature": "qa_original_score",
+                        "threshold": "13.90629",
+                        "left": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "3.0138202",
+                            "left": {
+                                "value": "-1.0772120952606201"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "3.0003545",
+                                "left": {
+                                    "value": "-1.0944561958312988"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "4.04789",
+                                    "left": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "4.1587586",
+                                        "left": {
+                                            "value": "1.083141803741455"
+                                        },
+                                        "right": {
+                                            "feature": "qa_pos_trigram",
+                                            "threshold": "20.444016",
+                                            "left": {
+                                                "feature": "qa_original_score",
+                                                "threshold": "11.16822",
+                                                "left": {
+                                                    "value": "1.0976613759994507"
+                                                },
+                                                "right": {
+                                                    "value": "1.0955445766448975"
+                                                }
+                                            },
+                                            "right": {
+                                                "value": "1.060683012008667"
+                                            }
+                                        }
+                                    },
+                                    "right": {
+                                        "value": "1.071372151374817"
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "qa_pos_trigram",
+                            "threshold": "3.9015298",
+                            "left": {
+                                "value": "-1.5098117589950562"
+                            },
+                            "right": {
+                                "value": "1.0538321733474731"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "2.9651628",
+                    "left": {
+                        "value": "-1.0696015357971191"
+                    },
+                    "right": {
+                        "feature": "qa_original_score",
+                        "threshold": "13.90629",
+                        "left": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "3.0138202",
+                            "left": {
+                                "value": "-1.0612517595291138"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "3.0003545",
+                                "left": {
+                                    "value": "-1.078283667564392"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "4.04789",
+                                    "left": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "11.16822",
+                                        "left": {
+                                            "feature": "qa_pos_trigram",
+                                            "threshold": "20.444016",
+                                            "left": {
+                                                "feature": "qa_pos_bigram",
+                                                "threshold": "3.154972",
+                                                "left": {
+                                                    "value": "1.3083041906356812"
+                                                },
+                                                "right": {
+                                                    "feature": "qa_original_score",
+                                                    "threshold": "4.1587586",
+                                                    "left": {
+                                                        "value": "1.0768429040908813"
+                                                    },
+                                                    "right": {
+                                                        "value": "1.073062539100647"
+                                                    }
+                                                }
+                                            },
+                                            "right": {
+                                                "value": "1.0482265949249268"
+                                            }
+                                        },
+                                        "right": {
+                                            "value": "1.0727864503860474"
+                                        }
+                                    },
+                                    "right": {
+                                        "value": "1.0528191328048706"
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "value": "1.034616470336914"
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "2.9651628",
+                    "left": {
+                        "value": "-1.0574755668640137"
+                    },
+                    "right": {
+                        "feature": "qa_original_score",
+                        "threshold": "13.90629",
+                        "left": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "3.0138202",
+                            "left": {
+                                "value": "-1.047418475151062"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "3.0003545",
+                                "left": {
+                                    "value": "-1.0652858018875122"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "4.04789",
+                                    "left": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "11.16822",
+                                        "left": {
+                                            "feature": "qa_pos_trigram",
+                                            "threshold": "20.444016",
+                                            "left": {
+                                                "feature": "qa_pos_bigram",
+                                                "threshold": "3.154972",
+                                                "left": {
+                                                    "value": "1.2430851459503174"
+                                                },
+                                                "right": {
+                                                    "feature": "qa_original_score",
+                                                    "threshold": "4.1587586",
+                                                    "left": {
+                                                        "value": "1.0639981031417847"
+                                                    },
+                                                    "right": {
+                                                        "value": "1.0596872568130493"
+                                                    }
+                                                }
+                                            },
+                                            "right": {
+                                                "value": "1.0390270948410034"
+                                            }
+                                        },
+                                        "right": {
+                                            "value": "1.0604702234268188"
+                                        }
+                                    },
+                                    "right": {
+                                        "value": "1.0363006591796875"
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "value": "1.0229636430740356"
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "2.9651628",
+                    "left": {
+                        "value": "-1.047468900680542"
+                    },
+                    "right": {
+                        "feature": "qa_original_score",
+                        "threshold": "13.90629",
+                        "left": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "3.0138202",
+                            "left": {
+                                "value": "-1.0352373123168945"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "3.0003545",
+                                "left": {
+                                    "value": "-1.054843544960022"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "4.04789",
+                                    "left": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "11.16822",
+                                        "left": {
+                                            "feature": "qa_pos_trigram",
+                                            "threshold": "20.444016",
+                                            "left": {
+                                                "feature": "qa_pos_bigram",
+                                                "threshold": "3.154972",
+                                                "left": {
+                                                    "value": "1.193150520324707"
+                                                },
+                                                "right": {
+                                                    "feature": "qa_original_score",
+                                                    "threshold": "4.1587586",
+                                                    "left": {
+                                                        "value": "1.0530664920806885"
+                                                    },
+                                                    "right": {
+                                                        "value": "1.0474284887313843"
+                                                    }
+                                                }
+                                            },
+                                            "right": {
+                                                "value": "1.0316503047943115"
+                                            }
+                                        },
+                                        "right": {
+                                            "value": "1.049760103225708"
+                                        }
+                                    },
+                                    "right": {
+                                        "value": "1.0202754735946655"
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "value": "1.0124523639678955"
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "2.9651628",
+                    "left": {
+                        "value": "-1.0392051935195923"
+                    },
+                    "right": {
+                        "feature": "qa_original_score",
+                        "threshold": "13.90629",
+                        "left": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "3.0138202",
+                            "left": {
+                                "value": "-1.024280309677124"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "3.0003545",
+                                "left": {
+                                    "value": "-1.046513557434082"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "4.04789",
+                                    "left": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "4.1587586",
+                                        "left": {
+                                            "value": "1.0390585660934448"
+                                        },
+                                        "right": {
+                                            "feature": "qa_original_score",
+                                            "threshold": "11.16822",
+                                            "left": {
+                                                "feature": "qa_pos_trigram",
+                                                "threshold": "20.444016",
+                                                "left": {
+                                                    "value": "1.0419031381607056"
+                                                },
+                                                "right": {
+                                                    "value": "1.025713324546814"
+                                                }
+                                            },
+                                            "right": {
+                                                "value": "1.0399965047836304"
+                                            }
+                                        }
+                                    },
+                                    "right": {
+                                        "value": "1.005327820777893"
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "qa_pos_trigram",
+                            "threshold": "3.9015298",
+                            "left": {
+                                "value": "-1.4220638275146484"
+                            },
+                            "right": {
+                                "value": "1.0154101848602295"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "2.9651628",
+                    "left": {
+                        "value": "-1.0323997735977173"
+                    },
+                    "right": {
+                        "feature": "qa_original_score",
+                        "threshold": "13.90629",
+                        "left": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "3.0138202",
+                            "left": {
+                                "value": "-1.0141671895980835"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "3.0003545",
+                                "left": {
+                                    "value": "-1.0399563312530518"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "4.04789",
+                                    "left": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "11.16822",
+                                        "left": {
+                                            "feature": "qa_pos_trigram",
+                                            "threshold": "20.444016",
+                                            "left": {
+                                                "feature": "qa_pos_bigram",
+                                                "threshold": "3.154972",
+                                                "left": {
+                                                    "value": "1.1254026889801025"
+                                                },
+                                                "right": {
+                                                    "feature": "qa_original_score",
+                                                    "threshold": "4.1587586",
+                                                    "left": {
+                                                        "value": "1.0369617938995361"
+                                                    },
+                                                    "right": {
+                                                        "value": "1.0303505659103394"
+                                                    }
+                                                }
+                                            },
+                                            "right": {
+                                                "value": "1.0209203958511353"
+                                            }
+                                        },
+                                        "right": {
+                                            "value": "1.033240556716919"
+                                        }
+                                    },
+                                    "right": {
+                                        "value": "0.9902816414833069"
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "value": "0.9947922825813293"
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "2.9651628",
+                    "left": {
+                        "value": "-1.0268512964248657"
+                    },
+                    "right": {
+                        "feature": "qa_original_score",
+                        "threshold": "14.015813",
+                        "left": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "3.0138202",
+                            "left": {
+                                "value": "-1.004858374595642"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "3.0003545",
+                                "left": {
+                                    "value": "-1.0354657173156738"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "4.04789",
+                                    "left": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "4.1587586",
+                                        "left": {
+                                            "value": "1.0288678407669067"
+                                        },
+                                        "right": {
+                                            "feature": "qa_original_score",
+                                            "threshold": "11.16822",
+                                            "left": {
+                                                "feature": "qa_pos_trigram",
+                                                "threshold": "20.444016",
+                                                "left": {
+                                                    "value": "1.0256237983703613"
+                                                },
+                                                "right": {
+                                                    "value": "1.0170412063598633"
+                                                }
+                                            },
+                                            "right": {
+                                                "value": "1.0279567241668701"
+                                            }
+                                        }
+                                    },
+                                    "right": {
+                                        "value": "0.9760218858718872"
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "qa_pos_trigram",
+                            "threshold": "3.9015298",
+                            "left": {
+                                "value": "-1.3542897701263428"
+                            },
+                            "right": {
+                                "value": "1.0042548179626465"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "3.121224",
+                    "left": {
+                        "value": "-0.9550570249557495"
+                    },
+                    "right": {
+                        "feature": "qa_parse_tree",
+                        "threshold": "3.0138202",
+                        "left": {
+                            "value": "-0.9968274831771851"
+                        },
+                        "right": {
+                            "feature": "qa_pos",
+                            "threshold": "3.0003545",
+                            "left": {
+                                "value": "-1.030369758605957"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "4.04789",
+                                "left": {
+                                    "feature": "qa_original_score",
+                                    "threshold": "4.1587586",
+                                    "left": {
+                                        "value": "1.0242282152175903"
+                                    },
+                                    "right": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "11.16822",
+                                        "left": {
+                                            "feature": "qa_pos_trigram",
+                                            "threshold": "20.444016",
+                                            "left": {
+                                                "feature": "qa_pos_bigram",
+                                                "threshold": "3.154972",
+                                                "left": {
+                                                    "value": "1.0823334455490112"
+                                                },
+                                                "right": {
+                                                    "value": "1.0208710432052612"
+                                                }
+                                            },
+                                            "right": {
+                                                "value": "1.0138955116271973"
+                                            }
+                                        },
+                                        "right": {
+                                            "value": "1.019562840461731"
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "feature": "qa_original_score",
+                                    "threshold": "13.796767",
+                                    "left": {
+                                        "value": "1.00998055934906"
+                                    },
+                                    "right": {
+                                        "value": "1.0226069688796997"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "2.9651628",
+                    "left": {
+                        "value": "-1.0192115306854248"
+                    },
+                    "right": {
+                        "feature": "qa_parse_tree",
+                        "threshold": "3.0138202",
+                        "left": {
+                            "value": "-0.9915315508842468"
+                        },
+                        "right": {
+                            "feature": "qa_pos",
+                            "threshold": "3.0003545",
+                            "left": {
+                                "value": "-1.0309083461761475"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "4.04789",
+                                "left": {
+                                    "feature": "qa_original_score",
+                                    "threshold": "4.1587586",
+                                    "left": {
+                                        "value": "1.0202093124389648"
+                                    },
+                                    "right": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "11.16822",
+                                        "left": {
+                                            "feature": "qa_pos_trigram",
+                                            "threshold": "20.444016",
+                                            "left": {
+                                                "feature": "qa_pos_bigram",
+                                                "threshold": "3.154972",
+                                                "left": {
+                                                    "value": "1.0671311616897583"
+                                                },
+                                                "right": {
+                                                    "value": "1.0140706300735474"
+                                                }
+                                            },
+                                            "right": {
+                                                "value": "1.0114017724990845"
+                                            }
+                                        },
+                                        "right": {
+                                            "value": "1.0161291360855103"
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "feature": "qa_original_score",
+                                    "threshold": "13.796767",
+                                    "left": {
+                                        "value": "0.9522349238395691"
+                                    },
+                                    "right": {
+                                        "value": "1.0209892988204956"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "3.121224",
+                    "left": {
+                        "value": "-0.9450331330299377"
+                    },
+                    "right": {
+                        "feature": "qa_parse_tree",
+                        "threshold": "3.0138202",
+                        "left": {
+                            "value": "-0.9762701392173767"
+                        },
+                        "right": {
+                            "feature": "qa_pos",
+                            "threshold": "3.0003545",
+                            "left": {
+                                "value": "-1.0182936191558838"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "4.04789",
+                                "left": {
+                                    "feature": "qa_original_score",
+                                    "threshold": "4.1587586",
+                                    "left": {
+                                        "value": "1.0170515775680542"
+                                    },
+                                    "right": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "11.16822",
+                                        "left": {
+                                            "feature": "qa_pos_trigram",
+                                            "threshold": "20.444016",
+                                            "left": {
+                                                "feature": "qa_pos_bigram",
+                                                "threshold": "3.154972",
+                                                "left": {
+                                                    "value": "1.0544984340667725"
+                                                },
+                                                "right": {
+                                                    "value": "1.0147923231124878"
+                                                }
+                                            },
+                                            "right": {
+                                                "value": "1.0093098878860474"
+                                            }
+                                        },
+                                        "right": {
+                                            "value": "1.0132418870925903"
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "feature": "qa_original_score",
+                                    "threshold": "13.796767",
+                                    "left": {
+                                        "value": "0.9978819489479065"
+                                    },
+                                    "right": {
+                                        "value": "1.0202155113220215"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "2.9651628",
+                    "left": {
+                        "value": "-1.0140469074249268"
+                    },
+                    "right": {
+                        "feature": "qa_original_score",
+                        "threshold": "14.015813",
+                        "left": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "3.0138202",
+                            "left": {
+                                "value": "-0.9674693942070007"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "3.0003545",
+                                "left": {
+                                    "value": "-1.027984380722046"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "4.04789",
+                                    "left": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "4.1587586",
+                                        "left": {
+                                            "value": "1.0142236948013306"
+                                        },
+                                        "right": {
+                                            "feature": "qa_original_score",
+                                            "threshold": "11.16822",
+                                            "left": {
+                                                "feature": "qa_pos_trigram",
+                                                "threshold": "20.444016",
+                                                "left": {
+                                                    "value": "1.008119821548462"
+                                                },
+                                                "right": {
+                                                    "value": "1.007651448249817"
+                                                }
+                                            },
+                                            "right": {
+                                                "value": "1.0131652355194092"
+                                            }
+                                        }
+                                    },
+                                    "right": {
+                                        "value": "0.9299472570419312"
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "qa_pos_trigram",
+                            "threshold": "3.9015298",
+                            "left": {
+                                "value": "-1.1987937688827515"
+                            },
+                            "right": {
+                                "value": "0.9939925074577332"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "2.9651628",
+                    "left": {
+                        "value": "-1.011783480644226"
+                    },
+                    "right": {
+                        "feature": "qa_parse_tree",
+                        "threshold": "3.0138202",
+                        "left": {
+                            "value": "-0.9579579830169678"
+                        },
+                        "right": {
+                            "feature": "qa_pos",
+                            "threshold": "3.0003545",
+                            "left": {
+                                "value": "-1.029157280921936"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "4.04789",
+                                "left": {
+                                    "feature": "qa_original_score",
+                                    "threshold": "4.1587586",
+                                    "left": {
+                                        "value": "1.0120983123779297"
+                                    },
+                                    "right": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "11.16822",
+                                        "left": {
+                                            "feature": "qa_pos_trigram",
+                                            "threshold": "20.444016",
+                                            "left": {
+                                                "feature": "qa_pos_bigram",
+                                                "threshold": "3.154972",
+                                                "left": {
+                                                    "value": "1.0364493131637573"
+                                                },
+                                                "right": {
+                                                    "value": "1.0037798881530762"
+                                                }
+                                            },
+                                            "right": {
+                                                "value": "1.00625479221344"
+                                            }
+                                        },
+                                        "right": {
+                                            "value": "1.0091686248779297"
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "feature": "qa_original_score",
+                                    "threshold": "13.796767",
+                                    "left": {
+                                        "value": "0.9095209836959839"
+                                    },
+                                    "right": {
+                                        "value": "1.0211352109909058"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "3.121224",
+                    "left": {
+                        "value": "-0.9247291088104248"
+                    },
+                    "right": {
+                        "feature": "qa_original_score",
+                        "threshold": "13.90629",
+                        "left": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "3.0138202",
+                            "left": {
+                                "value": "-0.9310405254364014"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "3.0003545",
+                                "left": {
+                                    "value": "-1.0095828771591187"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "4.04789",
+                                    "left": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "4.1587586",
+                                        "left": {
+                                            "value": "1.010399341583252"
+                                        },
+                                        "right": {
+                                            "feature": "qa_original_score",
+                                            "threshold": "11.16822",
+                                            "left": {
+                                                "value": "1.0096771717071533"
+                                            },
+                                            "right": {
+                                                "value": "1.0091520547866821"
+                                            }
+                                        }
+                                    },
+                                    "right": {
+                                        "feature": "qa_pos_bigram",
+                                        "threshold": "2.9446406",
+                                        "left": {
+                                            "value": "-1.9774597883224487"
+                                        },
+                                        "right": {
+                                            "value": "1.0201959609985352"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "qa_pos_trigram",
+                            "threshold": "3.9015298",
+                            "left": {
+                                "value": "-1.1261792182922363"
+                            },
+                            "right": {
+                                "value": "0.9869348406791687"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "2.9651628",
+                    "left": {
+                        "value": "-1.0090103149414062"
+                    },
+                    "right": {
+                        "feature": "qa_parse_tree",
+                        "threshold": "3.0138202",
+                        "left": {
+                            "value": "-0.9292795658111572"
+                        },
+                        "right": {
+                            "feature": "qa_pos",
+                            "threshold": "3.0003545",
+                            "left": {
+                                "value": "-1.0331649780273438"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "4.04789",
+                                "left": {
+                                    "feature": "qa_original_score",
+                                    "threshold": "4.1587586",
+                                    "left": {
+                                        "value": "1.008693814277649"
+                                    },
+                                    "right": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "11.16822",
+                                        "left": {
+                                            "feature": "qa_pos_bigram",
+                                            "threshold": "3.154972",
+                                            "left": {
+                                                "value": "1.0244768857955933"
+                                            },
+                                            "right": {
+                                                "value": "0.999055802822113"
+                                            }
+                                        },
+                                        "right": {
+                                            "value": "1.00645911693573"
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "feature": "qa_pos_bigram",
+                                    "threshold": "3.154972",
+                                    "left": {
+                                        "value": "-1.7265610694885254"
+                                    },
+                                    "right": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "13.796767",
+                                        "left": {
+                                            "value": "0.9246100783348083"
+                                        },
+                                        "right": {
+                                            "value": "1.020154356956482"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "2.9651628",
+                    "left": {
+                        "value": "-1.0076545476913452"
+                    },
+                    "right": {
+                        "feature": "qa_original_score",
+                        "threshold": "14.015813",
+                        "left": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "3.0138202",
+                            "left": {
+                                "value": "-0.9078212380409241"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "3.0003545",
+                                "left": {
+                                    "value": "-1.036397933959961"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "4.04789",
+                                    "left": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "4.1587586",
+                                        "left": {
+                                            "value": "1.0076004266738892"
+                                        },
+                                        "right": {
+                                            "feature": "qa_original_score",
+                                            "threshold": "11.16822",
+                                            "left": {
+                                                "feature": "qa_pos_bigram",
+                                                "threshold": "3.154972",
+                                                "left": {
+                                                    "value": "1.0199816226959229"
+                                                },
+                                                "right": {
+                                                    "value": "0.9934530854225159"
+                                                }
+                                            },
+                                            "right": {
+                                                "value": "1.0065263509750366"
+                                            }
+                                        }
+                                    },
+                                    "right": {
+                                        "feature": "qa_pos_bigram",
+                                        "threshold": "3.0498064",
+                                        "left": {
+                                            "value": "-1.5555667877197266"
+                                        },
+                                        "right": {
+                                            "value": "0.9062221646308899"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "value": "0.956559956073761"
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "3.121224",
+                    "left": {
+                        "value": "-0.905249834060669"
+                    },
+                    "right": {
+                        "feature": "qa_parse_tree",
+                        "threshold": "3.0138202",
+                        "left": {
+                            "value": "-0.880017876625061"
+                        },
+                        "right": {
+                            "feature": "qa_pos_bigram",
+                            "threshold": "2.9446406",
+                            "left": {
+                                "value": "-1.4336341619491577"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "3.0003545",
+                                "left": {
+                                    "value": "-1.0077407360076904"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "4.04789",
+                                    "left": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "4.1587586",
+                                        "left": {
+                                            "value": "1.006777048110962"
+                                        },
+                                        "right": {
+                                            "feature": "qa_original_score",
+                                            "threshold": "11.16822",
+                                            "left": {
+                                                "feature": "qa_pos_bigram",
+                                                "threshold": "3.154972",
+                                                "left": {
+                                                    "value": "1.0163235664367676"
+                                                },
+                                                "right": {
+                                                    "value": "1.0066368579864502"
+                                                }
+                                            },
+                                            "right": {
+                                                "value": "1.0045549869537354"
+                                            }
+                                        }
+                                    },
+                                    "right": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "13.796767",
+                                        "left": {
+                                            "value": "1.0152390003204346"
+                                        },
+                                        "right": {
+                                            "value": "1.0158915519714355"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "2.9651628",
+                    "left": {
+                        "value": "-1.0062930583953857"
+                    },
+                    "right": {
+                        "feature": "qa_parse_tree",
+                        "threshold": "3.0138202",
+                        "left": {
+                            "value": "-0.873034656047821"
+                        },
+                        "right": {
+                            "feature": "qa_pos",
+                            "threshold": "3.0003545",
+                            "left": {
+                                "value": "-1.0464301109313965"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "4.04789",
+                                "left": {
+                                    "feature": "qa_original_score",
+                                    "threshold": "4.1587586",
+                                    "left": {
+                                        "value": "1.005690336227417"
+                                    },
+                                    "right": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "11.16822",
+                                        "left": {
+                                            "feature": "qa_pos_bigram",
+                                            "threshold": "3.154972",
+                                            "left": {
+                                                "value": "1.0134689807891846"
+                                            },
+                                            "right": {
+                                                "value": "0.9909999370574951"
+                                            }
+                                        },
+                                        "right": {
+                                            "value": "1.0037555694580078"
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "feature": "qa_pos_bigram",
+                                    "threshold": "2.9446406",
+                                    "left": {
+                                        "value": "-1.339473843574524"
+                                    },
+                                    "right": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "13.796767",
+                                        "left": {
+                                            "value": "0.8796433806419373"
+                                        },
+                                        "right": {
+                                            "value": "1.0133496522903442"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "3.121224",
+                    "left": {
+                        "feature": "qa_pos_trigram",
+                        "threshold": "2.9651628",
+                        "left": {
+                            "value": "-1.0055721998214722"
+                        },
+                        "right": {
+                            "feature": "qa_pos_bigram",
+                            "threshold": "8.202935",
+                            "left": {
+                                "value": "-0.08342816680669785"
+                            },
+                            "right": {
+                                "value": "0.7109843492507935"
+                            }
+                        }
+                    },
+                    "right": {
+                        "feature": "qa_original_score",
+                        "threshold": "13.90629",
+                        "left": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "2.8882444",
+                            "left": {
+                                "value": "-1.06039297580719"
+                            },
+                            "right": {
+                                "feature": "qa_pos",
+                                "threshold": "3.0003545",
+                                "left": {
+                                    "value": "-1.0046025514602661"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "4.04789",
+                                    "left": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "4.1587586",
+                                        "left": {
+                                            "value": "1.0402730703353882"
+                                        },
+                                        "right": {
+                                            "feature": "qa_original_score",
+                                            "threshold": "11.16822",
+                                            "left": {
+                                                "value": "1.0020610094070435"
+                                            },
+                                            "right": {
+                                                "value": "0.9819531440734863"
+                                            }
+                                        }
+                                    },
+                                    "right": {
+                                        "value": "0.9510869383811951"
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "value": "0.9374338388442993"
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "2.9651628",
+                    "left": {
+                        "value": "-1.0511443614959717"
+                    },
+                    "right": {
+                        "feature": "qa_parse_tree",
+                        "threshold": "2.8882444",
+                        "left": {
+                            "value": "-1.1490819454193115"
+                        },
+                        "right": {
+                            "feature": "qa_pos",
+                            "threshold": "3.0003545",
+                            "left": {
+                                "value": "-1.0243629217147827"
+                            },
+                            "right": {
+                                "feature": "qa_parse_tree",
+                                "threshold": "3.0138202",
+                                "left": {
+                                    "feature": "qa_pos_bigram",
+                                    "threshold": "4.4169617",
+                                    "left": {
+                                        "feature": "qa_pos_bigram",
+                                        "threshold": "3.891132",
+                                        "left": {
+                                            "value": "-1.0020579099655151"
+                                        },
+                                        "right": {
+                                            "value": "1.8305461406707764"
+                                        }
+                                    },
+                                    "right": {
+                                        "feature": "qa_pos",
+                                        "threshold": "5.588384",
+                                        "left": {
+                                            "value": "-0.43806585669517517"
+                                        },
+                                        "right": {
+                                            "feature": "qa_pos",
+                                            "threshold": "5.650004",
+                                            "left": {
+                                                "value": "1.85316002368927"
+                                            },
+                                            "right": {
+                                                "value": "-1.0019707679748535"
+                                            }
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "4.04789",
+                                    "left": {
+                                        "value": "0.9892402291297913"
+                                    },
+                                    "right": {
+                                        "value": "0.8351320624351501"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "3.121224",
+                    "left": {
+                        "value": "-0.9265839457511902"
+                    },
+                    "right": {
+                        "feature": "qa_parse_tree",
+                        "threshold": "2.8882444",
+                        "left": {
+                            "value": "-1.1431289911270142"
+                        },
+                        "right": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "3.0138202",
+                            "left": {
+                                "feature": "qa_pos",
+                                "threshold": "5.588384",
+                                "left": {
+                                    "feature": "qa_original_score",
+                                    "threshold": "8.758718",
+                                    "left": {
+                                        "value": "-0.6274811625480652"
+                                    },
+                                    "right": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "8.977763",
+                                        "left": {
+                                            "value": "1.6201801300048828"
+                                        },
+                                        "right": {
+                                            "value": "-1.007506012916565"
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "5.650004",
+                                    "left": {
+                                        "value": "1.6376630067825317"
+                                    },
+                                    "right": {
+                                        "value": "-1.0016331672668457"
+                                    }
+                                }
+                            },
+                            "right": {
+                                "feature": "qa_pos_bigram",
+                                "threshold": "2.9446406",
+                                "left": {
+                                    "value": "-1.2708613872528076"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "3.0003545",
+                                    "left": {
+                                        "value": "-1.0047252178192139"
+                                    },
+                                    "right": {
+                                        "value": "1.0092557668685913"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "2.9651628",
+                    "left": {
+                        "value": "-1.0467735528945923"
+                    },
+                    "right": {
+                        "feature": "qa_parse_tree",
+                        "threshold": "2.8882444",
+                        "left": {
+                            "value": "-1.112352967262268"
+                        },
+                        "right": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "3.0138202",
+                            "left": {
+                                "feature": "qa_pos",
+                                "threshold": "5.588384",
+                                "left": {
+                                    "feature": "qa_original_score",
+                                    "threshold": "8.758718",
+                                    "left": {
+                                        "value": "-0.5950250029563904"
+                                    },
+                                    "right": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "8.977763",
+                                        "left": {
+                                            "value": "1.475605845451355"
+                                        },
+                                        "right": {
+                                            "value": "-1.0079337358474731"
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "5.650004",
+                                    "left": {
+                                        "value": "1.4934579133987427"
+                                    },
+                                    "right": {
+                                        "value": "-1.0013357400894165"
+                                    }
+                                }
+                            },
+                            "right": {
+                                "feature": "qa_pos_bigram",
+                                "threshold": "2.9446406",
+                                "left": {
+                                    "value": "-1.2130038738250732"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "3.0003545",
+                                    "left": {
+                                        "value": "-1.0314079523086548"
+                                    },
+                                    "right": {
+                                        "value": "0.9188043475151062"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "3.121224",
+                    "left": {
+                        "value": "-0.8922748565673828"
+                    },
+                    "right": {
+                        "feature": "qa_parse_tree",
+                        "threshold": "2.8882444",
+                        "left": {
+                            "value": "-1.0965546369552612"
+                        },
+                        "right": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "3.0138202",
+                            "left": {
+                                "feature": "qa_pos",
+                                "threshold": "5.588384",
+                                "left": {
+                                    "feature": "qa_original_score",
+                                    "threshold": "8.758718",
+                                    "left": {
+                                        "value": "-0.7766793966293335"
+                                    },
+                                    "right": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "8.977763",
+                                        "left": {
+                                            "value": "1.3684358596801758"
+                                        },
+                                        "right": {
+                                            "value": "-1.0065957307815552"
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "5.650004",
+                                    "left": {
+                                        "value": "1.3829160928726196"
+                                    },
+                                    "right": {
+                                        "value": "-1.0011022090911865"
+                                    }
+                                }
+                            },
+                            "right": {
+                                "feature": "qa_pos_bigram",
+                                "threshold": "2.9446406",
+                                "left": {
+                                    "value": "-1.1742697954177856"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "3.0003545",
+                                    "left": {
+                                        "value": "-1.0037364959716797"
+                                    },
+                                    "right": {
+                                        "value": "1.0074098110198975"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "2.9651628",
+                    "left": {
+                        "value": "-1.03287672996521"
+                    },
+                    "right": {
+                        "feature": "qa_parse_tree",
+                        "threshold": "2.8882444",
+                        "left": {
+                            "value": "-1.0798712968826294"
+                        },
+                        "right": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "3.0138202",
+                            "left": {
+                                "feature": "qa_pos",
+                                "threshold": "5.588384",
+                                "left": {
+                                    "feature": "qa_original_score",
+                                    "threshold": "8.758718",
+                                    "left": {
+                                        "value": "-0.7492236495018005"
+                                    },
+                                    "right": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "8.977763",
+                                        "left": {
+                                            "value": "1.2910016775131226"
+                                        },
+                                        "right": {
+                                            "value": "-1.0070854425430298"
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "5.650004",
+                                    "left": {
+                                        "value": "1.3048683404922485"
+                                    },
+                                    "right": {
+                                        "value": "-1.000901699066162"
+                                    }
+                                }
+                            },
+                            "right": {
+                                "feature": "qa_pos_bigram",
+                                "threshold": "3.0498064",
+                                "left": {
+                                    "value": "-1.1385574340820312"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "3.0003545",
+                                    "left": {
+                                        "value": "-1.0171575546264648"
+                                    },
+                                    "right": {
+                                        "value": "0.9000702500343323"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "3.121224",
+                    "left": {
+                        "value": "-0.8587517738342285"
+                    },
+                    "right": {
+                        "feature": "qa_parse_tree",
+                        "threshold": "2.8882444",
+                        "left": {
+                            "value": "-1.0674775838851929"
+                        },
+                        "right": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "3.0138202",
+                            "left": {
+                                "feature": "qa_pos",
+                                "threshold": "5.588384",
+                                "left": {
+                                    "feature": "qa_original_score",
+                                    "threshold": "8.758718",
+                                    "left": {
+                                        "value": "-0.6947711110115051"
+                                    },
+                                    "right": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "8.977763",
+                                        "left": {
+                                            "value": "1.230168104171753"
+                                        },
+                                        "right": {
+                                            "value": "-1.0058951377868652"
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "5.650004",
+                                    "left": {
+                                        "value": "1.2413322925567627"
+                                    },
+                                    "right": {
+                                        "value": "-1.0007455348968506"
+                                    }
+                                }
+                            },
+                            "right": {
+                                "feature": "qa_pos_bigram",
+                                "threshold": "2.9446406",
+                                "left": {
+                                    "value": "-1.1142863035202026"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "3.0003545",
+                                    "left": {
+                                        "value": "-1.0030673742294312"
+                                    },
+                                    "right": {
+                                        "value": "1.006089448928833"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "2.9651628",
+                    "left": {
+                        "value": "-1.023263931274414"
+                    },
+                    "right": {
+                        "feature": "qa_parse_tree",
+                        "threshold": "2.8882444",
+                        "left": {
+                            "value": "-1.0535316467285156"
+                        },
+                        "right": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "3.0138202",
+                            "left": {
+                                "feature": "qa_pos",
+                                "threshold": "5.588384",
+                                "left": {
+                                    "feature": "qa_original_score",
+                                    "threshold": "8.758718",
+                                    "left": {
+                                        "value": "-0.667389452457428"
+                                    },
+                                    "right": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "8.977763",
+                                        "left": {
+                                            "value": "1.1849373579025269"
+                                        },
+                                        "right": {
+                                            "value": "-1.0063914060592651"
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "5.650004",
+                                    "left": {
+                                        "value": "1.1954885721206665"
+                                    },
+                                    "right": {
+                                        "value": "-1.0006099939346313"
+                                    }
+                                }
+                            },
+                            "right": {
+                                "feature": "qa_pos_bigram",
+                                "threshold": "2.9446406",
+                                "left": {
+                                    "value": "-1.0914818048477173"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "3.0003545",
+                                    "left": {
+                                        "value": "-1.0218263864517212"
+                                    },
+                                    "right": {
+                                        "value": "0.8797011375427246"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "3.121224",
+                    "left": {
+                        "feature": "qa_pos_bigram",
+                        "threshold": "8.202935",
+                        "left": {
+                            "value": "-0.8746756911277771"
+                        },
+                        "right": {
+                            "value": "0.25302135944366455"
+                        }
+                    },
+                    "right": {
+                        "feature": "qa_parse_tree",
+                        "threshold": "2.8882444",
+                        "left": {
+                            "value": "-1.0448602437973022"
+                        },
+                        "right": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "3.0138202",
+                            "left": {
+                                "feature": "qa_pos",
+                                "threshold": "5.588384",
+                                "left": {
+                                    "feature": "qa_original_score",
+                                    "threshold": "8.758718",
+                                    "left": {
+                                        "value": "-0.6062728762626648"
+                                    },
+                                    "right": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "8.977763",
+                                        "left": {
+                                            "value": "1.1481125354766846"
+                                        },
+                                        "right": {
+                                            "value": "-1.0053229331970215"
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "5.650004",
+                                    "left": {
+                                        "value": "1.1566232442855835"
+                                    },
+                                    "right": {
+                                        "value": "-1.0005054473876953"
+                                    }
+                                }
+                            },
+                            "right": {
+                                "feature": "qa_pos_bigram",
+                                "threshold": "2.9446406",
+                                "left": {
+                                    "value": "-1.0759172439575195"
+                                },
+                                "right": {
+                                    "value": "0.9123134016990662"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "weight": "0.1",
+                "root": {
+                    "feature": "qa_pos_trigram",
+                    "threshold": "2.9651628",
+                    "left": {
+                        "value": "-1.0161212682724"
+                    },
+                    "right": {
+                        "feature": "qa_parse_tree",
+                        "threshold": "2.8882444",
+                        "left": {
+                            "value": "-1.0353400707244873"
+                        },
+                        "right": {
+                            "feature": "qa_parse_tree",
+                            "threshold": "3.0138202",
+                            "left": {
+                                "feature": "qa_pos",
+                                "threshold": "5.588384",
+                                "left": {
+                                    "feature": "qa_original_score",
+                                    "threshold": "8.758718",
+                                    "left": {
+                                        "value": "-0.24895809590816498"
+                                    },
+                                    "right": {
+                                        "feature": "qa_original_score",
+                                        "threshold": "8.977763",
+                                        "left": {
+                                            "value": "1.1200587749481201"
+                                        },
+                                        "right": {
+                                            "value": "-1.0064624547958374"
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "5.650004",
+                                    "left": {
+                                        "value": "1.1277832984924316"
+                                    },
+                                    "right": {
+                                        "value": "-1.0004175901412964"
+                                    }
+                                }
+                            },
+                            "right": {
+                                "feature": "qa_pos_bigram",
+                                "threshold": "3.0498064",
+                                "left": {
+                                    "value": "-1.0615899562835693"
+                                },
+                                "right": {
+                                    "feature": "qa_pos",
+                                    "threshold": "3.0003545",
+                                    "left": {
+                                        "value": "-1.0464997291564941"
+                                    },
+                                    "right": {
+                                        "value": "0.8568642139434814"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

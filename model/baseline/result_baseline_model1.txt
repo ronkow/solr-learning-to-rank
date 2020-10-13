@@ -1,0 +1,145 @@
+java -jar RankLib-2.14.jar -train ../data/training/baseline_model1_train.txt -test ../data/training/baseline_model1_test.txt -validate ../data/training/baseline_model1_validate.txt -ranker 6 -metric2t NDCG@10 -metric2T NDCG@10 -save ../model/baseline/baseline_model1.txt
+
+Discard orig. features
+Training data:	../data/training/baseline_model1_train.txt
+Test data:	../data/training/baseline_model1_test.txt
+Validation data:	../data/training/baseline_model1_validate.txt
+Feature vector representation: Dense.
+Ranking method:	LambdaMART
+Feature description file:	Unspecified. All features will be used.
+Train metric:	NDCG@10
+Test metric:	NDCG@10
+Feature normalization: No
+Model file: ../model/baseline/baseline_model1.txt
+
+[+] LambdaMART's Parameters:
+No. of trees: 1000
+No. of leaves: 10
+No. of threshold candidates: 256
+Min leaf support: 1
+Learning rate: 0.1
+Stop early: 100 rounds without performance gain on validation data
+
+Reading feature file [../data/training/baseline_model1_train.txt]... [Done.]            
+(152 ranked lists, 7600 entries read)
+Reading feature file [../data/training/baseline_model1_validate.txt]... [Done.]            
+(75 ranked lists, 3750 entries read)
+Reading feature file [../data/training/baseline_model1_test.txt]... [Done.]            
+(77 ranked lists, 3850 entries read)
+Initializing... [Done]
+---------------------------------
+Training starts...
+---------------------------------
+#iter   | NDCG@10-T | NDCG@10-V | 
+---------------------------------
+1       | 0.4572    | 0.4625    | 
+2       | 0.4566    | 0.4628    | 
+3       | 0.4566    | 0.4628    | 
+4       | 0.4622    | 0.4596    | 
+5       | 0.4622    | 0.4596    | 
+6       | 0.4591    | 0.4478    | 
+7       | 0.4601    | 0.4398    | 
+8       | 0.4601    | 0.4398    | 
+9       | 0.4613    | 0.445     | 
+10      | 0.4621    | 0.4507    | 
+11      | 0.462     | 0.4507    | 
+12      | 0.4614    | 0.4517    | 
+13      | 0.4609    | 0.4518    | 
+14      | 0.4617    | 0.4499    | 
+15      | 0.4595    | 0.4451    | 
+16      | 0.4601    | 0.4443    | 
+17      | 0.4601    | 0.4446    | 
+18      | 0.4595    | 0.4442    | 
+19      | 0.46      | 0.443     | 
+20      | 0.4635    | 0.4449    | 
+21      | 0.4634    | 0.4449    | 
+22      | 0.4616    | 0.4457    | 
+23      | 0.4668    | 0.4458    | 
+24      | 0.4667    | 0.4444    | 
+25      | 0.4675    | 0.4434    | 
+26      | 0.4666    | 0.4423    | 
+27      | 0.4666    | 0.4421    | 
+28      | 0.4666    | 0.4421    | 
+29      | 0.4669    | 0.4419    | 
+30      | 0.4664    | 0.4419    | 
+31      | 0.4664    | 0.4419    | 
+32      | 0.4664    | 0.4415    | 
+33      | 0.467     | 0.4415    | 
+34      | 0.467     | 0.4415    | 
+35      | 0.4668    | 0.4415    | 
+36      | 0.4668    | 0.4402    | 
+37      | 0.4672    | 0.4413    | 
+38      | 0.4673    | 0.4413    | 
+39      | 0.4671    | 0.4413    | 
+40      | 0.4659    | 0.4413    | 
+41      | 0.4679    | 0.4413    | 
+42      | 0.4678    | 0.4413    | 
+43      | 0.4678    | 0.4413    | 
+44      | 0.4678    | 0.4413    | 
+45      | 0.4682    | 0.4411    | 
+46      | 0.4708    | 0.4371    | 
+47      | 0.4715    | 0.4352    | 
+48      | 0.4714    | 0.4352    | 
+49      | 0.471     | 0.4352    | 
+50      | 0.4708    | 0.4352    | 
+51      | 0.4708    | 0.4352    | 
+52      | 0.4715    | 0.4352    | 
+53      | 0.4715    | 0.4359    | 
+54      | 0.4729    | 0.4358    | 
+55      | 0.4705    | 0.4359    | 
+56      | 0.4706    | 0.4359    | 
+57      | 0.4712    | 0.4372    | 
+58      | 0.4715    | 0.4388    | 
+59      | 0.4709    | 0.4376    | 
+60      | 0.4705    | 0.4357    | 
+61      | 0.4705    | 0.4361    | 
+62      | 0.4707    | 0.4361    | 
+63      | 0.4705    | 0.4361    | 
+64      | 0.4703    | 0.4361    | 
+65      | 0.4712    | 0.4361    | 
+66      | 0.4719    | 0.4349    | 
+67      | 0.4735    | 0.4363    | 
+68      | 0.4757    | 0.4356    | 
+69      | 0.474     | 0.4366    | 
+70      | 0.4764    | 0.435     | 
+71      | 0.4766    | 0.4348    | 
+72      | 0.4762    | 0.4336    | 
+73      | 0.4769    | 0.4343    | 
+74      | 0.4768    | 0.4343    | 
+75      | 0.4759    | 0.4342    | 
+76      | 0.4783    | 0.4315    | 
+77      | 0.4807    | 0.4317    | 
+78      | 0.4807    | 0.4315    | 
+79      | 0.4809    | 0.4304    | 
+80      | 0.4812    | 0.4296    | 
+81      | 0.4814    | 0.4296    | 
+82      | 0.4814    | 0.4296    | 
+83      | 0.4819    | 0.4296    | 
+84      | 0.4819    | 0.4283    | 
+85      | 0.4807    | 0.4243    | 
+86      | 0.4817    | 0.4249    | 
+87      | 0.4816    | 0.4244    | 
+88      | 0.4804    | 0.4231    | 
+89      | 0.48      | 0.4247    | 
+90      | 0.4801    | 0.4247    | 
+91      | 0.4796    | 0.4249    | 
+92      | 0.4801    | 0.4247    | 
+93      | 0.4811    | 0.4245    | 
+94      | 0.4803    | 0.4246    | 
+95      | 0.481     | 0.4253    | 
+96      | 0.4801    | 0.4254    | 
+97      | 0.4794    | 0.4254    | 
+98      | 0.4799    | 0.4254    | 
+99      | 0.4809    | 0.4258    | 
+100     | 0.4812    | 0.4247    | 
+101     | 0.4834    | 0.4237    | 
+102     | 0.4838    | 0.4235    | 
+103     | 0.4828    | 0.4232    | 
+---------------------------------
+Finished sucessfully.
+NDCG@10 on training data: 0.4566
+NDCG@10 on validation data: 0.4628
+---------------------------------
+NDCG@10 on test data: 0.4247
+
+Model saved to: ../model/baseline/baseline_model1.txt

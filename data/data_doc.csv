@@ -1,0 +1,851 @@
+"id","qb_question","qb_answer","qb_choice1","qb_choice2","qb_choice3","qb_topic_id"
+1,"The Olympics team is aiming * a gold medal next year.","for","about","with","after",1
+2,"She has a talent * art.","for","about","with","of",1
+3,"I felt sorry * my colleagues who lost their jobs.","for","about","with","by",1
+4,"Everybody knows the reason * his failures.","for","about","with","by",1
+5,"Martin took the car out * a drive.","for","about","with","in",1
+6,"We are waiting * the bus.","for","about","with","by",1
+7,"He shouted * help when he was stuck in the lift.","for","about","with","in",1
+8,"I do not know the reason * his unhappiness.","for","about","with","by",1
+9,"Sixty per cent the population voted * the people's party.","for","about","with","by",1
+10,"I will be in Tokyo * two weeks.","for","about","around","by",1
+11,"It is very late. I am going * bed soon.","to","for","na","na",1
+12,"I am very tired so I am going * take a nap.","to","with","na","na",1
+13,"The book clearly belongs * him as his name is written on it.","to","with","na","na",1
+14,"There must be a mistake because this does not belong * me.","to","with","na","na",1
+15,"My friend knows the answer * the question.","to","for","na","na",1
+16,"I have come * the conclusion that he is a liar.","to","with","na","na",1
+17,"I will apologise * him for my remarks.","to","with","na","na",1
+18,"His marriage * the pop star did not last very long.","to","with","na","na",1
+19,"There is something about her that appeals * everyone.","to","with","na","na",1
+20,"Everyone prays for a peaceful end * this situation.","to","with","na","na",1
+21,"He was frustrated * himself for repeating the mistake.","with","about","na","na",1
+22,"She was angry * herself for making the mistake.","with","about","na","na",1
+23,"I solved the problem * much help from my friends.","with","by","na","na",1
+24,"I completed the task * a little help from my classmates.","with","by","na","na",1
+25,"I will have a word * him after the meeting.","with","by","na","na",1
+26,"He is moody because he had an argument * his boss.","with","by","na","na",1
+27,"He was happy * with performance at the games.","with","by","na","na",1
+28,"I do not agree * your politics but we can still work together.","with","by","na","na",1
+29,"My wife is angry * me for breaking her favourite glass.","with","by","na","na",1
+30,"You must do this course * the right attitude if you want to succeed.","with","by","na","na",1
+31,"She has always been afraid * the dark.","of","with","na","na",1
+32,"He was accused * a crime he did not commit.","of","with","na","na",1
+33,"I am very concerned about the safety * my workers.","of","with","na","na",1
+34,"The school consisted almost entirely * Asian students.","of","with","na","na",1
+35,"I was in awe * her achievements.","of","with","na","na",1
+36,"The manner * his death was very unusual.","of","with","na","na",1
+37,"This burger is made entirely * vegetables.","of","by","na","na",1
+38,"The scope * her work was very broad.","of","with","na","na",1
+39,"Do not underestimate the love * a mother for her child.","of","by","na","na",1
+40,"I am a member * this country club.","of","with","na","na",1
+41,"The police was asking questions * last night's incident.","about","for","na","na",1
+42,"He kept asking me * the previous week's incident.","about","for","na","na",1
+43,"The brochure gives more information * the event.","about","for","na","na",1
+44,"Stay behind after the briefing for more information * the course.","about","for","na","na",1
+45,"I am worried * the health of my parents.","about","with","na","na",1
+46,"She has no qualms * taking advantage of her colleagues.","about","for","na","na",1
+47,"There is something * her that I find very odd.","about","with","na","na",1
+48,"I am not sure * this. I need to check.","about","with","na","na",1
+49,"This movie is * the loss of innocence.","about","for","na","na",1
+50,"This argument is * fairness, not money.","about","for","na","na",1
+51,"The children loved the Christmas presents they received * their grandmother.","from","by","na","na",1
+52,"The child loved the presents she got * her mum.","from","by","na","na",1
+53,"The noise comes * within the stadium as there is a concert.","from","by","na","na",1
+54,"They heard a loud noise coming * the back of the house.","from","by","na","na",1
+55,"He picked up the coins * underneath the sofa cushions.","from","by","na","na",1
+56,"She took the money * the drawer to pay for the goods.","from","by","na","na",1
+57,"I am still recovering * the effects of my illness.","from","by","na","na",1
+58,"Wearing a hat is a good way to shield your face * the sun.","from","against","na","na",1
+59,"The project was far * completion when he joined the team.","from","to","na","na",1
+60,"Thank you for your consideration. I look forward to hearing * you.","from","by","na","na",1
+61,"He sat on the chair * the window to look at the clouds.","by","over","na","na",1
+62,"They were sitting * the river looking at the ducks.","by","over","na","na",1
+63,"I was shocked * his reaction.","by","over","na","na",1
+64,"This book is written * a famous novelist.","by","from","na","na",1
+65,"Many people travel to work * train.","by","from","na","na",1
+66,"I go to school * bus everyday.","by","from","na","na",1
+67,"* using this method, you can solve the problem.","By","From","na","na",1
+68,"* following the instructions, I managed to work this out.","By","From","na","na",1
+69,"* the time he started working hard, it was too late.","By","From","na","na",1
+70,"* then, it was already past midnight.","By","From","na","na",1
+71,"* the moment, I am not sure.","At","In","na","na",1
+72,"* the end of the day, the decision is yours.","At","In","na","na",1
+73,"She lost her ring * the beach this morning.","at","in","na","na",1
+74,"He lost his phone * the mall this afternoon.","at","in","na","na",1
+75,"I worked * the library during the holidays.","at","in","na","na",1
+76,"Find me * the cafe when your meeting ends.","at","around","na","na",1
+77,"Be careful. There are pieces of glass * the end of the corridor.","at","in","na","na",1
+78,"You need to write your name * the top right hand corner.","at","in","na","na",1
+79,"The children laughed * the clown when he fell down clumsily.","at","with","na","na",1
+80,"I was looking * the painting when the fire broke out at the art gallery.","at","for","na","na",1
+81,"The waiter laid out the dishes * the table.","on","in","onto","na",1
+82,"The chef laid out the ingredients * the countertop.","on","in","onto","na",1
+83,"She left muddy footprints * the clean floor.","on","in","onto","na",1
+84,"He left his half-eaten plate * the table.","on","in","onto","na",1
+85,"He slept * the bench at the park last night.","on","in","onto","na",1
+86,"She sat * the grass and looked up at the sky.","on","in","onto","na",1
+87,"I will get to the conference * time if I walk faster.","on","in","under","na",1
+88,"He will reach the cinema * time if he takes a cab.","on","in","under","na",1
+89,"There is a red stain * your shirt.","on","in","onto","na",1
+90,"I will hang the picture * this wall.","on","in","onto","na",1
+91,"There is some leftover dinner * the fridge.","in","on","into","na",1
+92,"There is still some food * the kitchen.","in","on","into","na",1
+93,"There are no boxes left * the storeroom.","in","on","into","na",1
+94,"I made some coffee. It is * the pantry.","in","on","into","na",1
+95,"There is something moving * the water.","in","on","into","na",1
+96,"I put my clothes * the suitcase.","in","on","into","na",1
+97,"If you want to participate * the activity you need to read the rules first.","in","on","about","na",1
+98,"I have decided to take part * the competition.","in","on","about","na",1
+99,"For the science fair Jenny built a robot that can walk * a straight line.","in","on","about","na",1
+100,"The boomerang flies * a loop and returns to its thrower.","in","on","about","na",1
+101,"The baby climbed * the sofa and reached out for the toy.","onto","into","over","na",1
+102,"The cat jumped * the countertop to look for food.","onto","into","over","na",1
+103,"The rabbit hopped * the table to eat the carrot.","onto","into","na","na",1
+104,"I slipped and fell as I stepped * the pavement.","onto","into","na","na",1
+105,"He loaded the goods * the truck.","onto","into","na","na",1
+106,"The class became quiet when the teacher stepped * the classroom.","into","onto","na","na",1
+107,"I am going * the room to check.","into","onto","na","na",1
+108,"Please put some sugar * my coffee.","into","onto","na","na",1
+109,"Please stop work and get * bed.","into","onto","na","na",1
+110,"After gaining ten pounds, I could not fit * my old pants anymore.","into","onto","na","na",1
+111,"In the distance, * the hills, there is a nice town.","beyond","within","na","na",1
+112,"This road extends * the suburbs of the city.","beyond","within","na","na",1
+113,"At the end of this road * that hill, there is a castle.","beyond","within","na","na",1
+114,"If you live * your means, you will never have enough for retirement.","beyond","within","na","na",1
+115,"The outcome was * our control. There was nothing we could do.","beyond","within","na","na",1
+116,"* the years, many people got used to the hardship.","Over","Through","na","na",1
+117,"* the last century the world has changed beyond recognition.","Over","Through","na","na",1
+118,"The plane dropped leaflets * the city to warn people of the danger.","over","across","na","na",1
+119,"The car ran * the spilled oil and skidded.","over","into","at","on",1
+120,"The cat jumped * the fence to chase after the bird.","over","into","at","on",1
+121,"He found his slippers hidden * the bed.","under","over","around","na",1
+122,"She was hiding * the table when the building shook.","under","over","on","na",1
+123,"There were stray cats hiding * the bridge.","under","over","into","na",1
+124,"You will fail the test if your score is * fifty.","under","before","na","na",1
+125,"This is only offered to children * the age of ten.","under","before","na","na",1
+126,"The sun is now hidden * the clouds.","behind","under","over","na",1
+127,"The moon cannot be seen as it is hidden * the clouds.","behind","under","over","na",1
+128,"* his cool exterior he is very nervous inside.","Behind","Under","na","na",1
+129,"I sensed some sadness * her smile.","behind","under","na","na",1
+130,"The guide led us and I followed * her.","behind","before","na","na",1
+131,"Most of the city's population live * the city center.","within","in","na","na",1
+132,"It is recommended that the cheese is consumed * two weeks.","within","in","na","na",1
+133,"As long as you are * the country's borders, the law applies to you.","within","in","na","na",1
+134,"We managed to complete the project * our budget.","within","in","na","na",1
+135,"You should receive the tickets * a week.","within","before","na","na",1
+136,"The cat jumped * the rooftop onto the garden.","off","over","na","na",1
+137,"The stunt man jumped * the moving train onto the ground effortlessly.","off","over","na","na",1
+138,"I fell * the horse when I was trying to get down.","off","over","na","na",1
+139,"He got * the bus at the previous stop.","off","over","na","na",1
+140,"Please get your feet * the table.","off","over","na","na",1
+141,"He leaned the ladder * the wall.","against","across","na","na",1
+142,"I am * the idea of moving to a new place.","against","beyond","na","na",1
+143,"Ten people voted * the motion while the rest supported it.","against","beyond","na","na",1
+144,"I like the touch of the cat's fur * my face.","against","across","na","na",1
+145,"The boat slowed down because it was sailing * the wind.","against","beyond","na","na",1
+146,"I walked * the field to get the ball.","across","over","na","na",1
+147,"He swam * the river to escape from the police.","across","over","na","na",1
+148,"The smoke from the fire could be seen * the sky.","across","over","na","na",1
+149,"There were protests * the country during the elections.","across","over","na","na",1
+150,"He ran * the bridge to see the fireworks.","across","over","na","na",1
+151,"The train went * a mountain tunnel during the journey.","through","across","na","na",1
+152,"He drove * the tunnel along the highway.","through","across","na","na",1
+153,"We walked * the forest during the last day of the camp.","through","throughout","na","na",1
+154,"She pushed her way * the crowd to meet her friend.","through","throughout","na","na",1
+155,"Viruses can enter our bodies * the nose or mouth.","through","throughout","na","na",1
+156,"I was bored * the entire movie.","throughout","through","na","na",1
+157,"* the day, there were updates of the election results.","Throughout","Through","na","na",1
+158,"He could not keep still * the train journey.","throughout","through","na","na",1
+159,"She took care of her husband * his long illness.","throughout","through","na","na",1
+160,"* my career, I always go for jobs I enjoy.","Throughout","Through","na","na",1
+161,"The teacher reminded the children not to talk * the sermon.","during","around","na","na",1
+162,"The nanny reminded the child not to laugh * the ceremony.","during","around","na","na",1
+163,"He works one job * the day and another at night.","during","around","na","na",1
+164,"She sleeps * the day and studies throughout the night.","during","around","na","na",1
+165,"There is no time to relax * the semester.","during","around","na","na",1
+166,"* starting his exercise routine, he was overweight and unfit.","Before","After","na","na",1
+167,"He ate a light meal * the race.","before","during","na","na",1
+168,"* leaving, he said goodbye to everyone.","Before","After","na","na",1
+169,"She always wakes up * dawn.","before","during","na","na",1
+170,"You will get my reply * the end of the day.","before","during","na","na",1
+171,"He was exhausted * last night's party.","after","before","na","na",1
+172,"He finally took a well-deserved break * two years of hard work.","after","before","na","na",1
+173,"I always take a nap * a long day at work.","after","over","na","na",1
+174,"I always wonder if there is life * death.","after","over","na","na",1
+175,"She stayed up and waited for him till * midnight.","after","over","na","na",1
+176,"My grandmother never leaves home * her walking stick.","without","around","na","na",1
+177,"My grandfather never goes out * his hat and glasses.","without","around","na","na",1
+178,"I would not have been able to do this * your help.","without","with","na","na",1
+179,"He attempted to climbed up the cliff * any safety equipment.","without","with","na","na",1
+180,"This would not be possible * teamwork and perseverence.","without","with","na","na",1
+181,"* the three of us, I am the tallest.","Among","Between","na","na",1
+182,"* all his problems, his drug addiction is the most serious.","Among","Between","na","na",1
+183,"He tends to feel uneasy when he is * strangers.","among","between","na","na",1
+184,"* my friends, John is the one I trust the most.","Among","Between","na","na",1
+185,"There is much team spirit * the players.","among","between","na","na",1
+186,"The ceremony will proceed * my late father's wishes.","according to","due to","na","na",1
+187,"The money will be distributed * my late mother's will.","according to","due to","na","na",1
+188,"It will be cloudy this weekend * the weather report.","according to","due to","na","na",1
+189,"* the weather forecast, there will be heavy rain today.","According to","Due to","na","na",1
+190,"* our records, you have five hundred dollars in your account.","According to","Due to","na","na",1
+191,"It is * us to find the answer to our own problems.","up to","due to","na","na",1
+192,"It is * you to think of a solution to your problems.","up to","due to","na","na",1
+193,"* yesterday, we had no idea what happened to her.","Up to","After","na","na",1
+194,"* this month, there has not been any rain.","Up to","Before","na","na",1
+195,"I think he is * something but he would not say.","up to","due to","na","na",1
+196,"I attended the meeting * my boss as he was too busy.","on behalf of","in addition to","na","na",1
+197,"I went for the conference * my supervisor as she was working on something else.","on behalf of","in addition to","na","na",1
+198,"* the team, the coach thanked the fans for their support.","On behalf of","In addition to","na","na",1
+199,"* her company, the manager apologised to the customers.","On behalf of","In addition to","na","na",1
+200,"* his family, he thanked all the people who came to pay their respects.","On behalf of","In addition to","na","na",1
+201,"We met to discuss the project * class began.","before","when","na","na",2
+202,"* we make a decision, I would like to give everyone a chance to say something.","Before","when","na","na",2
+203,"He had already left * I could speak to him.","before","after","na","na",2
+204,"I have been learning this on my own long * I started this course.","before","after","na","na",2
+205,"* making up your mind, think of the consequences of your decision.","Before","After","na","na",2
+206,"I need to talk to you * you are done with your work.","after","before","na","na",2
+207,"The house was a mess * the crazy party we had last night.","after","before","na","na",2
+208,"Six months * our neighbours moved out, the house is still empty.","after","before","na","na",2
+209,"Soon * we set off, the car began to make strange noises.","after","before","na","na",2
+210,"I went home immediately * I met you.","after","before","na","na",2
+211,"I am looking for someone to feed my cat * I will be away next week.","since","if","na","na",2
+212,"Let us skip the movie * we already know how it ends.","since","if","na","na",2
+213,"I have liked that song * I first heard it at ten years old.","since","when","na","na",2
+214,"He has been a fan of this band * he first heard their songs twenty years ago.","since","when","na","na",2
+215,"I have been encountering all kinds of problems * I moved here.","since","when","na","na",2
+216,"She asked me * I was interested to join the party.","whether","because","na","na",2
+217,"Tell me * this dress is a good choice for the party.","whether","because","na","na",2
+218,"I will check * the children are awake.","whether","when","na","na",2
+219,"We asked the counter staff * the train has arrived.","whether","when","na","na",2
+220,"I started to wonder * we had made the right decision.","whether","when","na","na",2
+221,"The match will be postponed * the weather improves.","unless","when","na","na",2
+222,"This is not going to work * everyone plays his part.","unless","because","na","na",2
+223,"We will not win * we train hard.","unless","because","na","na",2
+224,"You cannot go for the mountain hike * I come along.","unless","when","na","na",2
+225,"We are never going to survive this * we work much harder.","unless","whether","na","na",2
+226,"You will never know * you try.","until","when","na","na",2
+227,"I will keep on dreaming * my dreams come true.","until","when","na","na",2
+228,"I was up * three in the morning doing my work.","until","after","na","na",2
+229,"Once she starts her work, she will not stop * she completes it.","until","after","na","na",2
+230,"The shop will remain open * all the customers have left.","until","because","na","na",2
+231,"* I have found the hotel, I will give you a call.","Once","Until","na","na",2
+232,"* you start this journey, you will not be able to turn back.","Once","Until","na","na",2
+233,"You will not be able to cancel this contract * you have signed it.","once","when","na","na",2
+234,"She will start cleaning up * all the guests have left.","once","before","na","na",2
+235,"* she starts her work, she will not stop until she completes it.","Once","Until","na","na",2
+236,"I read the book * I was waiting for the bus.","while","before","na","na",2
+237,"* he was in London, he went to visit my aunt.","While","Before","na","na",2
+238,"* you are still in the kitchen, please make me a cup of coffee.","While","Because","na","na",2
+239,"She bought some flowers * she was shopping for groceries.","while","because","na","na",2
+240,"I gained some weight * I was on holiday last month.","while","because","na","na",2
+241,"He wears ill-fitting clothes and * he looks good in whatever he wears.","yet","so","na","na",2
+242,"I did badly in this assignment and * I had a good grade overall.","yet","so","na","na",2
+243,"She could barely manage her life, * she refused to get any help.","yet","so","na","na",2
+244,"She wears expensive clothes and * she looks cheaply dressed.","yet","so","na","na",2
+245,"I did everything I could to help her, * she did not show any appreciation.","yet","so","na","na",2
+246,"My ankle started hurting * I stopped running.","so","until","na","na",2
+247,"He was hungry * he bought a sandwich.","so","until","na","na",2
+248,"She got lost in the city * she asked a stranger for directions.","so","until","na","na",2
+249,"I needed help * I approached the shop staff.","so","until","na","na",2
+250,"I had a bad headache * I took some painkillers.","so","until","na","na",2
+251,"She was only nineteen * she had her first child.","when","since","na","na",2
+252,"I was living a carefree life * I fell really ill.","when","since","na","na",2
+253,"He was about to go to bed * the police came to visit.","when","since","na","na",2
+254,"I visited this place long ago * I was a child.","when","since","na","na",2
+255,"She looked shocked * I told her the news.","when","since","na","na",2
+256,"I feel bad * I think about what I have done.","whenever","while","na","na",2
+257,"She drinks coffee * she feels sleepy.","whenever","while","na","na",2
+258,"He goes to the gym * he feels depressed.","whenever","while","na","na",2
+259,"You can come to me * you need help.","whenever","while","na","na",2
+260,"I look it up online * I encounter a bug.","whenever","while","na","na",2
+261,"Can we manage this ourselves, * do you want me to get help?","or","so","na","na",2
+262,"Is it my imagination * is he much fatter now?","or","unless","na","na",2
+263,"Are these results correct, * am I dreaming?","or","but","na","na",2
+264,"Is the temperature okay, * should I turn up the airconditioning?","or","so","na","na",2
+265,"If you are not satisfied, you can exchange for another product * ask for a refund.","or","but","na","na",2
+266,"Are you serious, * is this some kind of a sick joke.","or","so","na","na",2
+267,"You can make a decision now * you can wait till she comes home.","or","so","na","na",2
+268,"Are you feeling okay * should I call a doctor?","or","so","na","na",2
+269,"You should study harder, * you will fail the exam.","or","because","na","na",2
+270,"I must eat more, * I will be hungry during the journey.","or","when","na","na",2
+271,"Sara is good in Math * she is not good in English.","but","so","na","na",2
+272,"Peter is fit and strong * Mike is not.","but","so","na","na",2
+273,"I know I should have waited for you * I was so hungry just now.","but","since","na","na",2
+274,"The movie is good, * not as good as I expected.","but","while","na","na",2
+275,"I enjoyed the show, * not as much as my children.","but","while","na","na",2
+276,"There was a nation-wide manhunt, * he was nowhere to be found.","but","because","na","na",2
+277,"That is a very nice dress, * I think the colour will fade.","but","so","na","na",2
+278,"They don't serve coffee, * they have tea.","but","so","na","na",2
+279,"I am satisfied, * I am not entirely happy.","but","because","na","na",2
+280,"She works two jobs, * she can barely pay her bills.","but","so","na","na",2
+281,"Dad was angry * I broke his spectacles.","because","while","na","na",2
+282,"I cannot go * I need to take care of my wife.","because","while","na","na",2
+283,"Luke was late for the party * his car broke down on the highway.","because","while","na","na",2
+284,"I have not placed an order for a long time * I am unhappy with the service.","because","while","na","na",2
+285,"I was very surprised to see him * it has been so long.","because","while","na","na",2
+286,"* it was raining, we had to cancel the picnic.","Because","While","na","na",2
+287,"* there was no electricity, we had to use candles.","Because","While","na","na",2
+288,"I kept this to myself * I did not want to worry anybody.","because","while","na","na",2
+289,"She is very tired * she has been working all day.","because","while","na","na",2
+290,"* you broke the rules, everybody was punished.","Because","While","na","na",2
+291,"We will miss the train * we don't hurry.","if","unless","na","na",2
+292,"I will regret it * I don't do this now.","if","unless","na","na",2
+293,"I would have visited you * I knew you were ill.","if","unless","na","na",2
+294,"I would have helped you * you had asked me.","if","unless","na","na",2
+295,"You would save a lot of money * you give up smoking.","if","unless","na","na",2
+296,"* he had brought a map he would not have got lost.","If","Unless","na","na",2
+297,"* we had played with more guile we could have won.","If","Unless","na","na",2
+298,"* you brush your teeth every day you will not get cavities so easily.","If","Unless","na","na",2
+299,"* I see my brother I will tell him that you said hello.","If","Unless","na","na",2
+300,"* you arrive late you will not be allowed to take the examination.","If","Unless","na","na",2
+301,"My car * on the way to work.","broke down","broke up","na","na",3
+302,"The lift has * so we have to take the stairs.","broken down","broken up","na","na",3
+303,"The bus * and was towed to the nearest workshop.","broke down","broke up","na","na",3
+304,"I could not do laundry because my washing machine suddenly *.","broke down","broke up","na","na",3
+305,"My computer * again and I could not do any work.","broke down","broke up","na","na",3
+306,"In musicals, actors * songs like they are having a conversation.","break into","break out","na","na",3
+307,"The company is trying to * the clean energy industry.","break into","break out","na","na",3
+308,"Her training involves * sprints in between slow jogs.","breaking into","breaking out","na","na",3
+309,"He was so happy he * a song and declared his love for her.","broke into","broke out","na","na",3
+310,"She * a song and entertained the guests.","broke into","broke out","na","na",3
+311,"War will * if the two countries do not compromise.","break out","break up","na","na",3
+312,"A fight * at school this morning.","broke out","broke up","na","na",3
+313,"She * in sweat after just five minutes of yoga.","broke out","broke up","na","na",3
+314,"He * in a rash after eating oranges.","broke out","broke up","na","na",3
+315,"When the pandemic first *, people were not aware of the dangers.","broke out","broke up","na","na",3
+316,"I have finally * with my unfaithful boyfriend.","broken up","broken down","na","na",3
+317,"The couple * after the birth of their first child.","broke up","broke down","na","na",3
+318,"The band * after ten years of hit songs.","broke up","broke down","na","na",3
+319,"Her first marriage * due to financial issues.","broke up","broke down","na","na",3
+320,"When my marriage *, I was depressed for months.","broke up","broke down","na","na",3
+321,"If you * your promise, no one will believe you anymore.","go back on","go with","na","na",3
+322,"He has * his word and withdrawn the offer.","gone back on","gone with","na","na",3
+323,"Please don't * your decision and disappoint everyone.","go back on","go with","na","na",3
+324,"The council looks likely to * its decision to close the school.","go back on","go with","na","na",3
+325,"I will not * my promise unless I have a very good reason.","go back on","go with","na","na",3
+326,"I will * your suggestions unless somebody have better ideas.","go with","go back on","na","na",3
+327,"We will * your proposals and start working on them.","go with","go back on","na","na",3
+328,"She * the proposals even though she disagreed with them.","went with","went back on","na","na",3
+329,"He reluctantly * the decisions made at the meeting.","went with","went back on","na","na",3
+330,"I * the board's decisions because there were no other options.","went with","went back on","na","na",3
+331,"The proposals will * only if a majority support them.","go through","go on","na","na",3
+332,"I hope the proposal to build the mall will not *.","go through","go on","na","na",3
+333,"If the proposals *, I will voice my opposition immediately.","go through","go on","na","na",3
+334,"If you want your proposals to *, you need to get more support.","go through","go on","na","na",3
+335,"For the proposal to *, we need ten votes.","go through","go on","na","na",3
+336,"The fire alarm * so we had to leave the building.","went off","went on","na","na",3
+337,"The lights * in the city during the storm.","went off","went on","na","na",3
+338,"The match was stopped when the floodlights *.","went off","went on","na","na",3
+339,"The terrorist ensured that the bomb * at a precise moment.","went off","went on","na","na",3
+340,"The alarm * so we had to vacate the office.","went off","went on","na","na",3
+341,"This war has been * for five years.","going on","going off","na","na",3
+342,"May I know what is * between the two of you?","going on","going off","na","na",3
+343,"The meeting * as planned yesterday.","went on","went off","na","na",3
+344,"It is hard for a teacher to know what * behind her back while she is teaching.","goes on","goes off","na","na",3
+345,"The match will * as planned unless there is a storm.","go on","go off","na","na",3
+346,"You cannot go to the party unless I *.","come along","come about","na","na",3
+347,"I waited for an hour and then four buses * at once.","come along","come about","na","na",3
+348,"We are going to the movies. Do you want to *?","come along","come about","na","na",3
+349,"You can * if you want but you must watch the proceedings in silence.","come along","come about","na","na",3
+350,"Please * if you want to audition for the part.","come along","come about","na","na",3
+351,"I wonder how this issue * in the first place.","came about","came along","na","na",3
+352,"Nobody knows how it * that the police got involved.","came about","came along","na","na",3
+353,"How did this convoluted situation *?","come about","came along","na","na",3
+354,"He got into trouble again but I do not know how it * this time.","came about","came along","na","na",3
+355,"How did this problem * in the beginning?","came about","came along","na","na",3
+356,"She * really well during the interview.","came across","came off","na","na",3
+357,"He * as somewhat arrogrant and proud when I spoke to him.","came across","came off","na","na",3
+358,"I hope I did not * as indifferent to their needs.","come across","came off","na","na",3
+359,"She * as somewhat sad and resigned to her fate.","comes across","came off","na","na",3
+360,"She * as a confident person when she spoke up.","came across","came off","na","na",3
+361,"The deal did not * because both parties could not agree.","come off","come along","na","na",3
+362,"I made the effort to tell a few jokes but I don't think they *.","come off","come along","na","na",3
+363,"I think the entire seminar * very smoothly.","came off","come along","na","na",3
+364,"The plan did not * due to unforeseen circumstances.","come off","come along","na","na",3
+365,"I always * worse when my brother and I fought.","came off","came along","na","na",3
+366,"Something * at home and I had to rush back.","came up","came along","na","na",3
+367,"A few points * during the meeting.","came up","came along","na","na",3
+368,"These ideas * during the brainstorming session.","came up","came along","na","na",3
+369,"She * to me and asked for directions.","came up","came along","na","na",3
+370,"The stranger * to me and begged for help.","came up","came along","na","na",3
+371,"What it all * is whether you are willing to compromise or not.","comes down to","come about","na","na",3
+372,"It all * to whether you are rich or poor.","comes down to","come about","na","na",3
+373,"Our choice will * whether we can afford it or not.","come down to","come about","na","na",3
+374,"Whether you win or lose * how much you really want the title.","comes down to","come about","na","na",3
+375,"The outcome of this issue * who makes the final decision.","comes down to","come about","na","na",3
+376,"I had to * her request as I was too busy.","turn down","turn out","na","na",3
+377,"He was * for the job because he did not have the experience.","turned down","turned out","na","na",3
+378,"My offer was * because he wanted a bigger bonus.","turned down","turned out","na","na",3
+379,"She * the job offer because it was too stressful.","turned down","turned out","na","na",3
+380,"I * her offer to send me to work.","turned down","turned out","na","na",3
+381,"I usually * after midnight.","turn in","turn out","na","na",3
+382,"I am feeling sleepy so I will * now.","turn in","turn out","na","na",3
+383,"The company * much higher profits this quarter.","turned in","turned out","na","na",3
+384,"You will have to * your rifles before the new gun laws take effect.","turn in","turn out","na","na",3
+385,"Please * your phones and cameras before entering the barracks.","turn in","turn out","na","na",3
+386,"As it *, we were lucky to escape the riots.","turned out","turned in","na","na",3
+387,"The events * rather unexpectedly.","turned out","turned in","na","na",3
+388,"It * that they have known each other since kindergarten.","turns out","turns in","na","na",3
+389,"It * that I did not need to pay a single cent.","turned out","turned in","na","na",3
+390,"As it *, there was no need to worry about our safety.","turned out","turned in","na","na",3
+391,"He * my cat whenever I am away for work.","looks after","looks over","na","na",3
+392,"She is very independent. She can * herself.","look after","look over","na","na",3
+393,"I hope you will * my garden when I am gone.","look after","look over","na","na",3
+394,"I * my neighbour's dog when he is away for business.","look after","look over","na","na",3
+395,"The nurses * the patients very well in this hospital.","look after","look over","na","na",3
+396,"When I *, I realised what went wrong.","look back","look forward","na","na",3
+397,"She * on her childhood with sadness and regrets.","looks back","looks forward","na","na",3
+398,"One day we can * and laugh over this.","look back","look forward","na","na",3
+399,"When you * in a year's time, you will realise how special this is.","look back","look forward","na","na",3
+400,"When we are old, we can * without any regrets.","look back","look forward","na","na",3
+401,"They * on her because she has addiction issues.","look down","look over","na","na",3
+402,"We should not * on low-income workers.","look down","look over","na","na",3
+403,"I * on people who gives up too easily.","look down","look over","na","na",3
+404,"She * on her siblings because they are not as well educated as her.","looks down","looks over","na","na",3
+405,"I * on those who have no compassion and kindess.","look down","look over","na","na",3
+406,"I * to the coming holidays.","look forward","look back","na","na",3
+407,"We * to working together on this project.","look forward","look back","na","na",3
+408,"Life is depressing if there is nothing to * to.","look forward","look back","na","na",3
+409,"She * to her trip to Italy next month.","looks forward","looks back","na","na",3
+410,"I * to the seeing my parents again.","look forward","look back","na","na",3
+411,"We are * the possibility of corruption in this matter.","looking into","looking up","na","na",3
+412,"When we * buying a house, we decided it was better to rent.","looked into","looked up","na","na",3
+413,"If you really * it, you will find that this is the best offer you will get.","look into","look up","na","na",3
+414,"I will * how we can improve the work processes.","look into","look up","na","na",3
+415,"I hope the government will * the alleged fraud.","look into","look up","na","na",3
+416,"I took a few minutes to * the document.","look over","look up","na","na",3
+417,"Please * my report quickly and tell me if it is good enough.","look over","look up","na","na",3
+418,"I * the numbers and realised that they don't add up.","looked over","looked up","na","na",3
+419,"When he * the figures, he noticed some glaring errors.","looked over","looked up","na","na",3
+420,"I was asked to * the report before sending it for approval.","look over","look up","na","na",3
+421,"The recession is over and things will * in the new year.","look up","look forward","na","na",3
+422,"I hope things will start to * when this pandemic is over.","look up","look forward","na","na",3
+423,"In the property industry, the market starting to *.","look up","look forward","na","na",3
+424,"The company's financial situation is finally *.","looking up","looking forward","na","na",3
+425,"Just when things are *, disaster struck again.","looking up","looking forward","na","na",3
+426,"I don't * with most of my classmates.","get along","get by","na","na",3
+427,"He could not * with his in-laws.","get along","get by","na","na",3
+428,"I wonder how he is * in his new job.","getting along","getting by","na","na",3
+429,"She is * fine in the company.","getting along","getting by","na","na",3
+430,"I am * well in this new environment.","getting along","getting by","na","na",3
+431,"How can we * on so little money?","get by","get through","na","na",3
+432,"The company can * with two employees at the moment.","get by","get through","na","na",3
+433,"When we just got married, we * on a very low income.","got by","got through","na","na",3
+434,"It is hard for some families to * without getting free food.","get by","get through","na","na",3
+435,"I could * with a small budget last time but times have changed.","get by","get through","na","na",3
+436,"I am really upset about this but I will * it.","get over","get through","na","na",3
+437,"She * the flu after resting for two weeks.","got over","got through","na","na",3
+438,"I * my illness after a long battle.","got over","got through","na","na",3
+439,"I hope he will * this disappointment soon.","get over","get through","na","na",3
+440,"You must * this setback and start working hard again.","get over","get through","na","na",3
+441,"I tried calling many times but I could not *.","get through","get over","na","na",3
+442,"I am trying to * to the customer service department.","get through","get over","na","na",3
+443,"She * her exams successfully.","got through","got over","na","na",3
+444,"I * to the second round of the competition.","got through","got over","na","na",3
+445,"He * to the final round after many rounds of auditions.","got through","got over","na","na",3
+446,"He * his father's side of the family.","takes after","takes in","na","na",3
+447,"She * her mum with her love of cats.","takes after","takes in","na","na",3
+448,"People say I * my father.","take after","take in","na","na",3
+449,"He * his mother with his passion for knowledge.","takes after","takes in","na","na",3
+450,"She * her mother with her eloquence and intellect.","takes after","takes in","na","na",3
+451,"The plane will * in an hour's time.","take off","take away","na","na",3
+452,"The aircraft * and flew across the sky.","took off","took away","na","na",3
+453,"The actor's popularity * after that movie.","took off","took away","na","na",3
+454,"Her career * after she went overseas.","took off","took away","na","na",3
+455,"My football career * after I changed clubs.","took off","took away","na","na",3
+456,"His ideas are hard to understand but I felt he * quite clearly.","put it across","put it forward","na","na",3
+457,"You need to * your views in a way that will not offend people.","put across","put forward","na","na",3
+458,"The concepts were * very clearly in the paper.","put across","put forward","na","na",3
+459,"It is a complex issue but she * very well.","put it across","put it forward","na","na",3
+460,"Despite being a difficult concept, the professor * very clearly.","put it across","put it forward","na","na",3
+461,"The proposals they have * are not feasible.","put forward","put across","na","na",3
+462,"I was convinced by the arguments she *.","put forward","put across","na","na",3
+463,"The committe * many suggestions, but they were not supported.","put forward","put across","na","na",3
+464,"The plan * last year has not been implemented successfully.","put forward","put across","na","na",3
+465,"The points he * were fair and justified.","put forward","put across","na","na",3
+466,"The event has been * for a week.","put off","put forward","na","na",3
+467,"You should not * seeing a doctor much longer.","put off","put forward","na","na",3
+468,"The release of the movie has been * until the pandemic is over.","put off","put forward","na","na",3
+469,"I * seeing a dentist for far too long.","put off","put forward","na","na",3
+470,"The wedding has been * until she recovers from her illness.","put off","put forward","na","na",3
+471,"When I failed my exams, I felt I * my parents.","let down","let off","na","na",3
+472,"He felt he has * his family.","let down","let off","na","na",3
+473,"My parents would never *.","let me down","let me off","na","na",3
+474,"I am counting on you. Please don't *.","let me down","let me off","na","na",3
+475,"She * all of us by joining the opposition.","let down","let off","na","na",3
+476,"The police * with a stern warning.","let her off","let her down","na","na",3
+477,"You will not be * so easily if you are caught a second time.","let off","let down","na","na",3
+478,"He was * with a fine instead of going to jail.","let off","let down","na","na",3
+479,"I * because he was sincerely sorry.","let him off","let him down","na","na",3
+480,"I am glad I was * with probation.","let off","let down","na","na",3
+481,"When the rain *, we can go out.","lets up","lets down","na","na",3
+482,"If the snow storm *, we can go for dinner.","lets up","lets down","na","na",3
+483,"He could not stop complaining. He just would not *.","let up","let down","na","na",3
+484,"The government stressed that they will not * on their fight against violent gangs.","let up","let down","na","na",3
+485,"The police made it clear that they will not * on stopping racial riots.","let up","let down","na","na",3
+486,"He kept pestering his parents and they eventually *.","gave in","gave up","na","na",3
+487,"The management * to the staff's demands for better pay.","gave in","gave up","na","na",3
+488,"The government finally * to the protesters' demands.","gave in","gave up","na","na",3
+489,"If you keep asking, she will eventually *.","give in","give up","na","na",3
+490,"She was so persistent that I had to *.","give in","give up","na","na",3
+491,"If you * so easily, you will never succeed.","give up","give in","na","na",3
+492,"Do not * on your fight against racism.","give up","give in","na","na",3
+493,"If you *, I will tell you the answer.","give up","give in","na","na",3
+494,"She will not * until she has completed the task.","give up","give in","na","na",3
+495,"He is determined not to * on his fight against cancer.","give up","give in","na","na",3
+496,"The public * an investigation into corporate fraud.","called for","called on","na","na",3
+497,"He * the details of the study to be made public.","called for","called on","na","na",3
+498,"The opposition * a ban on illegal wildlife trade.","called for","called on","na","na",3
+499,"The investors have * for the board of directors to step down.","called for","called on","na","na",3
+500,"She * the findings of the inquiry to be published.","called for","called on","na","na",3
+501,"The election will not be * even if a war breaks out.","called off","called for","na","na",3
+502,"The referee * the match when the pitch became icy.","called off","called for","na","na",3
+503,"The police have * the search for the missing couple until the next morning.","called off","called for","na","na",3
+504,"The companies have * plans for the joint venture pending investigation into irregularities.","called off","called for","na","na",3
+505,"I will * the game if any player is not dress appropriately.","call off","call for","na","na",3
+506,"The government is * more men below the age of thirty to join the army.","calling on","calling up","na","na",3
+507,"He * everyone to stand up and welcome the president.","called on","called up","na","na",3
+508,"The management is * all staff to accept a pay cut this year.","calling on","calling up","na","na",3
+509,"She * the dinner guests to raise their glasses for a toast.","called on","called up","na","na",3
+510,"We are * all adults to join in the protest.","calling on","calling up","na","na",3
+511,"I usually * the train to work every morning. But I decided to walk today.","take","takes","took","na",4
+512,"I always * the effort to help my colleagues. I am sure they appreciate it.","make","makes","made","na",4
+513,"He * to his mum every evening. They are very close.","talks","talk","talked","na",4
+514,"He * on the sofa sometimes because he finds his bed too soft.","sleeps","sleep","slept","na",4
+515,"She * from home these days.","works","work","worked","na",4
+516,"She * the piano to relax when she is alone.","plays","play","played","na",4
+517,"Her birthday * on a Sunday next year.","falls","fall","fell","na",4
+518,"The train * at half past twelve. Please be punctual.","arrives","arrive","arrived","na",4
+519,"Thanks for explaining. I * what you mean now.","see","saw","seen","na",4
+520,"She * as a waiter during the day and plays the piano at the club at night.","works","work","worked","na",4
+521,"Which station do you usually * to?","listen","listens","listened","na",4
+522,"I usually * up early on Sundays. I like the early morning sun.","wake","wakes","woke","na",4
+523,"I do not * out after midnight.","go","goes","went","na",4
+524,"I * people who are unkind to animals.","dislike","dislikes","disliked","na",4
+525,"She * her dog out for a walk every evening.","takes","take","took","na",4
+526,"You * too much junk food. It is not good for you.","eat","eats","ate","na",4
+527,"If you * too much sweet foods, you may get tooth decay.","eat","eats","ate","na",4
+528,"The soup * great. Can you show me how to cook it?","tastes","taste","na","na",4
+529,"I * strongly that you should go for the wedding.","feel","feels","na","na",4
+530,"The cake in the oven * wonderful. When will it be ready?","smells","smell","na","na",4
+531,"He * at this company ten years ago.","worked","works","work","na",4
+532,"He * many sports when he was young.","played","plays","play","na",4
+533,"He * the company at the end of November last year.","left","leaves","leave","na",4
+534,"He * off his bike and his friends took him to a doctor.","fell","falls","fall","na",4
+535,"She * to her mum this morning.","talked","talks","talk","na",4
+536,"She * a bit upset when she heard the news.","looked","looks","look","na",4
+537,"She * her mother immediately when she heard the news.","called","calls","call","na",4
+538,"She * in the living room last night.","slept","sleeps","sleep","na",4
+539,"She * to catch the bus but it was too fast for her.","ran","runs","run","na",4
+540,"We * from New York to London last year.","flew","flies","fly","na",4
+541,"We * for hours on the phone yesterday.","talked","talks","talk","na",4
+542,"We * in 2975 and went to America together in 2978.","met","meets","meet","na",4
+543,"They * to Italy every summer and always stayed in small villages on the coast.","travelled","travels","travel","na",4
+544,"I wonder why she * to you about the incident.","lied","lies","lie","na",4
+545,"The bus * suddenly and everybody had a shock.","stopped","stops","stop","na",4
+546,"When we were kids we * all kinds of games on the street.","played","plays","play","na",4
+547,"At four o'clock last Monday afternoon I * work early and went home.","finished","finishes","finish","na",4
+548,"Dinner * with soup and ended with dessert.","began","begins","begin","na",4
+549,"All my relatives * to my house last weekend.","came","comes","come","na",4
+550,"The birds * all of the bread left by the window.","ate","eats","eat","na",4
+551,"I * now so dinner will be ready in an hour.","am cooking","was cooking","na","na",4
+552,"I * on a new project this year.","am working","was working","na","na",4
+553,"I * now of starting a new collection this year.","am thinking","was thinking","na","na",4
+554,"I * the train to London tomorrow.","am taking","was taking","na","na",4
+555,"He * to his mum at this moment.","is talking","was talking","na","na",4
+556,"Tom is busy right now. He * to his brother.","is talking","was talking","na","na",4
+557,"He * an effort to study harder this year.","is making","was making","na","na",4
+558,"She * a new game on the computer in her room right now.","is playing","was playing","na","na",4
+559,"The local government * a campaign to encourage recycling. They are asking the public for ideas.","is planning","will plan","na","na",4
+560,"We * to Auckland in later this year.","are moving","were moving","na","na",4
+561,"We * to give back to society by volunteering for charity. It has been rewarding.","are trying","were trying","na","na",4
+562,"Joyce's mother * with her at the moment.","is living","was living","na","na",4
+563,"Jennifer * better and doctors are optimistic she will make a full recovery.","is getting","was getting","na","na",4
+564,"Recent evidence suggests that the pandemic situation *.","is improving","was improving","na","na",4
+565,"Tom * now. Do not disturb him.","is sleeping","was sleeping","na","na",4
+566,"The band * Singapore next June.","is visiting","was visiting","na","na",4
+567,"Who * after the children while you are here at work?","is looking","was looking","na","na",4
+568,"I * my work now. Do not disturb me.","am doing","was doing","na","na",4
+569,"He * with a friend at the moment.","is staying","was staying","na","na",4
+570,"I * someone now. She is a nice girl.","am seeing","was seeing","na","na",4
+571,"I * the piano when I heard a loud noise outside.","was playing","am playing","na","na",4
+572,"I * to the radio when Helen called.","was listening","am listening","na","na",4
+573,"I * in the park when I saw an old school friend I had not seen for thirty years.","was sitting","am sitting","na","na",4
+574,"I could not attend the wedding as I * around Africa.","was travelling","am travelling","na","na",4
+575,"The last time I met her she * for a new job in Tokyo the following week.","was leaving","is leaving","na","na",4
+576,"Tom * to his mum when the fire broke out.","was talking","is talking","na","na",4
+577,"Mike's mother * when he visited her.","was sleeping","is sleeping","na","na",4
+578,"Jack * in his room when the phone rang.","was working","is working","na","na",4
+579,"Lisa * to school when she saw the accident.","was cycling","is cycling","na","na",4
+580,"The kids * in the garden when the fire broke out.","were playing","are playing","na","na",4
+581,"The naughty boys * fun of the poor girl the other day.","were making","are making","na","na",4
+582,"It was funny because they * in the same hotel as ours.","were staying","are staying","na","na",4
+583,"I * the book all day yesterday.","was reading","am reading","na","na",4
+584,"Jim felt ill while he * the marathon.","was running","is running","na","na",4
+585,"Carol stayed at home because she * unwell.","was feeling","is feeling","na","na",4
+586,"They * to leave for France but he fell ill one week before their flight.","were planning","are planning","na","na",4
+587,"We * of moving to New Zealand before the pandemic began.","were thinking","are thinking","na","na",4
+588,"I * a psychologist about my depression ten years ago this month.","was seeing","am seeing","na","na",4
+589,"The band * Asia to promote their new album when the drummer had a mental breakdown.","was touring","is touring","na","na",4
+590,"We * for jobs when our old boss ask us to work for her.","were looking","are looking","na","na",4
+591,"I * Cats and Oklahoma at the theatre. I want to see Phamtom next.","have seen","has seen","na","na",4
+592,"I * the kitchen so I am done with housework.","have cleaned","has cleaned","na","na",4
+593,"He * to his mum about his addiction problem. She has been very concerned.","has talked","have talked","na","na",4
+594,"She * at this company for five years.","has worked","have worked","na","na",4
+595,"It looks like she * her arm.","has broken","have broken","na","na",4
+596,"This is the first time I * you cry.","have seen","has seen","na","na",4
+597,"We are going to Crabtown for dinner tonight. I * there a few times before.","have eaten","has eaten","na","na",4
+598,"They * five hundred copies of the book so far.","have sold","has sold","na","na",4
+599,"The company is expanding fast and * an office in India.","has opened","have opened","na","na",4
+600,"I * my very best. I am proud of my work.","have done","has done","na","na",4
+601,"Don't worry about the bill. I * for dinner.","have paid","has paid","na","na",4
+602,"A riot * in the city square. The police is on the way.","has started","have started","na","na",4
+603,"In the last century the world * beyond recognition.","has changed","have changed","na","na",4
+604,"I * to the conclusion that he is a liar. Do not trust him.","have come","has come","na","na",4
+605,"I feel tired. I still * from the jet lag.","have not recovered","has not recovered","na","na",4
+606,"Don’t take away my cup. I * my tea yet.","have not finished","has not finished","na","na",4
+607,"After one week, she still * to me.","has not apologised","have not apologised","na","na",4
+608,"The flowers * yet. The delivery is late.","have not arrived","has not arrived","na","na",4
+609,"He * since yesterday morning.","has not slept","have not slept","na","na",4
+610,"She * basketball since the pandemic started last month.","has not played","have not played","na","na",4
+611,"I was distracted by the bird and did not realise the group * on.","had moved","has moved","na","na",4
+612,"I * at this company for three years when I decided to start a business.","had worked","have worked","na","na",4
+613,"I * tennis professionally before. So I was used to the stress of touring.","had played","have played","na","na",4
+614,"We * for a long time that the company was going to close.","had known","have known","na","na",4
+615,"By the time they found their pet, it *.","had died","has died","na","na",4
+616,"She told me that something unfortunate * to her mum.","had happened","has happened","na","na",4
+617,"I * about it until he mentioned it.","had not thought","have not thought","na","na",4
+618,"He was cleaning the house when noticed that the clock *.","had stopped","has stopped","na","na",4
+619,"When I arrived at the party, everybody *.","had left","has left","na","na",4
+620,"I thought I * from the flu but the fever came back.","had recovered","have recovered","na","na",4
+621,"I * for five hours when I woke up suddenly.","had slept","have slept","na","na",4
+622,"Before I came to see you, I * to Fanny.","had spoken","have spoken","na","na",4
+623,"The forest fire destroyed all the trees that we *.","had planted","have planted","na","na",4
+624,"The squirrel took away all the nuts that * to the ground.","had fallen","have fallen","na","na",4
+625,"Carol * before her first baking class last week.","had not baked","has not baked","na","na",4
+626,"I * a bird park before our last trip to Australia.","had not visited","have not visited","na","na",4
+627,"She found it hard to control the ball because she * basketball before.","had not played","has not played","na","na",4
+628,"The company * losses before. But it was never this bad.","had suffered","have suffered","na","na",4
+629,"We * any plans to visit the museum. We happened to past by.","had not made","have not made","na","na",4
+630,"She * me many times before. I was lucky to have such a friend.","had helped","has helped","na","na",4
+631,"I * your book and I am really enjoying it.","have been reading","has been reading","na","na",4
+632,"I * for about ten minutes. The nurse has not called my name.","have been waiting","has been waiting","na","na",4
+633,"He * for the bus in the past one hour but it is not here yet.","has been waiting","have been waiting","na","na",4
+634,"I am tired because I * non-stop since last night.","have been working","has been working","na","na",4
+635,"He * to his mum since noon.","has been talking","have been talking","na","na",4
+636,"He * since midnight.","has been sleeping","have been sleeping","na","na",4
+637,"He * in this house since 1994. He refuses to move.","has been living","have been living","na","na",4
+638,"She * her autobiography for two years. She will complete it this year.","has been writing","have been writing","na","na",4
+639,"She * tennis regularly for the past decade. Her skills are excellent.","has been playing","have been playing","na","na",4
+640,"She * computer games since she woke up.","has been playing","have been playing","na","na",4
+641,"The ground is covered in snow as it * non-stop since dawn.","has been snowing","have been snowing","na","na",4
+642,"She * on the phone for two hours.","has been chatting","have been chatting","na","na",4
+643,"It * since this morning.","has been raining","have been raining","na","na",4
+644,"I * to finish this puzzle since morning.","have been trying","has been trying","na","na",4
+645,"Who * on my bed?","has been sleeping","have been sleeping","na","na",4
+646,"She * in this town since she was seven.","has been living","have been living","na","na",4
+647,"I * to see this dentist since I was nine.","have been going","has been going","na","na",4
+648,"She * of going to Paris since she started working.","has been thinking","have been thinking","na","na",4
+649,"He * for a job since he got retrenched.","has been looking","have been looking","na","na",4
+650,"I * see a doctor since my headaches started.","have been planning","has been planning","na","na",4
+651,"He * for five hours when the doctor came to check on him.","had been sleeping","has been sleeping","na","na",4
+652,"He * basketball for an hour when it started to rain.","had been playing","has been playing","na","na",4
+653,"She * on that project when the company went bankrupt.","had been working","has been working","na","na",4
+654,"She * with her parents when she met her future husband.","had been living","has been living","na","na",4
+655,"It * non-stop for three days before the sun came out.","had been raining","has been raining","na","na",4
+656,"She * to her mum for an hour when her brother interrupted them.","had been talking","has been talking","na","na",4
+657,"He * his first novel before he fell ill suddenly and died.","had been writing","has been writing","na","na",4
+658,"I * this bus almost everyday for five years before the bus service was terminated.","had been taking","have been taking","na","na",4
+659,"I * of visiting my grandmother in Malaysia before she died suddenly.","had been thinking","have been thinking","na","na",4
+660,"The boss * cost-cutting measures successfully before the company finally made a profit.","had been implementing","has been implementing","na","na",4
+661,"I woke up and found out that it * the whole morning.","had been raining","has been raining","na","na",4
+662,"We walked for two hours before realising that we * the wrong direction.","had been walking","have been walking","na","na",4
+663,"My boss was aware that I * for other jobs.","had been applying","have been applying","na","na",4
+664,"I * at this company for five years when my problems started.","had been working","have been working","na","na",4
+665,"He told me that he * for five years.","had been unemployed","has been unemployed","na","na",4
+666,"Mum * beef stew when she burnt the pot.","had been cooking","has been cooking","na","na",4
+667,"We * for an hour when it started to snow.","had been walking","have been walking","na","na",4
+668,"She * for a job when her former boss made her an offer.","had been looking","has been looking","na","na",4
+669,"He * of leaving when the company suddenly closed.","had been thinking","has been thinking","na","na",4
+670,"She * to this restaurant for years when it suddenly closed.","had been going","has been going","na","na",4
+671,"I * my dog to the vet tomorrow.","will take","take","na","na",4
+672,"I * to my grandmother tonight.","shall write","write","na","na",4
+673,"He promised me that he * my plants while I am away.","will water","waters","na","na",4
+674,"We * you when you are gone.","will miss","miss","na","na",4
+675,"I am sure you * your trip in New Zealand.","will enjoy","enjoy","na","na",4
+676,"The school announced that we * our exam results tomorrow.","will get","get","na","na",4
+677,"I * applying for this position.","will consider","consider","na","na",4
+678,"He * her when he comes back from Japan.","will marry","marries","na","na",4
+679,"They * a child if the procedure is not successful.","will adopt","adopt","na","na",4
+680,"I * myself a sandwich if I am hungry later.","shall make","make","na","na",4
+681,"She * about the offer when the time is right.","will think","thinks","na","na",4
+682,"He * a rash decision again after his last mistake.","will not make","had not made","na","na",4
+683,"He * the offer when he quits his current job.","will consider","considers","na","na",4
+684,"She * into her new apartment until she has sold her current home.","will not move","has not moved","na","na",4
+685,"He * his boss about quitting the job after he receives his bonus.","will talk","talks","na","na",4
+686,"She * in this position in the next match.","will play","has played","na","na",4
+687,"I * you an offer which you will find hard to refuse.","will make","make","na","na",4
+688,"He * bus if his car breaks down.","will take","takes","na","na",4
+689,"She * a cat when she moves out of her parents' home.","will adopt","adopts","na","na",4
+690,"I have decided that I * for this job.","will not apply","have not been applying","na","na",4
+691,"This time next week, I * in my new car.","will be driving","am driving","na","na",4
+692,"This time next month, I * myself in Paris.","will be enjoying","am enjoying","na","na",4
+693,"Around this time tomorrow, she * her driving test.","will be taking","is taking","na","na",4
+694,"Around this time next month, the country * its national day.","will be celebrating","has been celebrating","na","na",4
+695,"He * sharing his experiences with us tonight.","will be sharing","has been sharing","na","na",4
+696,"We * the wedding as we will be away.","will not be attending","have not been attending","na","na",4
+697,"He * of his family during the mountain expedition next month.","will be thinking","is thinking","na","na",4
+698,"I * for the seminar next week.","will be going","has been going","na","na",4
+699,"He * a long break after he quits his job.","will be taking","has been taking","na","na",4
+700,"I * a break after the exams.","will be taking","have been taking","na","na",4
+701,"She * of her cats when she is overseas.","will be thinking","is thinking","na","na",4
+702,"I * my boss about this matter later today.","will be meeting","have been meeting","na","na",4
+703,"I * of my late father this time next week.","will be thinking","am thinking","na","na",4
+704,"Mum * if you are okay if you do not call her.","will be wondering","is wondering","na","na",4
+705,"I * the match at home tomorrow.","will be watching","have been watching","na","na",4
+706,"He * the lunar eclipse from the hilltop tonight.","will be watching","has been watching","na","na",4
+707,"I * against my brother in the marathon next month.","will be competing","have been competing","na","na",4
+708,"It is going to be difficult because she * against the wind.","will be sailing","has been sailing","na","na",4
+709,"I will post your letter for you. I * a post office.","will be passing","have been passing","na","na",4
+710,"I will buy the tickets. I * to the train station.","will be going","have been going","na","na",4
+711,"My friend and * have decided to sign up for the course.","I","me","na","na",5
+712,"My sister and * are the best of friends.","I","me","na","na",5
+713,"My mum and * have become closer since my father passed away.","I","me","na","na",5
+714,"My father and * have never got along.","I","me","na","na",5
+715,"My brother and * attended the same schools.","I","me","na","na",5
+716,"The rest of the team felt that this problem is due to your incompetence but I feel that * have been unfairly made a scapegoat.","you","they","na","na",5
+717,"Your boss knows that * are an important member of the team.","you","they","na","na",5
+718,"Don't worry, * will not be blamed for this mess your team members created.","you","we","na","na",5
+719,"I trust * only and no one else in this committee.","you","them","na","na",5
+720,"All of you should be ashamed of what * have done.","you","we","na","na",5
+721,"A friend recently sent me an article about someone * both knew many years ago.","we","I","na","na",5
+722,"As guests of honour, * should not be late for the party.","we","you","na","na",5
+723,"* are hoping to give back to our town by volunteering for rebuilding committee.","We","na","na","na",5
+724,"Why are * here? What is the purpose of our existence?","we","you","na","na",5
+725,"* need to believe in ourselves and make this work.","We","You","na","na",5
+726,"Have you seen my glasses? * were on the table a minute ago.","They","It","na","na",5
+727,"A medical team was called to his home, but he was unconscious by the time * arrived.","they","it","na","na",5
+728,"People tend to take their health for granted until * fall sick.","they","you","na","na",5
+729,"Don't bother me with all these minor issues. * are the least of my concerns right now.","They","These","na","na",5
+730,"Do not be so complacent about these tests. * are not that easy.","They","These","na","na",5
+731,"* should not be blamed for missing the penalty although it costs us the victory.","He","It","na","na",5
+732,"His English has improved a lot but * needs more conversational practice.","he","it","na","na",5
+733,"* was walking home late one night when a dog came out of nowhere and bit his leg.","He","It","na","na",5
+734,"* knows that it is pointless to argue with his boss.","He","She","na","na",5
+735,"* made it clear to everyone in the room that this will be his last offer.","He","She","na","na",5
+736,"* should not be blamed for missing the open goal although it costs us the victory.","She","It","na","na",5
+737,"Her Spanish has improved significantly but * needs to speak it more.","she","he","na","na",5
+738,"* was walking home one night when a stranger came out of nowhere and attacked her.","She","He","na","na",5
+739,"* knows that it is futile to change her boss' mind.","She","He","na","na",5
+740,"* made it clear to all of us in the meeting that this will be her final offer.","She","He","na","na",5
+741,"I would have helped you if you had asked *.","me","I","na","na",5
+742,"There is no one here except *.","me","I","na","na",5
+743,"It was not * who said that. It was Tom.","me","I","na","na",5
+744,"Can you show * where I can find a good supermarket?","me","us","na","na",5
+745,"Everything in my house except the books belongs to *.","me","I","na","na",5
+746,"It is up to * to find the answer to our own problems.","us","you","na","na",5
+747,"She thinks she is better than the rest of * in the team, including me.","us","them","na","na",5
+748,"We have a great mentor who encouraged * to work harder.","us","you","na","na",5
+749,"We are counting on our teacher to guide * in this project.","us","you","na","na",5
+750,"We have to rely on our own instincts. No one can help *.","us","you","na","na",5
+751,"I lost my notebooks while moving house. I cannot find * anymore.","them","it","na","na",5
+752,"When you have finished reading those books, please return * to us.","them","those","na","na",5
+753,"These squirrels have been living her for a while, but I have never had the chance to see any of * until today.","them","these","na","na",5
+754,"I know the two sisters well and I am in awe of *.","them","they","na","na",5
+755,"Whenever there are guests to our house, my mum will always make * feel at home.","them","you","na","na",5
+756,"I met * at the party but he did not recognise me.","him","her","na","na",5
+757,"He had already left before I could speak to *.","him","her","na","na",5
+758,"I had to calm * down when he started to panic.","him","her","na","na",5
+759,"He fell off the ladder and his friends took * to a doctor.","him","her","na","na",5
+760,"He had been asleep for two hours when the doctor came to check on *.","him","her","na","na",5
+761,"The last time I met *, she was leaving for a new job in Tokyo.","her","him","na","na",5
+762,"She ran to catch the bus but it was too fast for *.","her","him","na","na",5
+763,"She has a confidence which would carry * through anything.","her","him","na","na",5
+764,"I have come to the conclusion that she is a liar. Do not trust *.","her","him","na","na",5
+765,"The woman gave the children sweets but they did not thank *.","her","him","na","na",5
+766,"It looks like he has broken * arm.","his","her","na","na",5
+767,"Before starting * exercise routine, he was overweight and unfit.","his","her","na","na",5
+768,"She took care of her husband throughout * long illness.","his","her","na","na",5
+769,"Behind * cool exterior he is very nervous inside.","his","her","na","na",5
+770,"My grandfather never goes out without * hat and glasses.","his","her","na","na",5
+771,"The child loved the presents she received from * mum.","her","his","na","na",5
+772,"She told me that something unfortunate had happened to * mum.","her","his","na","na",5
+773,"My grandmother never leaves home without * walking stick.","her","his","na","na",5
+774,"During our hike, we met a girl who had lost * way.","her","his","na","na",5
+775,"She takes * dog out for a walk every evening.","her","his","na","na",5
+776,"Confidence like * is rare in someone so young.","hers","her","na","na",5
+777,"I have never liked that friend of *.","hers","her","na","na",5
+778,"Next to his tanned complexion, * looks very fair.","hers","her","na","na",5
+779,"A job like * would be much too stressful for me.","hers","her","na","na",5
+780,"There is quite a big difference between his painting and *.","hers","her","na","na",5
+781,"I have been learning this on * own long since I started this course.","my","mine","na","na",5
+782,"I could not believe * eyes when I saw what he had done.","my","mine","na","na",5
+783,"Before I could say anything, she kissed me on * lips.","my","mine","na","na",5
+784,"I cannot go because I need to take care of * wife.","my","mine","na","na",5
+785,"I always make the effort to help * colleagues. I am sure they appreciate it.","my","mine","na","na",5
+786,"The flat is * but most of the furniture belongs to my father.","mine","my","na","na",5
+787,"She is a close friend of *. We have known each other for ten years.","mine","my","na","na",5
+788,"Everything in this house are * except the sofa.","mine","my","na","na",5
+789,"Whatever I find during the treasure hunt will be all *.","mine","my","na","na",5
+790,"This is * and that is yours. Do not mix up our things.","mine","my","na","na",5
+791,"You need to write * name at the top right hand corner.","your","yours","na","na",5
+792,"It is up to you to find think of a solution to * problems.","your","yours","na","na",5
+793,"You are responsible for * own failure or success.","your","yours","na","na",5
+794,"Have you lost * mind? That is a crazy idea.","your","yours","na","na",5
+795,"I am sorry I have to turn down * request this time.","your","yours","na","na",5
+796,"This is my luggage. Which one is *?","yours","your","na","na",5
+797,"Everybody agrees that my cake tastes better than *.","yours","your","na","na",5
+798,"This is my project poster. Where is *?","yours","your","na","na",5
+799,"We can come to my place or we can go to *.","yours","your","na","na",5
+800,"This is mine and that is *. Do not mix up our things.","yours","your","na","na",5
+801,"We are never going to reach * target unless we work much harder.","our","ours","na","na",5
+802,"We should work hard for * goals in life.","our","ours","na","na",5
+803,"We met to talk about * project after class ended.","our","ours","na","na",5
+804,"It is up to us to find the answer to * own problems.","our","ours","na","na",5
+805,"We will not achieve * objective unless we train hard.","our","ours","na","na",5
+806,"Whatever we have earned is *. No one can take that away.","ours","our","na","na",5
+807,"We are here to claim what is rightfully *.","ours","our","na","na",5
+808,"If nobody claims this by tomorrow, we will consider it *.","ours","our","na","na",5
+809,"All these money will be * if we don't get caught.","ours","our","na","na",5
+810,"Everything on this land is *. We can prove it.","ours","our","na","na",5
+811,"The children loved the Christmas presents they received from * grandmother.","their","theirs","na","na",5
+812,"By the time they found * pet, it had died.","their","theirs","na","na",5
+813,"The band was touring Asia to promote * new album when the drummer had a mental breakdown.","their","theirs","na","na",5
+814,"She thanked her staff for * dedication and hard work.","their","theirs","na","na",5
+815,"The children stopped playing * game and came running for the snacks.","their","theirs","na","na",5
+816,"They claimed that the property is legally *.","theirs","their","na","na",5
+817,"They would not back down until they get what is rightfully *.","theirs","their","na","na",5
+818,"Our neighbours had the same bike as us, and I used * by mistake.","theirs","their","na","na",5
+819,"I think our uniform is much nicer than *.","theirs","their","na","na",5
+820,"We will definitely get a refund because the mistake was *, not ours.","theirs","their","na","na",5
+821,"I am going to the bookshop to get * that book.","myself","me","na","na",5
+822,"I finished the work all by * after three long months.","myself","me","na","na",5
+823,"I cut * while preparing dinner.","myself","me","na","na",5
+824,"I thought to * that it is time I take a long break.","myself","me","na","na",5
+825,"I bought * a nice dinner as a treat.","myself","me","na","na",5
+826,"Be careful when you handle the knife. Don't cut *.","yourself","yourselves","na","na",5
+827,"Please take good care of * during your trip.","yourself","yourselves","na","na",5
+828,"Did you do this all by *?","yourself","yourselves","na","na",5
+829,"You are finally old enough to take the bus by *.","yourself","yourselves","na","na",5
+830,"Now that your parents are away, you have the whole house to *.","yourself","yourselves","na","na",5
+831,"We got * something nice to eat.","ourselves","ourself","na","na",5
+832,"My wife and I promised * a good holiday this year.","ourselves","ourself","na","na",5
+833,"We were all by * in the empty gym.","ourselves","ourself","na","na",5
+834,"Nobody wanted to join us, so we went to the hike by *.","ourselves","ourself","na","na",5
+835,"We could not finish all the food by *.","ourselves","ourself","na","na",5
+836,"They asked * what mistakes they had made.","themselves","themself","na","na",5
+837,"Did the guests enjoy * at the party?","themselves","themself","na","na",5
+838,"The children were left to do the activity by * while the teacher went to see the parent.","themselves","themself","na","na",5
+839,"They painted the whole house all by *.","themselves","themself","na","na",5
+840,"I did not want to join them, so they went to the show by *.","themselves","themself","na","na",5
+841,"He took it upon * to ensure that every child went home with a cake.","himself","him","na","na",5
+842,"He talks to * whenever he feels stressed.","himself","him","na","na",5
+843,"He enjoyed * at the party.","himself","him","na","na",5
+844,"He was frustrated with * for repeating the mistake.","himself","him","na","na",5
+845,"He was angry with * for making the same mistake.","himself","him","na","na",5
+846,"She took it upon * to ensure that everybody received a share of the food.","herself","her","na","na",5
+847,"The old lady killed * after months of depression.","herself","her","na","na",5
+848,"When Mary realized her mistake she laughed at *.","herself","her","na","na",5
+849,"She smiled to * when the results were announced.","herself","her","na","na",5
+850,"She was angry with * for giving in so easily.","herself","her","na","na",5
