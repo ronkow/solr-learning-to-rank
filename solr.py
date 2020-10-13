@@ -62,6 +62,7 @@ def feature_store1():
     ]
     return fs1
 
+
 def model_store1():
     ms1 = {
         "store" : "feature_store1",
@@ -85,8 +86,6 @@ def model_store1():
         }
     }
     return ms1
-
-
 
 
 def feature_store2():
@@ -296,6 +295,7 @@ def feature_store2():
         },
     ]
     return fs2
+
 
 def model_store2():
     ms2 = {
