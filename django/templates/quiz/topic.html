@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Topics{% endblock title %}
+
+{% block content %}
+
+<h1>Topics</h1>
+
+{% if context_topic.all %}
+
+  <h5>Select a topic.</h5>
+
+  <ol>
+  {% for t in context_topic %}
+    <li><a href="{% url 'appquiz:quizlistview' t.id %}">{{ t.topic_name }}</a> (<strong>Examples:</strong> {{ t.topic_examples }})</li>
+
+  {% endfor %}
+  </ol>
+
+{% else %}
+    <h5>There are no topics.</h5>
+
+{% endif %}
+
+{% endblock content %}

@@ -1,0 +1,281 @@
+{% extends 'base.html' %}
+{%  load crispy_forms_tags %}
+
+{% block title %}Intelligent search{% endblock title %}
+
+{% block content %}
+
+<h1>Intelligent search</h1>
+
+<h5>We demonstrate <a href="https://lucene.apache.org/solr/guide/7_7/learning-to-rank.html">intelligent search by Apache Solr</a>,
+using <a href="{% url 'apppage:modelview' %}">ranking models</a> to return better results than Solr's default ranking by BM25.</h5>
+
+<div class="container-page-intro">
+<p>Using two different ranking models, we provide two ways to search for questions:</p>
+
+<p><strong>Answer not indicated (Model 1):</strong> Enter a sentence (or part of a sentence).
+    The system searches for and ranks sentences similar to the entire query sentence.</p>
+
+<p><strong>Answer indicated (Model 2):</strong> Enter a sentence (or part of a sentence) and use parentheses to indicate a word or phrase.
+    The system treats the enclosed word or phrase as the answer to a grammar question and focuses its search on a neighbourhood of words around and including the indicated answer.</p>
+
+<p>For Model 2, although the answer is a query input, we do not provide the user the option of selecting a grammar topic as a query input.
+Our questions are topic-labelled using broad classes and topic is not a feature in the model. Instead, the model learns to detect the topic from the syntax of the query.
+<a href="#discuss">More discussion below</a>.
+</p>
+</div>
+
+<ul>
+
+<li><h5><strong>Sample queries</strong></h5></li>
+
+<p>Select a sample question to query. The word or phrases enclosed in parentheses indicate the answer.
+
+<form method="get" action="{% url 'appsearch:ltrsearchresultview' %}" class="">
+
+ <table class="table table-hover table-bordered">
+ <tbody>
+  <tr>
+    <td class='p-0'>
+    <label class="form-check-label m-1 p-2" style="width:100%; height:100%">
+    <input type="radio"
+           name="query_ltr2"
+           value="I have been working (in) my office for two hours." required>
+    <div style="margin-left:12px; display:inline">I have been working (in) my office for two hours.</div>
+    </label>
+    </td>
+  </tr>
+  <tr>
+    <td class='p-0'>
+    <label class="form-check-label m-1 p-2" style="width:100%; height:100%">
+    <input type="radio"
+           name="query_ltr2"
+           value="I (have been working) in my office for two hours." required>
+    <div style="margin-left:12px; display:inline">I (have been working) in my office for two hours.</div>
+    </label>
+    </td>
+  <tr>
+  <tr>
+    <td class='p-0'>
+    <label class="form-check-label m-1 p-2" style="width:100%; height:100%">
+    <input type="radio"
+           name="query_ltr2"
+           value="He could (get by) with a meagre salary ten years ago but prices have increased." required>
+    <div style="margin-left:12px; display:inline">He could (get by) with a meagre salary ten years ago but prices have increased.</div>
+    </label>
+    </td>
+  <tr>
+  <tr>
+    <td class='p-0'>
+    <label class="form-check-label m-1 p-2" style="width:100%; height:100%">
+    <input type="radio"
+           name="query_ltr2"
+           value="He could get by with a meagre salary ten years ago but prices (have increased)." required>
+    <div style="margin-left:12px; display:inline">He could get by with a meagre salary ten years ago but prices (have increased).</div>
+    </label>
+    </td>
+  <tr>
+ </tbody>
+ </table>
+
+  <select name="top" style="padding-left:10px; width:200px; height:36px; color:dimgray; font-size:16px; border-color:lightgray;background-color:white; border-radius:5px; display:block;">
+    <option value="10">Top 10 results</option>
+    <option value="20">Top 20 results</option>
+    <option value="30">Top 30 results</option>
+    <option value="40">Top 40 results</option>
+    <option value="50">Top 50 results</option>
+  </select>
+
+ <input class="btn btn-success"
+                type="submit"
+                name="button1"
+                value="Search"
+                style="display:block; margin-top:10px">
+
+</form>
+
+<hr>
+<div style="margin-bottom:20px"></div>
+
+  <li><h5><strong>Enter a query</strong></h5></li>
+
+  <strong>Answer indicated</strong>
+
+  <form method="get" action="{% url 'appsearch:ltrsearchresultview' %}" class="">
+  {% csrf_token %}
+
+    <input id="input_id"
+           onkeyup='check_input(this);'
+           name="query_ltr2"
+           class="form-control"
+           style="width:100%;"
+           type="text"
+           placeholder="Enter a sentence with answer in parentheses, e.g. I (have done) my work."
+           required>
+
+  <select name="top" style="padding-left:10px; width:200px; height:36px; color:dimgray; font-size:16px; border-color:lightgray;background-color:white; border-radius:5px; display:block; margin-top:10px">
+    <option value="10">Top 10 results</option>
+    <option value="20">Top 20 results</option>
+    <option value="30">Top 30 results</option>
+    <option value="40">Top 40 results</option>
+    <option value="50">Top 50 results</option>
+  </select>
+
+  <button id="answer_button" type="submit" class="btn btn-success"  style="display:inline; margin-top:10px">Search</button>
+  <div id="result" style="display:inline; margin-left:14px; color:green"></div>
+
+  </form>
+
+<div style="margin-bottom:30px"></div>
+
+<strong>Answer not indicated</strong>
+
+  <form method="get" action="{% url 'appsearch:ltrsearchresultview' %}" class="">
+  {% csrf_token %}
+
+    <input id="input_id"
+           name="query_ltr1"
+           class="form-control"
+           style="width:100%;"
+           type="text"
+           placeholder="Enter a sentence"
+           required>
+
+  <select name="top" style="padding-left:10px; width:200px; height:36px; color:dimgray; font-size:16px; border-color:lightgray;background-color:white; border-radius:5px; display:block; margin-top:10px">
+    <option value="10">Top 10 results</option>
+    <option value="20">Top 20 results</option>
+    <option value="30">Top 30 results</option>
+    <option value="40">Top 40 results</option>
+    <option value="50">Top 50 results</option>
+  </select>
+
+  <button id="answer_button" type="submit" class="btn btn-success"  style="display:block; margin-top:10px">Search</button>
+  </form>
+
+</ul>
+
+<hr>
+<div id="discuss"></div>
+
+<h5><strong>Grammar topic as a query input</strong></h5>
+
+<p>In our <a href="{% url 'appsearch:dataview' %}">raw data</a>, we classify (and label) each data instance into one of five topics.
+But we do not use the topic as a model feature.
+These topic labels only serve to help determine the relevance of each document with respect to a query.
+A relevance label is required for each data instance in the dataset. The relevance label is generated (based on certain criteria) during the creation of the training and testing datasets, and is used in evaluating the model.
+For Model 1, the answer is not a query input and hence the topic is not known, and relevance for a query-document pair is judged based on syntactic similarity of the entire sentence.
+For Model 2, as the answer is a query input, the topic label is useful for determining relevance.
+</p>
+
+<p>
+Whether it is done by humans or by an intelligent system, grammar topic labelling is a non-trivial task requiring a thorough understanding of <a href="https://ronkow.com/search/data/#taxonomy">the taxonomy of English grammar</a>.
+Rather than attempting to label the data accurately with a precisely defined set of topics,
+it is less costly (and possibly more effective) to train a general model to learn to determine the topic by looking at the syntactic features of the query.
+</p>
+
+<p>We do not provide users with the option of entering the topic as a query input.
+In reality, most users would not be able to accurately specify the topic.
+Imagine a student Jenny coming across a new phrase "on behalf of" in a sentence "I attended the meeting on behalf of my boss."
+She wants to find more examples of sentences containing the preposition "on behalf of".
+But Jenny would not know that "on behalf of" is a preposition since she had not seen the phrase before.
+Our search features allows Jenny find similar sentences by entering the query "I attended the meeting (on behalf of) my boss."
+Using our <a href="https://www.ronkow.com/search/#answersearch">answer choice text search</a>, she could also query for "on behalf of" and learn that it is a preposition.</p>
+
+
+<script>
+var result = document.querySelector('#result');
+function check_input(element) {
+    s = document.getElementById('input_id').value
+    var depth = 0;
+    var left = 0;
+    var right = 0;
+    var left_i;
+    var right_i;
+
+    for(var i in s) {
+        if(s[i] == '(') {
+            left++;
+            left_i = i;
+        }
+        else if(s[i] == ')') {
+            right++;
+            right_i = i;
+        }
+    }
+    var len = s.length;
+
+    if (len == 0) {
+        result.innerText = '';
+        document.getElementById("answer_button").disabled = false;
+    }
+    else if(s[0]==' ' || s[len-1]==' ') {
+        result.innerText = 'Remove spaces at the start or end of the sentence';
+        document.getElementById("answer_button").disabled = true;
+    }
+    else if(left == 0 && right == 0) {
+        result.innerText = 'Indicate the answer using parentheses';
+        document.getElementById("answer_button").disabled = true;
+    }
+    else if(left == 0 || right == 0) {
+        result.innerText = 'Parentheses must be a pair';
+        document.getElementById("answer_button").disabled = true;
+    }
+    else if(left > 1 || right > 1) {
+        result.innerText = 'Only one pair of parentheses allowed';
+        document.getElementById("answer_button").disabled = true;
+    }
+    else if (right_i - left_i == 1) {
+        result.innerText = 'The answer cannot be blank';
+        document.getElementById("answer_button").disabled = true;
+    }
+    else if (right_i - left_i == len-1) {
+        result.innerText = 'The answer cannot be the entire sentence';
+        document.getElementById("answer_button").disabled = true;
+    }
+    else if (
+              (left_i==0 && right_i==len-2 && s[Number(right_i)+1]=='.') ||
+              (left_i==0 && right_i==len-2 && s[Number(right_i)+1]=='!') ||
+              (left_i==0 && right_i==len-2 && s[Number(right_i)+1]=='?')
+            ) {
+        result.innerText = 'The answer cannot be an entire sentence';
+        document.getElementById("answer_button").disabled = true;
+    }
+
+    else if( left == 1 &&
+             right == 1 &&
+             (right_i - left_i > 1) ) {
+        if (
+            (s[Number(left_i)-1]==' ' && s[Number(right_i)+1]==' ' && s[Number(left_i)+1]!=' ' && s[Number(right_i)-1]!=' ') ||
+            (s[Number(left_i)-1]==' ' && s[Number(right_i)+1]=='.') ||
+            (s[Number(left_i)-1]==' ' && s[Number(right_i)+1]=='?') ||
+            (s[Number(left_i)-1]==' ' && s[Number(right_i)+1]=='!') ||
+            (s[Number(left_i)-1]==' ' &&          right_i==len-1  && s[Number(left_i)+1]!=' ' && s[Number(right_i)-1]!=' ')   ||
+            (s[Number(right_i)+1]==' ' &&          left_i==0      && s[Number(left_i)+1]!=' ' && s[Number(right_i)-1]!=' ')
+           )  {
+            result.innerText = 'Parentheses valid';
+            document.getElementById("answer_button").disabled = false;
+        }
+        else if (
+                 (left_i==0      && s[Number(right_i)+1]!=' ') ||
+                 (right_i==len-1 && s[Number(left_i)-1]!=' ')  ||
+                 (left_i!=0      && s[Number(left_i)-1]!=' ')  ||
+                 (right_i!=len-1 && s[Number(right_i)+1]!=' ')
+                ) {
+            result.innerText = 'Parentheses must enclose a complete word or phrase';
+            document.getElementById("answer_button").disabled = true;
+        }
+        else {
+            result.innerText = 'Remove spaces between parentheses and enclosed word';
+            document.getElementById("answer_button").disabled = true;
+        }
+    }
+    else {
+        result.innerText = 'Invalid parentheses';
+        document.getElementById("answer_button").disabled = true;
+    }
+}
+</script>
+
+<div style="margin-bottom:80px"></div>
+
+{% endblock content %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Quizzes{% endblock title %}
+
+{% block content %}
+
+{% if context_quiz %}
+  <h1>{{context_topic.topic_name}}</h1>
+
+  <h5>Select a quiz.</h5>
+
+  <ul>
+  {% for q in context_quiz %}
+
+    <li><a href="{% url 'appquiz:quizsessionview' context_topic.id forloop.counter %}">Quiz {{ forloop.counter }}</a></li>
+
+  {% endfor %}
+  </ul>
+
+{% else %}
+    <h5>There are no quizzes for the topic {{context_topic.topic_name}}.</h5>
+
+{% endif %}
+
+{% endblock content %}

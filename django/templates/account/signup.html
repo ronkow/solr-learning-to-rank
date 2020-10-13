@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Sign up{% endblock title %}
+
+{% block content %}
+
+<h1>Sign up</h1>
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+<script type="text/javascript">
+    var recaptchaCallback = function(response_token) {
+      var form = document.getElementById("recaptcha-form");
+      form.submit();
+    };
+</script>
+
+<form method="post" action="{% url 'account_signup' %}" id="recaptcha-form">
+  {% csrf_token %}
+  {{ form|crispy }}
+
+  <button type="submit" data-sitekey="xxx" data-callback="recaptchaCallback" class="btn btn-success g-recaptcha">Sign up</button>
+</form>
+
+<div class="text-below-form">
+   <p>Already a member? <a href="{% url 'account_login' %}">Log in</a></p>
+</div>
+
+{% endblock content %}

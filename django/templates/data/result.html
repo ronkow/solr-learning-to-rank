@@ -1,0 +1,264 @@
+{% extends 'base.html' %}
+
+{% block title %}Results{% endblock title %}
+
+{% block mycss %}
+{% endblock %}
+
+{% block content %}
+
+<h1>Results</h1>
+
+<h5>We present the training and test results for our two models.</h5>
+
+<p>After all the hard work of creating your LTR datasets (for example, our Model 1 <a href="https://ronkow.com/files/data.txt">validation dataset</a>), it's time to train and test your models.
+Here is a sample command to run LambdaMART:</p>
+
+<pre>
+java -jar RankLib-2.14.jar
+-train ../yourpath/train_data.txt
+-validate ../yourpath/validate_data.txt
+-test ../yourpath/test_data.txt
+-ranker 6
+-metric2t NDCG@10
+-metric2T NDCG@10
+-save ../yourpath/model.txt
+</pre>
+
+<p>The algorithm outputs the model in a text file in XML format, for example: <a href="https://ronkow.com/files/model.txt">LTR Model 1</a>.</p>
+
+<p>In the training and validation results displayed here, only the first and final iterations and the iteration with the best validation accuracy are shown.
+Over iterations, the training and validation accuracies typically increase in tandem up to a certain point. Then as the training accuracy continues to increase, the validation accuracy starts to plateau or decrease,
+a sign of overfitting.
+The algorithm selects the model with the best validation accuracy.
+</p>
+
+<p>
+Also note that we cannot compare the results between Model 1 and Model 2
+because the query inputs are different and the <a href="https://ronkow.com/model/#relevance">relevance</a> of each document to the query are judged using different criteria, which affects the <a href="https://en.wikipedia.org/wiki/Discounted_cumulative_gain">NDCG@10</a> calculations.</p>
+
+<h4><strong>1. Model 1</strong></h4>
+
+<h5><strong>Baseline ranking model</strong></h5>
+
+<p>
+Model 1 uses the entire sentence with no indication of answer.
+The baseline model has only one feature: the BM25 score for the entire sentence.</p>
+
+<pre>
+Discard orig. features
+Training data:	../data/model1/solr_train_baseline.txt
+Test data:	../data/model1/solr_test_baseline.txt
+Validation data:	../data/model1/solr_validate_baseline.txt
+Feature vector representation: Dense.
+Ranking method:	LambdaMART
+Feature description file:	Unspecified. All features will be used.
+Train metric:	NDCG@10
+Test metric:	NDCG@10
+Feature normalization: No
+Model file: ../model/solr_lambdamart_baseline_model1.txt
+
+[+] LambdaMART's Parameters:
+No. of trees: 1000
+No. of leaves: 10
+No. of threshold candidates: 256
+Min leaf support: 1
+Learning rate: 0.1
+Stop early: 100 rounds without performance gain on validation data
+
+Reading feature file [../data/model1/solr_train_baseline.txt]... [Done.]
+(110 ranked lists, 5500 entries read)
+Reading feature file [../data/model1/solr_validate_baseline.txt]... [Done.]
+(20 ranked lists, 1000 entries read)
+Reading feature file [../data/model1/solr_test_baseline.txt]... [Done.]
+(22 ranked lists, 1100 entries read)
+Initializing... [Done]
+---------------------------------
+Training starts...
+---------------------------------
+#iter   | NDCG@10-T | NDCG@10-V |
+---------------------------------
+1       | 0.6481    | 0.6799    |
+...
+169     | 0.6929    | 0.7066    |
+...
+270     | 0.691     | 0.6774    |
+---------------------------------
+Finished sucessfully.
+NDCG@10 on training data: 0.6929
+NDCG@10 on validation data: 0.7066
+---------------------------------
+NDCG@10 on test data: 0.6586
+
+Model saved to: ../model/solr_lambdamart_baseline_model1.txt
+
+</pre>
+
+<hr>
+
+<h5><strong>Learning-to-rank model</strong></h5>
+
+<p>The LTR model for Model 1 has <a href="https://ronkow.com/model/#feature-value">five features</a>.</p>
+
+<pre>
+Discard orig. features
+Training data:	../data/model1/solr_train.txt
+Test data:	../data/model1/solr_test.txt
+Validation data:	../data/model1/solr_validate.txt
+Feature vector representation: Dense.
+Ranking method:	LambdaMART
+Feature description file:	Unspecified. All features will be used.
+Train metric:	NDCG@10
+Test metric:	NDCG@10
+Feature normalization: No
+Model file: ../model/solr_lambdamart_model1.txt
+
+[+] LambdaMART's Parameters:
+No. of trees: 1000
+No. of leaves: 10
+No. of threshold candidates: 256
+Min leaf support: 1
+Learning rate: 0.1
+Stop early: 100 rounds without performance gain on validation data
+
+Reading feature file [../data/model1/solr_train.txt]... [Done.]
+(110 ranked lists, 5500 entries read)
+Reading feature file [../data/model1/solr_validate.txt]... [Done.]
+(20 ranked lists, 1000 entries read)
+Reading feature file [../data/model1/solr_test.txt]... [Done.]
+(22 ranked lists, 1100 entries read)
+Initializing... [Done]
+---------------------------------
+Training starts...
+---------------------------------
+#iter   | NDCG@10-T | NDCG@10-V |
+---------------------------------
+1       | 0.9882    | 0.9765    |
+...
+11      | 0.9994    | 0.9968    |
+...
+112     | 1.0       | 0.9968    |
+---------------------------------
+Finished sucessfully.
+NDCG@10 on training data: 0.9994
+NDCG@10 on validation data: 0.9968
+---------------------------------
+NDCG@10 on test data: 1.0
+
+Model saved to: ../model/solr_lambdamart_model1.txt
+</pre>
+
+<hr>
+
+<h4><strong>2. Model 2</strong></h4>
+<h5><strong>Baseline ranking model</strong></h5>
+
+<p>
+Model 2 uses a substring of the entire sentence, constructed by concatenating four words before the answer, the answer itself, and four words after the answer.
+The baseline model has only one feature: BM25 score for the substring.</p>
+
+<pre>
+Discard orig. features
+Training data:	../data/model2/solr_train_baseline.txt
+Test data:	../data/model2/solr_test_baseline.txt
+Validation data:	../data/model2/solr_validate_baseline.txt
+Feature vector representation: Dense.
+Ranking method:	LambdaMART
+Feature description file:	Unspecified. All features will be used.
+Train metric:	NDCG@10
+Test metric:	NDCG@10
+Feature normalization: No
+Model file: ../model/solr_lambdamart_baseline_model2.txt
+
+[+] LambdaMART's Parameters:
+No. of trees: 1000
+No. of leaves: 10
+No. of threshold candidates: 256
+Min leaf support: 1
+Learning rate: 0.1
+Stop early: 100 rounds without performance gain on validation data
+
+Reading feature file [../data/model2/solr_train_baseline.txt]... [Done.]
+(110 ranked lists, 5500 entries read)
+Reading feature file [../data/model2/solr_validate_baseline.txt]... [Done.]
+(20 ranked lists, 1000 entries read)
+Reading feature file [../data/model2/solr_test_baseline.txt]... [Done.]
+(22 ranked lists, 1100 entries read)
+Initializing... [Done]
+---------------------------------
+Training starts...
+---------------------------------
+#iter   | NDCG@10-T | NDCG@10-V |
+---------------------------------
+1       | 0.5249    | 0.5251    |
+...
+2       | 0.5261    | 0.534     |
+...
+103     | 0.5567    | 0.4668    |
+---------------------------------
+Finished sucessfully.
+NDCG@10 on training data: 0.5261
+NDCG@10 on validation data: 0.534
+---------------------------------
+NDCG@10 on test data: 0.5033
+
+Model saved to: ../model/solr_lambdamart_baseline_model2.txt
+</pre>
+
+<hr>
+
+<h5><strong>Learning-to-rank model</strong></h5>
+
+<p>The LTR model for Model 2 has <a href="https://ronkow.com/model/#feature-value">28 features</a>.</p>
+
+<pre>
+Discard orig. features
+Training data:	../data/model2/solr_train.txt
+Test data:	../data/model2/solr_test.txt
+Validation data:	../data/model2/solr_validate.txt
+Feature vector representation: Dense.
+Ranking method:	LambdaMART
+Feature description file:	Unspecified. All features will be used.
+Train metric:	NDCG@10
+Test metric:	NDCG@10
+Feature normalization: No
+Model file: ../model/solr_lambdamart_model2.txt
+
+[+] LambdaMART's Parameters:
+No. of trees: 1000
+No. of leaves: 10
+No. of threshold candidates: 256
+Min leaf support: 1
+Learning rate: 0.1
+Stop early: 100 rounds without performance gain on validation data
+
+Reading feature file [../data/model2/solr_train.txt]... [Done.]
+(110 ranked lists, 5500 entries read)
+Reading feature file [../data/model2/solr_validate.txt]... [Done.]
+(20 ranked lists, 1000 entries read)
+Reading feature file [../data/model2/solr_test.txt]... [Done.]
+(22 ranked lists, 1100 entries read)
+Initializing... [Done]
+---------------------------------
+Training starts...
+---------------------------------
+#iter   | NDCG@10-T | NDCG@10-V |
+---------------------------------
+1       | 0.8289    | 0.8267    |
+...
+61      | 0.9311    | 0.9744    |
+...
+162     | 0.9356    | 0.9696    |
+---------------------------------
+Finished sucessfully.
+NDCG@10 on training data: 0.9311
+NDCG@10 on validation data: 0.9744
+---------------------------------
+NDCG@10 on test data: 0.9079
+
+Model saved to: ../model/solr_lambdamart_model2.txt
+</pre>
+
+<div style="margin-bottom:80px"></div>
+
+{% endblock content %}

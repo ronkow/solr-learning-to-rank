@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{# {% load i18n %} #}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+
+<h1>Welcome to the Grammar Quiz Website</h1>
+
+  <p><a href="{% url 'appquiz:topicview' %}">Start doing a grammar quiz</a>.</p>
+
+  <p>What is this project <a href="{% url 'apppage:aboutview' %}">about</a>?</p>
+
+{% if user.is_authenticated %}
+
+{% else %}
+  <p><a href="{% url 'account_login' %}">Log in</a> or <a href="{% url 'account_signup' %}">sign up</a> for an account.</p>
+  
+  <br>
+  
+  <p>There are many multiple-choice grammar questions here for practice. If wrong answers are submitted, correct answers are displayed <strong>only for logged in users</strong>. 
+  Users can access all other features without logging in.</p>
+  
+  <p>You can sign up for an account using any dummy email address as your login id. 
+  However password resets (if you forget your password) can only be done if you sign up using a valid email address, because password reset is processed via a link sent to your account email address.</p>
+  
+{% endif %}
+
+{% endblock content %}

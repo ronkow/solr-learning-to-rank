@@ -1,0 +1,201 @@
+ul{
+  margin-left:5px;
+  padding: 0;
+}
+
+h1 {
+  color: crimson;
+  font-family: "Arial";
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+h4, h5 {
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.asteriskField {
+    display: none;
+}
+
+.container-page-intro p {
+    margin-bottom:14px;
+}
+
+.container-page-intro {
+    margin-bottom:30px;
+}
+
+.text-block {
+ margin-bottom: 30px;
+}
+
+.text-below-form {
+  margin-top: 16px;
+}
+
+/* set width of dropdown box to fit text exactly */
+.dropdown-menu {
+  min-width:inherit;
+}
+
+/* to make button in form look like a text link */
+.button-logout {
+  background: none!important;
+  padding: 0!important;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: dodgerblue;
+}
+
+#dropdown-account,
+#header-home-link,
+#nav .header-account-link,
+.dropdown-link {
+  font-size: 18px;
+  color: dodgerblue;
+}
+
+#nav .header-page-link {
+  font-size: 18px;
+  color: dimgray;
+}
+
+#nav .header-search-text {
+  font-size: 16px;
+  color: gray;
+}
+
+#header-home-link:hover,
+#nav .header-page-link:hover,
+#nav .header-account-link:hover {
+    color: black;
+}
+
+.dropdown-link:hover {
+    color: black;
+    background-color: white;
+}
+
+.container {
+  width:100%;
+}
+
+.pos-table td {
+  vertical-align: middle;
+}
+
+.pos {
+  margin-right:0px;
+  padding-bottom:90px;
+  color:dimgray
+}
+
+.pos-tag {
+  font-family:monospace;
+  font-size:14px;
+  color:#006400;
+}
+
+.pronoun-table td {
+  height: 54px;
+}
+
+.pverb-table td, .prep-table td {
+  height: 40px;
+  line-height:17px;
+  border:0px;
+}
+
+.conj-table td {
+  height: 40px;
+  line-height:17px;
+  border:0px;
+}
+
+.pronoun-table-column, .preposition-table-column, .pverb-table-column {
+  margin-right:22px;
+  color:#006400;  /* darkgreen */
+}
+
+.tense-table-first-column {
+  margin-left:4px;
+  margin-right:4px;
+  color:darkblue;
+}
+
+.answer {
+  color:#404040;
+  font-weight:bold;
+}
+
+.list-indent {
+  margin-left:30px;
+}
+
+.example {
+  color:dimgray;
+}
+
+.sentences {
+  margin-bottom:30px;
+  color:dimgray;
+}
+
+.sentences p {
+  line-height:11px;
+}
+
+.formula p {
+  line-height:2px;
+}
+
+.formula {
+  margin-left:30px;
+  margin-bottom:20px;
+}
+
+pre {
+  color:#006400
+}
+
+.block{
+  display:block;
+}
+
+.table-first-column {
+  color:darkblue;
+  margin-left:4px;
+  margin-right:4px;
+}
+
+table {
+  margin-bottom:30px;
+  border-collapse: collapse;
+}
+
+table, td, th {
+  border: 0.5px solid lightgrey;
+  padding: 4px;
+}
+
+th {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.td-number {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.bullet {
+  font-size:24px;
+  margin-right:30px;
+}

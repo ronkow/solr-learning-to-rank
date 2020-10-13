@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load quiz_tag %}
+
+{% block title %}Search{% endblock title %}
+
+{% block content %}
+
+<h1>Search results</h1>
+
+{% if context_solr_down %}
+  <p>We are so sorry the Solr server is down. Please try again later.</p>
+{% else %}
+
+  {% if context_search_by_question %}
+     <p>Query: <strong>{{context_query_text}}</strong> (to match question text)</p>
+
+  {% elif context_search_by_choice %}
+     <p>Query: <strong>{{context_query_text}}</strong> (to match answer choice text)</p>
+
+  {% elif context_search_by_all %}
+     <p>Any term in your query: <strong>{{context_query_text}}</strong> (to match question text, answer choice text or topic names)</p>
+
+  {% endif %}
+
+  {% if context_no_result %}
+   <p>No questions match your query.</p>
+
+  {% else %}
+
+    {% if context_single_result %}
+      <p>1 question match your query.
+
+    {% else %}
+      <p>{{context_result_count}} questions match your query.
+
+      {% if context_search_by_all %}
+        Top {{context_top}} results:</p>
+      {% else %}
+         All results (unranked):</p>
+      {% endif %}
+
+    {% endif %}
+
+    {% if context_search_by_topic or context_search_by_question or context_search_by_choice %}
+    <ol>
+      {% for r in context_result %}
+           <li><a href="{% url 'appsearch:qbsessionview' r.id %}">{{ r.qb_question | blankspace }}</a> ({{r.qb_topic}})</li>
+      {% endfor %}
+    </ol>
+    {% else %}    
+    <ol>
+      {% with x=context_top|stringformat:"s" %}
+      {% with y=":"|add:x %}
+
+      {% for r in context_result|slice:y %}
+          {% with q=r.object %}
+           <li><a href="{% url 'appsearch:qbsessionview' q.id %}">{{ q.qb_question | blankspace }}</a> ({{q.qb_topic}})</li>
+          {% endwith %}
+      {% endfor %}
+
+      {% endwith %}
+      {% endwith %}
+   </ol>
+    {% endif %}
+
+  {% endif %}
+{% endif %}
+
+<div style="margin-bottom:80px"></div>
+
+{% endblock content %}

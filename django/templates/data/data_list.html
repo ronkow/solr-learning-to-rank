@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load quiz_tag %}
+
+{% block title %}Search{% endblock title %}
+
+{% block content %}
+
+<h1>Data</h1>
+
+{% if context_no_result %}
+   <p>No questions for <strong>{{context_topic}}</strong>.</p>
+
+{% else %}
+   {% if context_single_result %}
+      <p>1 question for <strong>{{context_topic}}</strong>.
+
+   {% else %}
+      <p>{{context_result_count}} questions for <strong>{{context_topic}}</strong>. Answers are displayed in <span style="color:green;">green</span>.
+
+   {% endif %}
+
+    <ol>
+      {% for r in context_result %}
+           <li><a href="{% url 'appsearch:qbsessionview' r.id %}">{{ r.qb_question | blankspace }}</a> <span style="color:green;">({{r.qb_answer}})</span></li>
+      {% endfor %}
+    </ol>
+
+{% endif %}
+
+<div style="margin-bottom:80px"></div>
+
+{% endblock content %}

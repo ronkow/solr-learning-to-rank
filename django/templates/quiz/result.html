@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load quiz_tag %}
+
+{% block title %}Results{% endblock title %}
+
+{% block content %}
+
+    <h1>{{ context_topic.topic_name }} Quiz {{ context_quiz_number }}</h1>
+
+    <h4 style="text-align:center">Your score: <b>{{ context_result }}%</b></h4>
+
+    <div style="display: block; text-align: center; margin-top:20px">
+      <a href="{% url 'appquiz:quizsessionview' context_topic.id context_quiz_number %}">Do this quiz again</a>
+      <br>
+      <a href="{% url 'appquiz:quizlistview' context_topic.id %}">Select another {{ context_topic.topic_name }} quiz</a>
+    </div>
+
+    <hr>
+
+    <div class="">
+        {# key = quiz_id, value = q1.id, q2.id, ... #}
+
+        {% for key, value in context_dict_quiz %}
+
+            <p style="text-align:left"><strong>Question {{ forloop.counter }}:</strong> {{ value.user.question_text | blankspace }}</p>
+
+      <table class="table table-bordered">
+            <tbody>
+
+                {# k = c1, c2, ... v = True, False #}
+
+                {% for k, v in value.user.question_choices.items %}
+                 <tr>
+                 <td class='p-0'>
+
+                   {# v TRUE:RIGHT ANS, SELECTED #}
+                   {% if v and k in value.user.user_answer_selected %}
+                     <p class="m-1 p-2" style="background-color:lightgreen;">{{ k }}
+                     <span style="margin-left:20px;font-size:20px;font-weight:bold">&#10003;</span>
+                     </p>
+
+                   {# v TRUE:RIGHT ANS, NOT SELECTED #}
+                   {% elif v and k not in value.user.user_answer_selected %}
+
+                     {% if user.is_authenticated %}
+                       <p class="m-1 p-2" style="background-color: lightgreen">{{ k }}
+                       <span style="margin-left:20px;font-size:20px;font-weight:bold">&#10003;</span>
+                       </p>
+                     {% else %}
+                       <p class="m-1 p-2" style="background-color: white">{{ k }}</p>
+                     {% endif %}
+
+                   {# v FALSE:WRONG ANS, SELECTED #}
+                   {% elif not v and k in value.user.user_answer_selected %}
+                     <p class="m-1 p-2" style="background-color: lightpink">{{ k }}
+                     <span style="margin-left:20px;font-size:18px;font-weight:bold">&#10007;</span>
+                     </p>
+
+                   {% else %}
+                      <p class="m-1 p-2" style="background-color:white">{{ k }}</p>
+
+                   {% endif %}
+                 </td>
+                 </tr>
+               {% endfor %}
+
+           </tbody>
+       </table>
+       <hr>
+        {% endfor %}
+    </div>
+
+
+{% endblock %}

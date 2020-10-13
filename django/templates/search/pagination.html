@@ -1,0 +1,15 @@
+<div style="display:block;text-align:center;">
+    
+    {% if context_page.has_previous %}
+      <a href="?page={{ context_page.previous_page_number }}">Previous</a>   {# must be ?page=... #}
+    {% endif %}
+    
+    <span class="">
+      Page {{ context_page.number }} of {{ context_page.paginator.num_pages }}
+    </span>
+    
+    {% if context_page.has_next %}
+      <a href="?page={{ context_page.next_page_number }}">Next</a>
+    {% endif %}
+    
+</div>

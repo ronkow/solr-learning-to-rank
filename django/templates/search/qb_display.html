@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load quiz_tag %}
+
+{% block title %}Question{% endblock title %}
+
+{% block content %}
+
+<h1>{{context_topic.topic_name}}</h1>
+
+<h5>Choose the best answer.</h5>
+<br>
+  <p><strong>Question: </strong>{{ context_question.qb_question | blankspace }}</p>
+
+    <form action="" method="POST">
+    {% csrf_token %}
+
+    <table class="table table-hover table-bordered">
+    <tbody>
+      {% for c in context_list_choices %}
+        <tr>
+        <td class='p-0'>
+        <label class="form-check-label m-1 p-2" style="width:100%; height:100%">
+
+        <input type="radio"
+               name="{{ context_question.id }}"
+               value="{{ c }}"
+               required>
+        <span style="margin-left:10px; display:inline">{{ c }}</span>
+        </label>
+        </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+    </table>
+
+    <input class="btn btn-outline-primary btn-lg"
+           type="submit"
+           name=""
+           value="Submit">
+  </form>
+
+{% endblock %}
