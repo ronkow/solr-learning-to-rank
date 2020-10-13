@@ -1,4 +1,4 @@
-java -jar RankLib-2.14.jar -train ../data/training/model1_train.txt -test ../data/training/model1_test.txt -validate ../data/training/model1_validate.txt -ranker 6 -metric2t NDCG@10 -metric2T NDCG@10 -save ../model/final/model1.txt
+java -jar RankLib-2.14.jar -train ../data/final/model1_train.txt -test ../data/final/model1_test.txt -validate ../data/final/model1_validate.txt -ranker 6 -metric2t NDCG@10 -metric2T NDCG@10 -save ../model/final/model1.txt
 
 Discard orig. features
 Training data:	../data/training/model1_train.txt
