@@ -34,7 +34,7 @@ AUTH_USER_MODEL = 'appusers.CustomUser'
 HAYSTACK_CONNECTIONS = {
     'default': {
         'ENGINE': 'haystack.backends.solr_backend.SolrEngine',
-        'URL': 'http://my_userid:my_password@my_host:my_portnumber/solr/my_core',
+        'URL': 'http://my_userid:my_password@my_server:my_portnumber/solr/my_core',
     },
 }
 
