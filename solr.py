@@ -373,6 +373,82 @@ def model_store2():
     return ms2
 
 
+# model store with no qb_topic_id
+
+def model_store2_final():
+    ms2 = {
+        "store" : "feature_store2",
+        "name" : "linear_model2",
+        "class" : "org.apache.solr.ltr.model.LinearModel",
+        "features" : [
+            { "name": "ss_original_score" },
+            { "name": "ss_pos" },  
+            { "name": "ss_pos_bigram" },
+            { "name": "ss_pos_trigram" },
+            { "name": "ss_parse_tree" },
+            
+            { "name": "before" },  
+            { "name": "before_last" },  
+            { "name": "before_last_pos" },
+            { "name": "before_pos" },  
+            { "name": "before_pos_bigram" },  
+            { "name": "before_pos_trigram" },
+            { "name": "before_parse_tree" },  
+            
+            { "name": "after" },  
+            { "name": "after_first" },  
+            { "name": "after_first_pos" },
+            { "name": "after_pos" },  
+            { "name": "after_pos_bigram" },  
+            { "name": "after_pos_trigram" },
+            { "name": "after_parse_tree" },  
+            { "name": "ans" },
+    
+            { "name": "ans_first" },
+            { "name": "ans_last" },
+            { "name": "ans_pos" },
+            { "name": "ans_first_pos" },
+            { "name": "ans_last_pos" },         
+            { "name": "ans_is_first" },   
+            { "name": "ans_is_last" }, 
+            { "name": "ans_length" },
+        ],
+        "params" : {
+            "weights" : {
+                "ss_original_score": 1.0,
+                "ss_pos": 0.0,
+                "ss_pos_bigram": 0.0,
+                "ss_pos_trigram": 0.0,
+                "ss_parse_tree": 0.0,
+                "before": 0.0,
+                "before_last": 0.0,
+                "before_last_pos": 0.0,
+                "before_pos": 0.0,
+                "before_pos_bigram": 0.0,
+                "before_pos_trigram": 0.0,
+                "before_parse_tree": 0.0,
+                "after": 0.0,
+                "after_first": 0.0,
+                "after_first_pos": 0.0,
+                "after_pos": 0.0,
+                "after_pos_bigram": 0.0,
+                "after_pos_trigram": 0.0,
+                "after_parse_tree": 0.0,
+                "ans": 0.0,
+                "ans_first": 0.0,
+                "ans_last": 0.0,
+                "ans_pos": 0.0,
+                "ans_first_pos": 0.0,
+                "ans_last_pos": 0.0,
+                "ans_is_first": 0.0,
+                "ans_is_last": 0.0,
+                "ans_length": 0.0,
+            }
+        }
+    }
+    return ms2
+
+
 def feature_list(model):
     
     FEATURE_LIST_ONE = [
@@ -413,9 +489,18 @@ def feature_list(model):
         "ans_is_last",    
         "ans_length",    
         "qb_topic_id",   # Only for data prep. Remove qb_topic_id for training.
-    ]
+    ]    
     
+    FEATURE_LIST_ONE_BASELINE = ["qa_original_score"]
+    
+    FEATURE_LIST_TWO_BASELINE = ["ss_original_score"]
+  
+
     if model==1:
         return FEATURE_LIST_ONE
     elif model==2:
         return FEATURE_LIST_TWO
+    elif model==3:
+        return FEATURE_LIST_ONE_BASELINE
+    elif model==4:
+        return FEATURE_LIST_TWO_BASELINE
