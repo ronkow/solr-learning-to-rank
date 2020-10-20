@@ -1,6 +1,0 @@
-{{ object.qb_topic }}
-{{ object.qb_text }}
-{{ object.qb_answer }}
-{{ object.qb_choice1 }}
-{{ object.qb_choice2 }}
-{{ object.qb_choice3 }}
