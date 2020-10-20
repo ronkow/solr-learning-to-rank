@@ -29,9 +29,9 @@ Params:
 	                       Supported: 
 	                       NDCG@k
 	                       DCG@k 
-	                       MAP Mean Average Precision
-	                       ERR@k (default=ERR@10) Expected Reciprocal Rank
-	                       P@k 
+	                       MAP 
+	                       ERR@k (default=ERR@10) 
+			       P@k 
 	                       RR@k 
 
 	[ -metric2T <metric> ]	Metric to evaluate on the test data (default to the same as specified for -metric2t)
@@ -40,22 +40,14 @@ Params:
 
 	[ -silent ]		Do not print progress messages (which are printed by default)
 
-
-
-
 	[ -feature <file> ]	Feature description file: list features to be considered by the learner, each on a separate line
 				If not specified, all features will be used.
 
-
-
 	[ -qrel <file> ]	TREC-style relevance judgment file. It only affects MAP and NDCG (default=unspecified)
-
 
 	[ -missingZero ]	Substitute zero for missing feature values rather than throwing an exception.
 
-
 	[ -tvs <x \in [0..1]> ]	If you don't have separate validation data, use this to set train-validation split to be (x)(1.0-x)
-
 
 	[ -tts <x \in [0..1]> ]	Set train-test split to be (x)(1.0-x). -tts will override -tvs
 
@@ -80,7 +72,6 @@ Params:
 	[ -mls <n> ]		Min leaf support -- minimum % of docs each leaf has to contain (default=1)
 	[ -estop <e> ]		Stop early when no improvement is observed on validaton data in e consecutive rounds (default=100)
 
-
     [-] RankNet-specific parameters
 	[ -epoch <T> ]		The number of epochs to train (default=100)
 	[ -layer <layer> ]	The number of hidden layers (default=1)
@@ -102,7 +93,6 @@ Params:
 	[ -i <iteration> ]	The number of iterations to search in each dimension (default=25)
 	[ -tolerance <t> ]	Performance tolerance between two solutions (default=0.001)
 	[ -reg <slack> ]	Regularization parameter (default=no-regularization)
-
 
     [-] ListNet-specific parameters
 	[ -epoch <T> ]		The number of epochs to train (default=1500)
@@ -136,9 +126,7 @@ Params:
 	[ -norm ]		Normalize feature vectors (similar to -norm for training/tuning)
 
 
-
 EXAMPLE
-
 java -jar bin/RankLib.jar 
 -train MQ2008/Fold1/train.txt 
 -test MQ2008/Fold1/test.txt 
@@ -150,36 +138,25 @@ java -jar bin/RankLib.jar
 
 
 VALIDATION DATASET
-
 The parameter -validate is optional but it often leads to better models. 
 In particular, -validate is very important for RankNet/MART/LambdaMART. 
 
 
 TRAINING METRIC
-
 Important Note: 
--metric2t only applies to listwise algorithms 1, 2, 3:
+-metric2t only applies to the following listwise algorithms: 
 1. AdaRank 
 2. Coordinate Ascent  
 3. LambdaMART 
-4. ListNet  
 
-ListNet is a special case. 
+4. ListNet is a special case. 
 Despite being a listwise algorithm, it has its own optimization criteria. 
 Therefore, -metric2t also has no effect on ListNet.
 
-Pointwise and pairwise algorithms: 
+Pointwise/pairwise algorithms: 
 1. MART
 2. RankNet 
 3. RankBoost
 4. Random Forests
-
-always use their internal RMSE / pair-wise loss as the optimization criteria. 
-Thus, -metric2t has no effects on them. 
-
-
-EVALUATION METRICS
-
-MAP Mean Average Precision - good for binary relevance
-ERR@k Expected Reciprocal Rank - 
-
+always use their internal RMSE/pairwise loss as the optimization criteria. 
+Thus, -metric2t has no effect on them. 
