@@ -1,0 +1,162 @@
+java -jar RankLib-2.14.jar -train ../data/final/model1_train.txt -test ../data/final/model1_test.txt -validate ../data/final/model1_validate.txt -ranker 6 -metric2t NDCG@1 -silent -gmax 1
+
+
+
+Discard orig. features
+Training data:	../data/final/model1_train.txt
+Test data:	../data/final/model1_test.txt
+Validation data:	../data/final/model1_validate.txt
+Feature vector representation: Dense.
+Ranking method:	LambdaMART
+Feature description file:	Unspecified. All features will be used.
+Train metric:	NDCG@1
+Test metric:	NDCG@1
+Feature normalization: No
+
+[+] LambdaMART's Parameters:
+
+Reading feature file [../data/final/model1_train.txt]... [Done.]            
+(152 ranked lists, 7600 entries read)
+Reading feature file [../data/final/model1_validate.txt]... [Done.]            
+(75 ranked lists, 3750 entries read)
+Reading feature file [../data/final/model1_test.txt]... [Done.]            
+(77 ranked lists, 3850 entries read)
+NDCG@1 on test data: 0.8701
+
+
+
+Discard orig. features
+Training data:	../data/final/model1_train.txt
+Test data:	../data/final/model1_test.txt
+Validation data:	../data/final/model1_validate.txt
+Feature vector representation: Dense.
+Ranking method:	LambdaMART
+Feature description file:	Unspecified. All features will be used.
+Train metric:	NDCG@3
+Test metric:	NDCG@3
+Feature normalization: No
+
+[+] LambdaMART's Parameters:
+
+Reading feature file [../data/final/model1_train.txt]... [Done.]            
+(152 ranked lists, 7600 entries read)
+Reading feature file [../data/final/model1_validate.txt]... [Done.]            
+(75 ranked lists, 3750 entries read)
+Reading feature file [../data/final/model1_test.txt]... [Done.]            
+(77 ranked lists, 3850 entries read)
+NDCG@3 on test data: 0.9091
+
+
+
+Discard orig. features
+Training data:	../data/final/model1_train.txt
+Test data:	../data/final/model1_test.txt
+Validation data:	../data/final/model1_validate.txt
+Feature vector representation: Dense.
+Ranking method:	LambdaMART
+Feature description file:	Unspecified. All features will be used.
+Train metric:	NDCG@5
+Test metric:	NDCG@5
+Feature normalization: No
+
+[+] LambdaMART's Parameters:
+
+Reading feature file [../data/final/model1_train.txt]... [Done.]            
+(152 ranked lists, 7600 entries read)
+Reading feature file [../data/final/model1_validate.txt]... [Done.]            
+(75 ranked lists, 3750 entries read)
+Reading feature file [../data/final/model1_test.txt]... [Done.]            
+(77 ranked lists, 3850 entries read)
+NDCG@5 on test data: 0.9063
+
+
+
+Discard orig. features
+Training data:	../data/final/model1_train.txt
+Test data:	../data/final/model1_test.txt
+Validation data:	../data/final/model1_validate.txt
+Feature vector representation: Dense.
+Ranking method:	LambdaMART
+Feature description file:	Unspecified. All features will be used.
+Train metric:	NDCG@10
+Test metric:	NDCG@10
+Feature normalization: No
+
+[+] LambdaMART's Parameters:
+
+Reading feature file [../data/final/model1_train.txt]... [Done.]            
+(152 ranked lists, 7600 entries read)
+Reading feature file [../data/final/model1_validate.txt]... [Done.]            
+(75 ranked lists, 3750 entries read)
+Reading feature file [../data/final/model1_test.txt]... [Done.]            
+(77 ranked lists, 3850 entries read)
+NDCG@10 on test data: 0.9091
+
+
+
+Discard orig. features
+Training data:	../data/final/model1_train.txt
+Test data:	../data/final/model1_test.txt
+Validation data:	../data/final/model1_validate.txt
+Feature vector representation: Dense.
+Ranking method:	LambdaMART
+Feature description file:	Unspecified. All features will be used.
+Train metric:	NDCG@15
+Test metric:	NDCG@15
+Feature normalization: No
+
+[+] LambdaMART's Parameters:
+
+Reading feature file [../data/final/model1_train.txt]... [Done.]            
+(152 ranked lists, 7600 entries read)
+Reading feature file [../data/final/model1_validate.txt]... [Done.]            
+(75 ranked lists, 3750 entries read)
+Reading feature file [../data/final/model1_test.txt]... [Done.]            
+(77 ranked lists, 3850 entries read)
+NDCG@15 on test data: 0.9063
+
+
+
+Discard orig. features
+Training data:	../data/final/model1_train.txt
+Test data:	../data/final/model1_test.txt
+Validation data:	../data/final/model1_validate.txt
+Feature vector representation: Dense.
+Ranking method:	LambdaMART
+Feature description file:	Unspecified. All features will be used.
+Train metric:	NDCG@20
+Test metric:	NDCG@20
+Feature normalization: No
+
+[+] LambdaMART's Parameters:
+
+Reading feature file [../data/final/model1_train.txt]... [Done.]            
+(152 ranked lists, 7600 entries read)
+Reading feature file [../data/final/model1_validate.txt]... [Done.]            
+(75 ranked lists, 3750 entries read)
+Reading feature file [../data/final/model1_test.txt]... [Done.]            
+(77 ranked lists, 3850 entries read)
+NDCG@20 on test data: 0.909
+
+
+
+Discard orig. features
+Training data:	../data/final/model1_train.txt
+Test data:	../data/final/model1_test.txt
+Validation data:	../data/final/model1_validate.txt
+Feature vector representation: Dense.
+Ranking method:	LambdaMART
+Feature description file:	Unspecified. All features will be used.
+Train metric:	NDCG@30
+Test metric:	NDCG@30
+Feature normalization: No
+
+[+] LambdaMART's Parameters:
+
+Reading feature file [../data/final/model1_train.txt]... [Done.]            
+(152 ranked lists, 7600 entries read)
+Reading feature file [../data/final/model1_validate.txt]... [Done.]            
+(75 ranked lists, 3750 entries read)
+Reading feature file [../data/final/model1_test.txt]... [Done.]            
+(77 ranked lists, 3850 entries read)
+NDCG@30 on test data: 0.909

@@ -1,0 +1,24 @@
+java -jar RankLib-2.14.jar -train ../data/baseline/baseline_model1_train.txt -test ../data/baseline/baseline_model1_test.txt -validate ../data/baseline/baseline_model1_validate.txt 
+-ranker 6 -metric2t MAP -gmax 1 -silent
+
+Discard orig. features
+Training data:	../data/baseline/baseline_model1_train.txt
+Test data:	../data/baseline/baseline_model1_test.txt
+Validation data:	../data/baseline/baseline_model1_validate.txt
+Feature vector representation: Dense.
+Ranking method:	LambdaMART
+Feature description file:	Unspecified. All features will be used.
+Train metric:	MAP
+Test metric:	MAP
+Feature normalization: No
+
+[+] LambdaMART's Parameters:
+
+Reading feature file [../data/baseline/baseline_model1_train.txt]... [Done.]            
+(152 ranked lists, 7600 entries read)
+Reading feature file [../data/baseline/baseline_model1_validate.txt]... [Done.]            
+(75 ranked lists, 3750 entries read)
+Reading feature file [../data/baseline/baseline_model1_test.txt]... [Done.]            
+(77 ranked lists, 3850 entries read)
+MAP on test data: 0.391
+ronkow@monty:~/Documents/a/a_github/solr-learning-to-rank/ranklib$  

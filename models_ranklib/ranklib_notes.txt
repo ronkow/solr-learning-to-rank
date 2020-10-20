@@ -1,0 +1,185 @@
+PARAMETERS
+
+java -jar RankLib-2.14.jar
+
+Usage: java -jar RankLib.jar <Params>
+Params:
+  [+] Training (+ tuning and evaluation)
+	-train <file>		Training data
+
+	-ranker <type>		Specify which ranking algorithm to use
+				0: MART (gradient boosted regression tree)
+				1: RankNet
+				2: RankBoost
+				3: AdaRank
+				4: Coordinate Ascent
+				6: LambdaMART
+				7: ListNet
+				8: Random Forests
+				9: Linear regression (L2 regularization)
+
+	[ -validate <file> ]	Specify if you want to tune your system on the validation data (default=unspecified)
+				If specified, the final model will be the one that performs best on the validation data
+
+	[ -test <file> ]	Specify if you want to evaluate the trained model on this data (default=unspecified)
+
+	[ -save <model> ]	Save the model learned (default=not-save)
+
+	[ -metric2t <metric> ]	Metric to optimize on the training data.  
+	                       Supported: 
+	                       NDCG@k
+	                       DCG@k 
+	                       MAP Mean Average Precision
+	                       ERR@k (default=ERR@10) Expected Reciprocal Rank
+	                       P@k 
+	                       RR@k 
+
+	[ -metric2T <metric> ]	Metric to evaluate on the test data (default to the same as specified for -metric2t)
+
+	[ -gmax <label> ]	Highest judged relevance label. It affects the calculation of ERR (default=4, i.e. 5-point scale {0,1,2,3,4})
+
+	[ -silent ]		Do not print progress messages (which are printed by default)
+
+
+
+
+	[ -feature <file> ]	Feature description file: list features to be considered by the learner, each on a separate line
+				If not specified, all features will be used.
+
+
+
+	[ -qrel <file> ]	TREC-style relevance judgment file. It only affects MAP and NDCG (default=unspecified)
+
+
+	[ -missingZero ]	Substitute zero for missing feature values rather than throwing an exception.
+
+
+	[ -tvs <x \in [0..1]> ]	If you don't have separate validation data, use this to set train-validation split to be (x)(1.0-x)
+
+
+	[ -tts <x \in [0..1]> ]	Set train-test split to be (x)(1.0-x). -tts will override -tvs
+
+	[ -norm <method>]	Normalize all feature vectors (default=no-normalization). Method can be:
+				sum: normalize each feature by the sum of all its values
+				zscore: normalize each feature by its mean/standard deviation
+				linear: normalize each feature by its min/max values
+
+	[ -kcv <k> ]		Specify if you want to perform k-fold cross validation using the specified training data (default=NoCV)
+				-tvs can be used to further reserve a portion of the training data in each fold for validation
+
+	[ -kcvmd <dir> ]	Directory for models trained via cross-validation (default=not-save)
+
+	[ -kcvmn <model> ]	Name for model learned in each fold. It will be prefix-ed with the fold-number (default=empty)
+
+
+    [-] {MART, LambdaMART}-specific parameters
+	[ -tree <t> ]		Number of trees (default=1000)
+	[ -leaf <l> ]		Number of leaves for each tree (default=10)
+	[ -shrinkage <factor> ]	Shrinkage, or learning rate (default=0.1)
+	[ -tc <k> ]		Number of threshold candidates for tree spliting. -1 to use all feature values (default=256)
+	[ -mls <n> ]		Min leaf support -- minimum % of docs each leaf has to contain (default=1)
+	[ -estop <e> ]		Stop early when no improvement is observed on validaton data in e consecutive rounds (default=100)
+
+
+    [-] RankNet-specific parameters
+	[ -epoch <T> ]		The number of epochs to train (default=100)
+	[ -layer <layer> ]	The number of hidden layers (default=1)
+	[ -node <node> ]	The number of hidden nodes per layer (default=10)
+	[ -lr <rate> ]		Learning rate (default=0.00005)
+
+    [-] RankBoost-specific parameters
+	[ -round <T> ]		The number of rounds to train (default=300)
+	[ -tc <k> ]		Number of threshold candidates to search. -1 to use all feature values (default=10)
+
+    [-] AdaRank-specific parameters
+	[ -round <T> ]		The number of rounds to train (default=500)
+	[ -noeq ]		Train without enqueuing too-strong features (default=unspecified)
+	[ -tolerance <t> ]	Tolerance between two consecutive rounds of learning (default=0.002)
+	[ -max <times> ]	The maximum number of times a feature can be consecutively selected without changing performance (default=5)
+
+    [-] Coordinate Ascent-specific parameters
+	[ -r <k> ]		The number of random restarts (default=5)
+	[ -i <iteration> ]	The number of iterations to search in each dimension (default=25)
+	[ -tolerance <t> ]	Performance tolerance between two solutions (default=0.001)
+	[ -reg <slack> ]	Regularization parameter (default=no-regularization)
+
+
+    [-] ListNet-specific parameters
+	[ -epoch <T> ]		The number of epochs to train (default=1500)
+	[ -lr <rate> ]		Learning rate (default=0.00001)
+
+    [-] Random Forests-specific parameters
+	[ -bag <r> ]		Number of bags (default=300)
+	[ -srate <r> ]		Sub-sampling rate (default=1.0)
+	[ -frate <r> ]		Feature sampling rate (default=0.3)
+	[ -rtype <type> ]	Ranker to bag (default=0, i.e. MART)
+	[ -tree <t> ]		Number of trees in each bag (default=1)
+	[ -leaf <l> ]		Number of leaves for each tree (default=100)
+	[ -shrinkage <factor> ]	Shrinkage, or learning rate (default=0.1)
+	[ -tc <k> ]		Number of threshold candidates for tree spliting. -1 to use all feature values (default=256)
+	[ -mls <n> ]		Min leaf support -- minimum % of docs each leaf has to contain (default=1)
+
+    [-] Linear Regression-specific parameters
+	[ -L2 <reg> ]		L2 regularization parameter (default=1.0E-10)
+
+  [+] Testing previously saved models
+	-load <model>		The model to load
+				Multiple -load can be used to specify models from multiple folds (in increasing order),
+				  in which case the test/rank data will be partitioned accordingly.
+	-test <file>		Test data to evaluate the model(s) (specify either this or -rank but not both)
+	-rank <file>		Rank the samples in the specified file (specify either this or -test but not both)
+	[ -metric2T <metric> ]	Metric to evaluate on the test data (default=ERR@10)
+	[ -gmax <label> ]	Highest judged relevance label. It affects the calculation of ERR (default=4, i.e. 5-point scale {0,1,2,3,4})
+	[ -score <file>]	Store ranker's score for each object being ranked (has to be used with -rank)
+	[ -qrel <file> ]	TREC-style relevance judgment file. It only affects MAP and NDCG (default=unspecified)
+	[ -idv <file> ]		Save model performance (in test metric) on individual ranked lists (has to be used with -test)
+	[ -norm ]		Normalize feature vectors (similar to -norm for training/tuning)
+
+
+
+EXAMPLE
+
+java -jar bin/RankLib.jar 
+-train MQ2008/Fold1/train.txt 
+-test MQ2008/Fold1/test.txt 
+-validate MQ2008/Fold1/vali.txt 
+-ranker 6 
+-metric2t NDCG@10 
+-metric2T ERR@10 
+-save mymodel.txt
+
+
+VALIDATION DATASET
+
+The parameter -validate is optional but it often leads to better models. 
+In particular, -validate is very important for RankNet/MART/LambdaMART. 
+
+
+TRAINING METRIC
+
+Important Note: 
+-metric2t only applies to listwise algorithms 1, 2, 3:
+1. AdaRank 
+2. Coordinate Ascent  
+3. LambdaMART 
+4. ListNet  
+
+ListNet is a special case. 
+Despite being a listwise algorithm, it has its own optimization criteria. 
+Therefore, -metric2t also has no effect on ListNet.
+
+Pointwise and pairwise algorithms: 
+1. MART
+2. RankNet 
+3. RankBoost
+4. Random Forests
+
+always use their internal RMSE / pair-wise loss as the optimization criteria. 
+Thus, -metric2t has no effects on them. 
+
+
+EVALUATION METRICS
+
+MAP Mean Average Precision - good for binary relevance
+ERR@k Expected Reciprocal Rank - 
+
