@@ -4,13 +4,13 @@ Model File: /home/ronkow/Documents/a/a_github/solr-learning-to-rank/ranklib/../m
 Algorithm : LambdaMART
 
 Feature frequencies : 
-	Feature[1] :     415
-	Feature[2] :     394
-	Feature[3] :     180
-	Feature[4] :     118
-	Feature[5] :     297
-	Feature[6] :     147
-	Feature[9] :     329
+	Feature[1] :      415
+	Feature[2] :      394
+	Feature[3] :      180
+	Feature[4] :      118
+	Feature[5] :      297
+	Feature[6] :      147
+	Feature[9] :      329
 	Feature[10] :      33
 	Feature[11] :       8
 	Feature[12] :     411
@@ -67,14 +67,15 @@ STD              :      29.67
 -------------------------------------------
 MODEL 2
 
-Feature[1] :     415 ss_original_score
-Feature[2] :     394 ss_pos
-Feature[3] :     180 ss_pos_bigram
-Feature[4] :     118 ss_pos_trigram
-Feature[5] :     297 ss_parse_tree
+FEATURES USED 
+Feature[1] :      415 ss_original_score
+Feature[2] :      394 ss_pos
+Feature[3] :      180 ss_pos_bigram
+Feature[4] :      118 ss_pos_trigram
+Feature[5] :      297 ss_parse_tree
 
-Feature[6] :     147 before	
-Feature[9] :     329  before_pos 
+Feature[6] :      147 before	
+Feature[9] :      329 before_pos 
 Feature[10] :      33 before_pos_bigram
 Feature[11] :       8 before_pos_trigram
 Feature[12] :     411 before_parse_tree
@@ -96,8 +97,7 @@ Feature[25] :     158 ans_last_pos
 Feature[26] :      86 ans_is_first
 Feature[28] :     126 ans_length
 
-NOT USED	
+FEATURES NOT USED	
 Feature 7 before_last
 Feature 8 before_last_pos 
 Feature 27 ans_is_last	
-
