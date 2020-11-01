@@ -25,6 +25,9 @@ NDCG@1 on test data: 0.9654
 
 
 
+
+
+
 Discard orig. features
 Training data:	../data/final/model2_train.txt
 Test data:	../data/final/model2_test.txt
@@ -48,6 +51,8 @@ NDCG@3 on test data: 0.9682
 
 
 
+
+
 Discard orig. features
 Training data:	../data/final/model2_train.txt
 Test data:	../data/final/model2_test.txt
@@ -68,6 +73,10 @@ Reading feature file [../data/final/model2_validate.txt]... [Done.]
 Reading feature file [../data/final/model2_test.txt]... [Done.]            
 (77 ranked lists, 3850 entries read)
 NDCG@5 on test data: 0.9714
+
+
+
+
 
 
 
