@@ -110,7 +110,11 @@ STATIC_URL = '/static/'
 EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
 EMAIL_FILE_PATH = '/my_path/static_files/email'
 
+# FOR PRODUCTION
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_files')
+
+# FOR DEVELOPMENT 
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static_files')]  
 
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',            # default
