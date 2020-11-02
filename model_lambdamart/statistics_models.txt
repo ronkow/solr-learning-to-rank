@@ -1,3 +1,26 @@
+java -cp RankLib-2.14.jar:commons-math3-3.5.jar ciir.umass.edu.features.FeatureManager -feature_stats ../model_lambdamart/final/model1.txt
+
+Model File: /home/ronkow/Documents/a/a_github/solr-learning-to-rank/ranklib/../model_lambdamart/final/model1.txt
+Algorithm : LambdaMART
+
+Feature frequencies : 
+	Feature[1] :      95
+	Feature[2] :     100
+	Feature[3] :      31
+	Feature[4] :      68
+	Feature[5] :      48
+ 
+Total Features Used: 5
+
+Min frequency    :      31.00
+Max frequency    :     100.00
+Median frequency :      68.00
+Avg frequency    :      68.40
+Variance         :     880.30
+STD              :      29.67
+
+-----------------------------
+
 java -cp RankLib-2.14.jar:commons-math3-3.5.jar ciir.umass.edu.features.FeatureManager -feature_stats ../model_lambdamart/final/model2.txt
 
 Model File: /home/ronkow/Documents/a/a_github/solr-learning-to-rank/ranklib/../model_lambdamart/final/model2.txt
@@ -38,31 +61,6 @@ Median frequency :     126.00
 Avg frequency    :     181.08
 Variance         :   20718.66
 STD              :     143.94
-
-
-
-
-
-java -cp RankLib-2.14.jar:commons-math3-3.5.jar ciir.umass.edu.features.FeatureManager -feature_stats ../model_lambdamart/final/model1.txt
-
-Model File: /home/ronkow/Documents/a/a_github/solr-learning-to-rank/ranklib/../model_lambdamart/final/model1.txt
-Algorithm : LambdaMART
-
-Feature frequencies : 
-	Feature[1] :      95
-	Feature[2] :     100
-	Feature[3] :      31
-	Feature[4] :      68
-	Feature[5] :      48
- 
-Total Features Used: 5
-
-Min frequency    :      31.00
-Max frequency    :     100.00
-Median frequency :      68.00
-Avg frequency    :      68.40
-Variance         :     880.30
-STD              :      29.67
 
 -------------------------------------------
 MODEL 2
