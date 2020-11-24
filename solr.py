@@ -3,10 +3,23 @@ import requests
 # To amend features, delete old features and old model-store first
 
 def delete_feature_store(path):
+    """
+    Delete an existing feature store in the file _schema_feature-store.json in Solr
+    Print the response
+    Parameter: 
+        path: path of the feature store, e.g. http://localhost:8983/solr/core1/schema/feature-store/feature_store1
+    """
     resp = requests.delete(path)
     print(resp.text)
     
 def delete_model_store(path):
+    """
+    Delete an existing model store file in the file _schema_model-store.json Solr
+    Print the response
+    Parameter: 
+        path: path of the model store
+            e.g. http://localhost:8983/solr/core1/schema/model-store/linear_model1
+    """
     resp = requests.delete(path)
     print(resp.text)
 
@@ -14,15 +27,40 @@ def delete_model_store(path):
 # Create feature store and model store
 
 def create_feature_store(path, headers, data):
+    """
+    Create a new feature store
+    Print the response
+    Parameters:
+       path: path of the feature store
+           e.g. http://localhost:8983/solr/core1/schema/feature-store
+       headers: header in JSON format 
+           {"Content-type": "application/json"}
+       data: data in JSON format 
+           json.dumps(...)
+    """
     resp = requests.put(path, headers=headers, data=data)
     print(resp.text)
     
 def create_model_store(path, headers, data):
+    """
+    Create a new model store
+    Print the response
+    Parameters:
+       path: path of the model store
+           e.g. http://localhost:8983/solr/core1/schema/model-store
+       headers: header in JSON format 
+           {"Content-type": "application/json"}
+       data: data in JSON format
+           json.dumps(...)
+    """    
     resp = requests.put(path, headers=headers, data=data)
     print(resp.text)
     
 
 def feature_store1():
+    """
+    Definition of feature store 1 in JSON format
+    """
     fs1 = [
         {
             # qa1  
@@ -64,6 +102,9 @@ def feature_store1():
 
 
 def model_store1():
+    """
+    Definition of model store for linear_model1 in JSON format
+    """
     ms1 = {
         "store" : "feature_store1",
         "name" : "linear_model1",
@@ -89,6 +130,9 @@ def model_store1():
 
 
 def feature_store2():
+    """
+    Definition of feature store 2 in JSON format
+    """
     fs2 = [
         {
             # ss1  
@@ -298,6 +342,9 @@ def feature_store2():
 
 
 def model_store2():
+    """
+    Definition of model store for linear_model2 in JSON format, including the feature qb_topic_id
+    """
     ms2 = {
         "store" : "feature_store2",
         "name" : "linear_model2",
@@ -376,6 +423,9 @@ def model_store2():
 # model store with no qb_topic_id
 
 def model_store2_final():
+    """
+    Definition of model store for linear_model2 in JSON format, excluding the feature qb_topic_id
+    """
     ms2 = {
         "store" : "feature_store2",
         "name" : "linear_model2",
@@ -450,7 +500,9 @@ def model_store2_final():
 
 
 def feature_list(model):
-    
+    """
+    Lists of feature names for Model 1 and Model 2
+    """
     FEATURE_LIST_ONE = [
         "qa_original_score",
         "qa_pos",
