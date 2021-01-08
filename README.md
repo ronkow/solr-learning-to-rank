@@ -1,6 +1,5 @@
 # solr-learning-to-rank
 
-The website https://www.ronkow.com/grammar/ is currently being migrated to a new web server.  
-It will not be available for the time being.
+The website is at https://www.ronkow.com/grammar/  
 
-Developed with invaluable help from https://github.com/sujitpal/ltr-examples
+This project was developed with invaluable help from https://github.com/sujitpal/ltr-examples
