@@ -1,6 +1,6 @@
 # solr-learning-to-rank
 
-The website is at https://www.ronkow.com/grammar/  
+The project website is at https://www.ronkow.com/grammar/  
 
 This repository contains the following code:
 - creating model datasets
