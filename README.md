@@ -3,8 +3,9 @@
 The project website is at https://www.ronkow.com/grammar/  
 
 This repository contains the following code:
-- creating model datasets
+- creating model datasets (feature value extraction by Solr)
 - converting LambdaMART models to JSON
+- uploading data, feature definitions, and model to Solr
 - grammar website (quizzes and search system only)
 - setup of search system (database search and Solr search)
 
