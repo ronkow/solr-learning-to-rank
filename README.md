@@ -2,6 +2,8 @@
 
 The project website is at https://www.ronkow.com/grammar/  
 
+Please visit the project website for documentation.
+
 This repository contains the following code:
 - creating datasets for training or LambdaMART baseline and final models (feature value extraction by Solr)
 - converting LambdaMART models to JSON
