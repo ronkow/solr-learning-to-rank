@@ -1,0 +1,20 @@
+Miniconda3 Windows 64-bit for Python 3.8
+https://docs.conda.io/en/latest/miniconda.html
+
+JRE >= 1.8 
+https://www.java.com/en/download/
+
+Solr 7.7.3
+https://archive.apache.org/dist/lucene/solr/
+
+Stanford CoreNLP 4.2.0
+https://stanfordnlp.github.io/CoreNLP/
+
+RankLib-2.15.jar
+https://sourceforge.net/projects/lemur/files/lemur/RankLib-2.15/
+
+commons-math3-3.5.jar
+http://commons.apache.org/proper/commons-math/
+
+DB Browser for SQLite
+https://sqlitebrowser.org/dl/

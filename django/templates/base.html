@@ -13,7 +13,7 @@
 
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
 
-  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async></script>
+  <!--<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async></script>-->
 
   <title>{% block title %}{% endblock title %}</title>
 
@@ -33,44 +33,10 @@
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-
-      <li class="nav-item"><a class="nav-link header-page-link" href="{% url 'apppage:aboutview' %}">About</a></li>
-      <li class="nav-item"><a class="nav-link header-page-link" href="{% url 'apppage:contactview' %}">Contact</a></li>
       <li class="nav-item"><a class="nav-link header-page-link" href="{% url 'appquiz:topicview' %}">Quizzes</a></li>
-      <li class="nav-item"><a class="nav-link header-page-link" href="{% url 'appsearch:dataview' %}">Data</a></li>
-      <li class="nav-item"><a class="nav-link header-page-link" href="{% url 'apppage:modelview' %}">Models</a></li>
-      <li class="nav-item"><a class="nav-link header-page-link" href="{% url 'apppage:resultview' %}">Results</a></li>
       <li class="nav-item"><a class="nav-link header-page-link" href="{% url 'appsearch:searchview' %}">Search</a></li>
       <li class="nav-item"><a class="nav-link header-page-link" href="{% url 'appsearch:ltrsearchview' %}">Intelligent search</a></li>
-
-    {% if user.is_authenticated %}
-
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" id="dropdown-account" data-toggle="dropdown" href="#" role="button">Account</a>
-
-      <div class="dropdown-menu">
-        <a href="{% url 'apppage:profileview' %}"     class="dropdown-item dropdown-link">Profile</a>
-        <a href="{% url 'account_change_password' %}" class="dropdown-item dropdown-link">Settings</a>
-
-        <form method="post" action="{% url 'account_logout' %}">
-            {% csrf_token %}
-            {% if redirect_field_value %}
-              <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
-            {% endif %}
-            <button type="submit" class="dropdown-item dropdown-link">Log Out</button>
-        </form>
-
-      </div>
-    </li>
-
-    {% else %}
-       <li class="nav-item"><a href="{% url 'account_login' %}"  class="nav-link header-account-link">Log in</a></li>
-       <li class="nav-item"><a href="{% url 'account_signup' %}" class="nav-link header-account-link">Sign up</a></li>
-
-    {% endif %}
-
   </ul>
-
   </div>
 </nav>
 </header>
@@ -81,9 +47,9 @@
 </div>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 </html>

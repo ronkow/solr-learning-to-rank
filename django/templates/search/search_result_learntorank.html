@@ -4,92 +4,78 @@
 {% block title %}Intelligent search{% endblock title %}
 
 {% block content %}
-
 <h1>Intelligent search results</h1>
+
 
 {% if context_solr_down %}
   <p>We are so sorry the Solr server is down. Please try again later.</p>
 {% else %}
 
-   <p>As this is a demonstration, the answers are displayed (in <span style="color:green;">green</span>).</p>
-   <p>
-   For learning-to-rank, there is an option in Solr to only re-rank the top N default BM25 results,
-   where N is a parameter we choose. This allows for quicker results.
-   The drawback of this is that relevant results outside of the top N results will not stand a chance of a higher ranking.</p>
-   <p>
-   Since we only have 1002 sentences currently, we do not use this re-ranking option. Our models ranks all 1002 sentences.
-   By ranking all data, we can also compare the total number of relevant results between default BM25 and LTR.
-   The difference can be significant, as can be seen for our two sample queries. </p>
 
-<hr>
+
+
+<h5>As this is a demonstration, the answers are displayed in <span style="color: green;">green</span>.</h5>
+
+
+{# LTR #}
 
  {% if context_query2 %}
-  <p style="margin-bottom:2px;">Query: <strong>{{context_question}}</strong> with indicated answer: <strong>{{context_answer}}</strong></p>
+  <p style="margin-bottom:2px;"><strong>Query:</strong> {{context_question}}</p>
+  <p><strong>Indicated answer:</strong> {{context_answer}}</p>
  {% elif context_query1 %}
-  <p>Query: <strong>{{context_question}}</strong></p>
+  <p><strong>Query:</strong> {{context_question}}</p>
  {% endif %}
 
  {% if context_substring %}
-  <p>Substring as query: <strong>{{context_substring}}</strong></p>
+  <p><strong>Query input:</strong> {{context_substring}}</p>
  {% endif %}
 
- {# NO LTR #}
 
-   <h5><strong>Default BM25</strong></h5>
+
+<hr>
+
+
+{% if context_no_result %}
+  <p><strong>No questions match your query.</strong></p>
+
+{% else %}
+  {% if context_single_result %}
+     <p><strong>1 question match your query.</strong>
+  {% else %}
+     <p><strong>{{context_result_count}} questions match your query.
+     Top {{context_top}} results:</strong></p>
+  {% endif %}
+{% endif %}
+
+
+
+
+{# NO LTR #}
+<h5><strong>Default BM25</strong></h5>
 
  {% if context_no_result %}
-   <p>No questions match your query.</p>
-
  {% else %}
-
-   {% if context_single_result %}
-      <p>1 question match your query.
-   {% else %}
-      <p>{{context_result_count}} questions match your query.
-   {% endif %}
-
-   {% if not context_single_result %}
-      Top {{context_top}} results:</p>
-   {% endif %}
-
-   <ol>
-      {% with x=context_top|stringformat:"s" %}
+    <ol>
+      {% with x=context_top|stringformat:"s" %}                {##}
       {% with y=":"|add:x %}
 
-      {% for r in context_result|slice:y %}
-
-          {% with q=r.object %}
-           <li><a href="{% url 'appsearch:qbsessionview' q.id %}">{{ q.qb_question | blankspace }}</a> <span style="color:green;">({{q.qb_answer}})</span> ({{q.qb_topic}})</li>
-          {% endwith %}
-
+      {% for q in context_result|slice:y %}                    {##}
+             <li><a href="{% url 'appsearch:qbsessionview' q.id %}">{{ q.qb_question | blankspace }}</a> <span style="color:green;">({{q.qb_answer}})</span> ({{q.qb_topic}})</li>
       {% endfor %}
 
       {% endwith %}
       {% endwith %}
-   </ol>
+    </ol>
  {% endif %}
 
-<hr>
 
- {# LTR #}
-   <h5><strong>Learning to rank</strong></h5>
+{# LTR #}
+<h5><strong>Learning to rank</strong></h5>
 
  {% if context_no_result_ltr %}
-   <p>No questions match your query.</p>
-
  {% else %}
-   {% if context_single_result_ltr %}
-      <p>1 question match your query.
-   {% else %}
-      <p>{{context_result_count_ltr}} questions match your query.
-   {% endif %}
-
-   {% if not context_single_result_ltr %}
-      Top {{context_top_ltr}} results:</p>
-   {% endif %}
-
    {% if context_use_bm25_result %}
-     <ol>
+   <ol>
       {% with x=context_top|stringformat:"s" %}
       {% with y=":"|add:x %}
 
@@ -105,10 +91,10 @@
 
    {% else %}
      <ol>
-      {% with x=context_top_ltr|stringformat:"s" %}
+      {% with x=context_top_ltr|stringformat:"s" %}                {##}
       {% with y=":"|add:x %}
 
-      {% for q in context_result_ltr|slice:y %}
+      {% for q in context_result_ltr|slice:y %}                    {##}
              <li><a href="{% url 'appsearch:qbsessionview' q.id %}">{{ q.qb_question | blankspace }}</a> <span style="color:green;">({{q.qb_answer}})</span> ({{q.qb_topic}})</li>
       {% endfor %}
 
@@ -116,8 +102,10 @@
       {% endwith %}
      </ol>
    {% endif %}
+
  {% endif %}
-{% endif %}
+
+{% endif %} {# SOLR DOWN #}
 
 <div style="margin-bottom:80px"></div>
 

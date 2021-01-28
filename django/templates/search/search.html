@@ -5,24 +5,20 @@
 
 {% block content %}
 
+
 <h1>Search</h1>
 
-<h5>Search for questions from our question bank.</h5>
+<h5>Search for questions from Solr.</h5>
 
 <ul>
 
+
   <li><h5><strong>Solr search</strong></h5></li>
-  <p>This search runs on the search engine <a href="https://lucene.apache.org/solr/">Apache Solr</a>.
-    You can search by any words in the question, answer choices or topic names. An autocomplete feature (using n-grams in Solr) allows queries of incomplete spellings of words,
-    as long as the first two (or more) letters of the word are entered.
-    For example, the query "re" will return results with words like "repeating".
-    Results are ranked using <a href="https://lucene.apache.org/solr/guide/6_6/other-schema-elements.html#OtherSchemaElements-Similarity">Solr's default similarity scoring function, BM25</a>.</p>
+
 
   <form method="get" action="{% url 'appsearch:searchtextview' %}" class="">
    {% csrf_token %}
-
   <input name="query_all" class="form-control" style="width:100%" type="text" placeholder="Enter your query text" required>
-
   <select name="top" style="padding-left:10px; width:200px; height:36px; color:dimgray; font-size:16px; border-color:lightgray;background-color:white; border-radius:5px; display:block; margin-top:10px">
     <option value="10">Top 10 results</option>
     <option value="20">Top 20 results</option>
@@ -31,49 +27,53 @@
     <option value="50">Top 50 results</option>
     <option value="1000">All results ranked</option>
   </select>
-
   <button type="submit" class="btn btn-success" style="display:block; margin-top:10px">Search</button>
   </form>
 
+
+
+
 </ul>
+
 
 <hr>
 
+<h5>Search for questions from the database.</h5>
+
 <ul>
+
 <li><h5><strong>Search by topic</strong></h5></li>
-<p>This is a Django database retrieval of all questions by topic.</p>
+
 
 <form method="get" action="{% url 'appsearch:searchtopicview' %}">
     {% csrf_token %}
     <div style="width:200px;">{{ context_topic_form|crispy }}</div>
     <button type="submit" class="btn btn-success">Search</button>
 </form>
+
 </ul>
 
-<hr>
 
-<p>The following searches are implemented using <a href="https://docs.djangoproject.com/en/3.1/topics/db/queries/#complex-lookups-with-q-objects">Django Q objects</a>.
-Unlike Solr search, query text (including spaces) are matched as one contiguous string.
-Multiple spaces between two words are reduced to a single space. Leading and trailing spaces are also removed.
-Since this is simply string matching, incomplete spellings of words need not start from the first letter of the word.
-For example, the query "peat" will return results with words like "repeating". Results are not ranked by relevance; they are displayed according to the order of question ids in the database.
-</p>
+
 <ul>
+
 
   <li><h5><strong>Search by question text</strong></h5></li>
 
+
   <form method="get" action="{% url 'appsearch:searchtextview' %}" class="">
-    <input name="query_question" class="form-control" style="width:100%" type="text" placeholder="Enter your query text" required>
-    <button type="submit" class="btn btn-success"  style="display:block; margin-top:10px">Search</button>
+  <input name="query_question" class="form-control" style="width:100%" type="text" placeholder="Enter your query text" required>
+  <button type="submit" class="btn btn-success"  style="display:block; margin-top:10px">Search</button>
   </form>
 
 <div style="margin-bottom:30px" id="answersearch"></div>
 
+
   <li><h5><strong>Search by answer choice text</strong></h5></li>
+
 
   <form method="get" action="{% url 'appsearch:searchtextview' %}" class="">
   <input name="query_choice" class="form-control" style="width:100%" type="text" placeholder="Enter your query text" required>
-
   <button type="submit" class="btn btn-success"  style="display:block; margin-top:10px">Search</button>
   </form>
 

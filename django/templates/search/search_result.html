@@ -4,68 +4,89 @@
 {% block title %}Search{% endblock title %}
 
 {% block content %}
-
 <h1>Search results</h1>
+
+{# either no result or got result #}
+{# if got result, either 1 result or more than 1 result #}
+{# if more than 1 result, either less than 20 results, or 20 results #}
+
+
+
 
 {% if context_solr_down %}
   <p>We are so sorry the Solr server is down. Please try again later.</p>
 {% else %}
 
+
+
+
   {% if context_search_by_question %}
-     <p>Query: <strong>{{context_query_text}}</strong> (to match question text)</p>
-
+     <p><strong>Query:</strong> <strong>{{context_query_text}}</strong> (to match question text)</p>
   {% elif context_search_by_choice %}
-     <p>Query: <strong>{{context_query_text}}</strong> (to match answer choice text)</p>
-
+     <p><strong>Query:</strong> <strong>{{context_query_text}}</strong> (to match answer choice text)</p>
   {% elif context_search_by_all %}
-     <p>Any term in your query: <strong>{{context_query_text}}</strong> (to match question text, answer choice text or topic names)</p>
-
+     <p><strong>Any term in your query:</strong> <strong>{{context_query_text}}</strong> (to match question text, answer choice text or topic names)</p>
   {% endif %}
+
+
+
+
+
 
   {% if context_no_result %}
    <p>No questions match your query.</p>
 
   {% else %}
 
-    {% if context_single_result %}
-      <p>1 question match your query.
-
-    {% else %}
-      <p>{{context_result_count}} questions match your query.
-
-      {% if context_search_by_all %}
-        Top {{context_top}} results:</p>
+      {% if context_single_result %}
+         <p>1 question match your query.
       {% else %}
-         All results (unranked):</p>
+         <p>{{context_result_count}} questions match your query.
+
+         {% if context_search_by_all %}
+            Top {{context_top}} results:</p>
+         {% else %}
+            All results (unranked):</p>
+         {% endif %}
       {% endif %}
 
-    {% endif %}
 
     {% if context_search_by_topic or context_search_by_question or context_search_by_choice %}
     <ol>
-      {% for r in context_result %}
+      {% for r in context_result %}               {# IF NOT SOLR, DISPLAY ALL #}
            <li><a href="{% url 'appsearch:qbsessionview' r.id %}">{{ r.qb_question | blankspace }}</a> ({{r.qb_topic}})</li>
       {% endfor %}
     </ol>
-    {% else %}    
+
+
+    {% else %}     {# ELSE IF SOLR #}
     <ol>
       {% with x=context_top|stringformat:"s" %}
       {% with y=":"|add:x %}
 
-      {% for r in context_result|slice:y %}
-          {% with q=r.object %}
+      {# for r in context_result|slice:":20" #}  {# FOR SOLR, DISPLAY AT MOST 20 #}
+
+      {% for q in context_result|slice:y %}
+      {# for r in context_result|slice:y #}
+          {# with q=r.object #}
            <li><a href="{% url 'appsearch:qbsessionview' q.id %}">{{ q.qb_question | blankspace }}</a> ({{q.qb_topic}})</li>
-          {% endwith %}
+          {# endwith #}
       {% endfor %}
 
       {% endwith %}
       {% endwith %}
-   </ol>
+    </ol>
     {% endif %}
 
   {% endif %}
-{% endif %}
+{% endif %}    {# solr down #}
+
+
 
 <div style="margin-bottom:80px"></div>
 
 {% endblock content %}
+
+
+{# % include "search/pagination.html" with context_page=context_result % #}
+{# % for new in news|slice:":10" % #}

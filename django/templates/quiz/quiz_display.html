@@ -1,11 +1,17 @@
 {% extends "base.html" %}
 {% load quiz_tag %}
 
+
+
 {% block title %}Quiz{% endblock title %}
+
 
 {% block content %}
 
+
   <h1>{{context_topic.topic_name}} Quiz {{context_quiz.quiz_number}}</h1>
+
+
 
 {% if context_first_question %}
     {% if context_one_question %}
@@ -15,8 +21,10 @@
     {% endif %}
 <br>
 {% endif %}
-
+                                        
+    
   <p><strong>Question {{context_progress_current}}: </strong>{{ context_current_question.q_question | blankspace }}</p>
+
 
     <form action="" method="POST">
     {% csrf_token %}
@@ -26,11 +34,11 @@
       {% for c in context_list_choices %}
         <tr>
         <td class='p-0'>
-        <label class="form-check-label m-1 p-2"
+        <label class="form-check-label m-1 p-2" 
           style="width:100%; height:100%">
-
-        <input type="radio"
-          name="{{ context_quiz.id }}"
+                       
+        <input type="radio" 
+          name="{{ context_quiz.id }}" 
           value="{{ c }}" required>
         <span style="margin-left:10px; display:inline">{{ c }}</span>
         </label>
@@ -40,14 +48,19 @@
     </tbody>
     </table>
 
-    <input class="btn btn-outline-primary btn-lg"
+        <input class="btn btn-outline-primary btn-lg"
                 type="submit"
                 name=""
                 value="Submit">
     </form>
+  
+
 
 <div style="display: block; text-align: center; margin-top: 20px">
   <p>Question {{ context_progress_current }} of {{ context_progress_total }}</p>
 </div>
+
+
+{# <script src="back_redirect.js"></script> #}
 
 {% endblock %}

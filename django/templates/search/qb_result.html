@@ -5,25 +5,29 @@
 
 <h1>{{ context_topic.topic_name }}</h1>
 
+
+
 {% for key, value in context_dict_question %}
 
    {% if value.user.user_answer_check %}
       <h5>Well done!</h5>
    {% else %}
       <h5>Practice makes perfect! <a href="{% url 'appquiz:topicview' %}">Do another quiz?</a></h5>
-   {% endif %}
+   {% endif %}  
 
 <br>
+
     <p style="text-align:left"><strong>Question:</strong> {{ value.user.question_text | blankspace }}</p>
+
 
     <table class="table table-bordered">
     <tbody>
-
+                    
     {% for k, v in value.user.question_choices.items %}
      <tr>
      <td class='p-0'>
-
-        {# v TRUE:RIGHT ANS, SELECTED #}
+            
+        {# v TRUE:RIGHT ANS, SELECTED #}       
         {% if v and k == value.user.user_answer_selected %}
         <p class="m-1 p-2" style="background-color:lightgreen;">{{ k }}
         <span style="margin-left:20px;font-size:20px;font-weight:bold">&#10003;</span>
@@ -31,7 +35,7 @@
 
         {# v TRUE:RIGHT ANS, NOT SELECTED #}
         {% elif v and k != value.user.user_answer_selected %}
-
+                     
            {% if user.is_authenticated %}
              <p class="m-1 p-2" style="background-color: lightgreen">{{ k }}
              <span style="margin-left:20px;font-size:20px;font-weight:bold">&#10003;</span>
@@ -39,26 +43,32 @@
            {% else %}
              <p class="m-1 p-2" style="background-color: white">{{ k }}</p>
            {% endif %}
-
+           
+                
         {# v FALSE:WRONG ANS, SELECTED #}
         {% elif not v and k == value.user.user_answer_selected %}
           <p class="m-1 p-2" style="background-color: lightpink">{{ k }}
           <span style="margin-left:20px;font-size:18px;font-weight:bold">&#10007;</span>
           </p>
-
+                   
         {% else %}
-
+                   
           <p class="m-1 p-2" style="background-color:white">{{ k }}</p>
-
+                   
         {% endif %}
      </td>
      </tr>
     {% endfor %}
-
+            
     </tbody>
     </table>
+
+
+
+
 {% endfor %}
 
 <div style="margin-bottom:80px"></div>
+
 
 {% endblock %}
