@@ -1,6 +1,6 @@
 # solr-learning-to-rank
 
-The project website is at https://www.ronkow.com/grammar/  
+[//]: # The project website is at https://www.ronkow.com/grammar/  
 
 Please visit the project website for documentation.
 
