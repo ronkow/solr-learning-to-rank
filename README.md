@@ -1,9 +1,5 @@
 # solr-learning-to-rank
 
-[//]: # The project website is at https://www.ronkow.com/grammar/  
-
-Please visit the project website for documentation.
-
 This repository contains the data, models and code for:
 - creating datasets (training, validation, testing) for LambdaMART baseline and final models (feature value extraction by Solr)
 - converting LambdaMART models to JSON
