@@ -1,6 +1,8 @@
 # solr-learning-to-rank
 
-Please read the project report for details:
+This is my Master of Science in Artificial Intelligence project.
+
+Please read the project report for details:  
 https://github.com/ronkow/solr-learning-to-rank/blob/main/project_report/project_report.pdf
 
 This repository contains the data, models and code for:
