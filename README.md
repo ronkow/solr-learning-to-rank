@@ -1,7 +1,7 @@
 # solr-learning-to-rank
 
-Please read the project report for details:  
-https://github.com/ronkow/solr-learning-to-rank/blob/main/docs/project_report.pdf
+Please read the docs for details:  
+https://github.com/ronkow/solr-learning-to-rank/tree/main/docs
 
 This repository contains the data, models and code for:
 - creating datasets (training, validation, testing) for LambdaMART baseline and final models (feature value extraction by Solr)
